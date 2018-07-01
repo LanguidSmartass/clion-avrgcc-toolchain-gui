@@ -2,20 +2,18 @@ import com.intellij.ide.ui.UINumericRange;
 import com.intellij.openapi.Disposable;
 import com.intellij.openapi.options.ConfigurationException;
 import com.intellij.openapi.options.SearchableConfigurable;
-import com.intellij.openapi.util.Pair;
 import com.intellij.util.messages.Topic;
 import org.jetbrains.annotations.Nls;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import javax.swing.*;
-import java.util.List;
 
-public class CPPToolchainsExperimentalConfigurable implements SearchableConfigurable, Disposable {
+public class ToolchainSettingsConfigurable implements SearchableConfigurable, Disposable {
     public static final Topic<Listener> TOPIC;
     public static final String ID = "CPPToolchains";
     public static final String DISPLAY_NAME;
-    private CPPToolchainsExperimentalPanel myPanel = null;
+    private ToolchainSettingsPanel myPanel = null;
     private int myPreselectedToolchain;
 
     @NotNull
@@ -62,7 +60,7 @@ public class CPPToolchainsExperimentalConfigurable implements SearchableConfigur
     public JComponent createComponent() {
 
         if (this.myPanel == null) {
-            this.myPanel = new CPPToolchainsExperimentalPanel(this, this.myPreselectedToolchain);
+            this.myPanel = new ToolchainSettingsPanel(this, this.myPreselectedToolchain);
             this.myPanel.autoRecheckWithApplication();
         }
         this.myPanel.setVisible(true);
@@ -101,7 +99,7 @@ public class CPPToolchainsExperimentalConfigurable implements SearchableConfigur
 
     static {
         long var0 = 11775785817021L;
-        TOPIC = Topic.create("Toolchain Experimental editor topic", CPPToolchainsExperimentalConfigurable.Listener.class);
+        TOPIC = Topic.create("Toolchain Experimental editor topic", ToolchainSettingsConfigurable.Listener.class);
         DISPLAY_NAME = CPPBundleExperimental.message("cpp.toolchains", new Object[0]);
     }
 

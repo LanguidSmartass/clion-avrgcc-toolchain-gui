@@ -10,26 +10,31 @@ import com.intellij.ui.ListCellRendererWrapper;
 import com.intellij.ui.OnePixelSplitter;
 import com.intellij.ui.components.JBList;
 import com.intellij.ui.components.JBPanelWithEmptyText;
+import com.intellij.ui.treeStructure.Tree;
 import com.intellij.util.ui.StatusText;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import javax.swing.*;
+import javax.swing.event.TreeModelListener;
+import javax.swing.tree.TreeModel;
+import javax.swing.tree.TreePath;
 
-public class CPPToolchainsExperimentalPanel extends JPanel implements Disposable {
-    private final ComboBox<String> myToolSetKind;
-    private JBSplitter mySplitter;
-    private JBList myToolchainList;
-
-    public CPPToolchainsExperimentalPanel(@NotNull Disposable var1, int var2) {
-        this.myToolSetKind = new ComboBox<>(100);
-        this.myToolchainList = new JBList(1, 2, 3, 4);
-        this.myToolSetKind.setVisible(true);
-        this.add(this.myToolSetKind);
-        this.add(this.myToolchainList);
+public class ToolchainSettingsPanel extends JPanel implements Disposable {
+//    private final ComboBox<String> myToolSetKind;
+//    private JBSplitter mySplitter;
+//    private JBList myToolchainList;
+    private final Tree uiTree;
+    public ToolchainSettingsPanel(@NotNull Disposable var1, int var2) {
+        uiTree = new Tree(new frontend.tree.TreeModel());
+        this.add(uiTree);
+//        this.myToolSetKind = new ComboBox<>(100);
+//        this.myToolchainList = new JBList(1, 2, 3, 4);
+//        this.myToolSetKind.setVisible(true);
+//        this.add(this.myToolSetKind);
+//        this.add(this.myToolchainList);
     }
-
 
     public final void autoRecheckWithApplication() {
         long var1 = 98777743076406L;

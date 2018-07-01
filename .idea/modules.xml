@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/clion-avrgcc-plugin.iml" filepath="$PROJECT_DIR$/clion-avrgcc-plugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/clion-avrgcc-toolchain-gui.iml" filepath="$PROJECT_DIR$/clion-avrgcc-toolchain-gui.iml" />
     </modules>
   </component>
 </project>
