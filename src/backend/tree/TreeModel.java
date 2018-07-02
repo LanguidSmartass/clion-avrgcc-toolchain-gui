@@ -6,10 +6,14 @@ public class TreeModel {
     public TreeModel() {
         root = new NamedTreeNode("Root");
 
+        NamedTreeNode device = new NamedTreeNode("Device");
+        device.makeAsLeaf();
+        root.addChild(device);
+
         NamedTreeNode common = new NamedTreeNode("AVR/GNU Common");
         root.addChild(common);
         {
-            NamedTreeNode general  = new NamedTreeNode("General");
+            NamedTreeNode general  = new NamedTreeNode("General", new backend.tree.common.General());
             NamedTreeNode outfiles = new NamedTreeNode("Output Files");
             general.makeAsLeaf();
             outfiles.makeAsLeaf();

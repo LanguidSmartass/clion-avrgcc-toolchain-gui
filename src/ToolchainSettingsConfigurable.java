@@ -13,7 +13,7 @@ public class ToolchainSettingsConfigurable implements SearchableConfigurable, Di
     public static final Topic<Listener> TOPIC;
     public static final String ID = "CPPToolchains";
     public static final String DISPLAY_NAME;
-    private ToolchainSettingsPanel myPanel = null;
+    private ToolchainPanel myPanel = null;
     private int myPreselectedToolchain;
 
     @NotNull
@@ -60,7 +60,7 @@ public class ToolchainSettingsConfigurable implements SearchableConfigurable, Di
     public JComponent createComponent() {
 
         if (this.myPanel == null) {
-            this.myPanel = new ToolchainSettingsPanel(this, this.myPreselectedToolchain);
+            this.myPanel = new ToolchainPanel(this, this.myPreselectedToolchain);
             this.myPanel.autoRecheckWithApplication();
         }
         this.myPanel.setVisible(true);

@@ -3,14 +3,16 @@ package backend.tree;
 public class NamedTreeNode extends TreeNode {
     private final String name;
     private boolean isLeaf;
+    private ExtendedSettings settings;
 
     public NamedTreeNode(String name) {
         this.name = name;
+        this.settings = null;
     }
 
-    public NamedTreeNode(TreeNode parent) {
-        super(parent);
-        this.name = "";
+    public NamedTreeNode(String name, ExtendedSettings settings) {
+        this.name = name;
+        this.settings = settings;
     }
 
     public NamedTreeNode(TreeNode parent, String name) {
@@ -34,4 +36,6 @@ public class NamedTreeNode extends TreeNode {
     public void makeAsBranch() {
         isLeaf = false;
     }
+
+    public ExtendedSettings getSettings() { return settings; }
 }
