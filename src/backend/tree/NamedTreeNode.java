@@ -18,8 +18,9 @@ public class NamedTreeNode extends TreeNode {
         this.name = name;
     }
 
-    public String getName() {
-        return name;
+    @Override
+    public String toString() {
+        return this.name;
     }
 
     public boolean isLeaf() {
