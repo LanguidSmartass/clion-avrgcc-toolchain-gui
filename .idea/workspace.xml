@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="147c820a-4c87-4050-8d4b-f21902b43a99" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/backend/tree/NamedTreeNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/backend/tree/TreeModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/backend/tree/TreeNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/tree/TreeModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clion-avrgcc-toolchain-gui.iml" beforeDir="false" afterPath="$PROJECT_DIR$/clion-avrgcc-toolchain-gui.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/META-INF/plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AvrGcc.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CPPToolchainsExperimentalConfigurable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ToolchainSettingsConfigurable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CPPToolchainsExperimentalPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ToolchainSettingsPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ToolchainSettingsPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ToolchainSettingsPanel.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,79 +15,83 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ToolchainSettingsPanel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ToolchainSettingsPanel.java">
+      <file leaf-file-name="CPPToolchainsPanel.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2017.3.4/lib/clion.jar!/com/jetbrains/cidr/cpp/toolchains/CPPToolchainsPanel.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="20" column="34" lean-forward="true" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+            <state relative-caret-position="106">
+              <caret line="67" column="56" selection-start-line="67" selection-start-column="51" selection-end-line="67" selection-end-column="56" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tree.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2017.3.4/lib/openapi.jar!/com/intellij/ui/treeStructure/Tree.class">
+      <file leaf-file-name="CPPModuleType.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2017.3.4/lib/clion.jar!/com/jetbrains/cidr/cpp/CPPModuleType.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="88" column="19" selection-start-line="88" selection-start-column="19" selection-end-line="88" selection-end-column="19" />
-              <folding>
-                <element signature="e#3165#3166#0" expanded="true" />
-                <element signature="e#3208#3209#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-1149">
+              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TreeModel.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/backend/tree/TreeModel.java">
+      <file leaf-file-name="DetailsEditorHelper.class" pinned="false" current-in-tab="true">
+        <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2017.3.4/lib/clion.jar!/com/jetbrains/cidr/cpp/DetailsEditorHelper.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-327">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CPPToolchainsListener.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2017.3.4/lib/clion.jar!/com/jetbrains/cidr/cpp/toolchains/CPPToolchainsListener.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CPPToolSet.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2017.3.4/lib/clion.jar!/com/jetbrains/cidr/cpp/toolchains/CPPToolSet.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1078">
+              <caret line="293" lean-forward="true" selection-start-line="293" selection-end-line="293" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ToolSetInstallations.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2017.3.4/lib/clion.jar!/com/jetbrains/cidr/cpp/toolchains/ToolSetInstallations.class">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TreeModel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/frontend/tree/TreeModel.java">
+      <file leaf-file-name="CPPToolchains.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2017.3.4/lib/clion.jar!/com/jetbrains/cidr/cpp/toolchains/CPPToolchains.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-221">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#335#336#0" expanded="true" />
-                <element signature="e#372#373#0" expanded="true" />
-                <element signature="e#300#301#0" expanded="true" />
-                <element signature="e#327#328#0" expanded="true" />
-                <element signature="e#388#389#0" expanded="true" />
-                <element signature="e#412#413#0" expanded="true" />
-                <element signature="e#681#682#0" expanded="true" />
-                <element signature="e#730#731#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-3594">
+              <caret line="35" column="125" lean-forward="true" selection-start-line="35" selection-start-column="125" selection-end-line="35" selection-end-column="125" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TreeNode.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/backend/tree/TreeNode.java">
+      <file leaf-file-name="Checker.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2017.3.4/lib/clion.jar!/com/jetbrains/cidr/cpp/toolchains/Checker.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-146">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="85">
+              <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NamedTreeNode.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/backend/tree/NamedTreeNode.java">
+      <file leaf-file-name="CPPEnvironment.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2017.3.4/lib/clion.jar!/com/jetbrains/cidr/cpp/toolchains/CPPEnvironment.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-              <folding>
-                <element signature="e#471#472#0" expanded="true" />
-                <element signature="e#500#501#0" expanded="true" />
-                <element signature="e#473#474#0" expanded="true" />
-                <element signature="e#502#503#0" expanded="true" />
-                <element signature="e#536#537#0" expanded="true" />
-                <element signature="e#566#567#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-884">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -113,9 +107,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ToolSetInstallations</find>
-      <find>configurable.group.build.settings</find>
-      <find>build, e</find>
       <find>Option</find>
       <find>cpp.toolchains.empty.description</find>
       <find>descri</find>
@@ -143,6 +134,9 @@
       <find>ComboBox</find>
       <find>myToolchainList</find>
       <find>myTreeModel</find>
+      <find>String</find>
+      <find>cpp.toolchain</find>
+      <find>combo</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -171,10 +165,10 @@
         <option value="$PROJECT_DIR$/src/backend/tree/NamedNode.java" />
         <option value="$PROJECT_DIR$/src/backend/tree/Node.java" />
         <option value="$PROJECT_DIR$/src/frontend/tree/TreeModel.java" />
-        <option value="$PROJECT_DIR$/src/ToolchainSettingsPanel.java" />
         <option value="$PROJECT_DIR$/src/backend/tree/TreeNode.java" />
         <option value="$PROJECT_DIR$/src/backend/tree/NamedTreeNode.java" />
         <option value="$PROJECT_DIR$/src/backend/tree/TreeModel.java" />
+        <option value="$PROJECT_DIR$/src/ToolchainSettingsPanel.java" />
       </list>
     </option>
   </component>
@@ -252,7 +246,7 @@
               <item name="&lt; CLion CL-173.4674.29 &gt;" type="70bed36:NamedLibraryElementNode" />
               <item name="clion.jar" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="intellij" type="462c0819:PsiDirectoryNode" />
+              <item name="jetbrains" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="clion-avrgcc-toolchain-gui" type="b2602c69:ProjectViewProjectNode" />
@@ -260,8 +254,8 @@
               <item name="&lt; CLion CL-173.4674.29 &gt;" type="70bed36:NamedLibraryElementNode" />
               <item name="clion.jar" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="intellij" type="462c0819:PsiDirectoryNode" />
-              <item name="openapi" type="462c0819:PsiDirectoryNode" />
+              <item name="jetbrains" type="462c0819:PsiDirectoryNode" />
+              <item name="cidr" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="clion-avrgcc-toolchain-gui" type="b2602c69:ProjectViewProjectNode" />
@@ -269,9 +263,9 @@
               <item name="&lt; CLion CL-173.4674.29 &gt;" type="70bed36:NamedLibraryElementNode" />
               <item name="clion.jar" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="intellij" type="462c0819:PsiDirectoryNode" />
-              <item name="openapi" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="jetbrains" type="462c0819:PsiDirectoryNode" />
+              <item name="cidr" type="462c0819:PsiDirectoryNode" />
+              <item name="cpp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="clion-avrgcc-toolchain-gui" type="b2602c69:ProjectViewProjectNode" />
@@ -279,8 +273,10 @@
               <item name="&lt; CLion CL-173.4674.29 &gt;" type="70bed36:NamedLibraryElementNode" />
               <item name="clion.jar" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="intellij" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="jetbrains" type="462c0819:PsiDirectoryNode" />
+              <item name="cidr" type="462c0819:PsiDirectoryNode" />
+              <item name="cpp" type="462c0819:PsiDirectoryNode" />
+              <item name="toolchains" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -386,16 +382,15 @@
       <workItem from="1529954557678" duration="30509000" />
       <workItem from="1530176705672" duration="614000" />
       <workItem from="1530391579803" duration="1659000" />
-      <workItem from="1530394862623" duration="10537000" />
+      <workItem from="1530394862623" duration="13800000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43319000" />
+    <option name="totallyTimeSpent" value="46582000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="11" />
@@ -403,15 +398,15 @@
       <window_info anchor="right" id="Palette&#9;" order="0" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.50073206" side_tool="true" visible="true" weight="0.3290938" />
+      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.50073206" side_tool="true" weight="0.3290938" />
       <window_info anchor="right" id="Maven Projects" order="2" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="0" />
-      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.49926794" visible="true" weight="0.3290938" />
+      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.49926794" weight="0.3290938" />
       <window_info anchor="bottom" id="Terminal" order="2" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="3" visible="true" weight="0.24963397" />
+      <window_info active="true" content_ui="combo" id="Project" order="3" visible="true" weight="0.3081991" />
       <window_info anchor="right" id="Database" order="1" />
       <window_info id="Learn" order="0" />
       <window_info id="Structure" order="5" side_tool="true" weight="0.25" />
@@ -445,18 +440,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2018.1.3/lib/clion.jar!/com/jetbrains/cidr/cpp/toolchains/GDB.class" />
-    <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2018.1.3/lib/clion.jar!/com/jetbrains/cidr/cpp/toolchains/WSL.class" />
-    <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2018.1.3/lib/clion.jar!/com/jetbrains/cidr/cpp/toolchains/MSVC.class" />
-    <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2018.1.3/lib/clion.jar!/com/jetbrains/cidr/cpp/toolchains/Cygwin.class" />
-    <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2018.1.3/lib/clion.jar!/com/jetbrains/cidr/cpp/toolchains/CPPToolchainsUtilKt.class" />
-    <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2018.1.3/lib/resources_en.jar!/messages/OptionsBundle.properties" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.797/com/jetbrains/cidr/cpp/toolchains/CPPToolchainsPanel$loadToolSetInstallations$1.class" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.248/com/jetbrains/cidr/cpp/toolchains/CPPToolchains.class" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.006/com/jetbrains/cidr/cpp/toolchains/CPPToolSet$Option.class" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.531/com/jetbrains/cidr/cpp/toolchains/CPPToolSet.class" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.521/com/jetbrains/cidr/cpp/toolchains/ToolSetInstallations.class" />
-    <entry file="file://$PROJECT_DIR$/src/ToolSetInstallations.class" />
     <entry file="file://$PROJECT_DIR$/src/ToolSetInstallations.java" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.356/com/jetbrains/cidr/cpp/toolchains/ToolSetInstallations.class" />
     <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2018.1.3/lib/clion.jar!/com/jetbrains/cidr/cpp/toolchains/ToolSetInstallations.class" />
@@ -477,13 +460,6 @@
     <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2018.1.3/lib/clion.jar!/com/jetbrains/cidr/toolchains/OSType.class" />
     <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2018.1.3/lib/clion.jar!/META-INF/CLionPlugin.xml" />
     <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2018.1.3/lib/clion.jar!/com/jetbrains/cidr/cpp/toolchains/CPPToolchains.class" />
-    <entry file="file://$PROJECT_DIR$/src/CPPBundleExperimental.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2018.1.3/lib/clion.jar!/com/jetbrains/cidr/cpp/CPPBundle.class" />
     <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2018.1.3/lib/clion.jar!/com/jetbrains/cidr/cpp/toolchains/CPPToolchainsPanel.class" />
     <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2018.1.3/lib/clion.jar!/com/jetbrains/cidr/cpp/toolchains/CPPToolchainsConfigurable.class" />
@@ -491,23 +467,6 @@
     <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2018.1.3/lib/clion.jar!/com/jetbrains/cidr/cpp/toolchains/CPPToolSet.class" />
     <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2018.1.3/lib/openapi.jar!/com/intellij/openapi/ui/ComboBox.class" />
     <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2018.1.3/lib/openapi.jar!/com/intellij/ui/components/JBList.class" />
-    <entry file="file://$PROJECT_DIR$/src/ToolchainSettingsConfigurable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CPPBundleExperimental.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2017.3.4/lib/clion.jar!/com/intellij/ui/CheckboxTree.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -588,24 +547,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ToolchainSettingsPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="20" column="34" lean-forward="true" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2017.3.4/lib/openapi.jar!/com/intellij/ui/treeStructure/Tree.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="88" column="19" selection-start-line="88" selection-start-column="19" selection-end-line="88" selection-end-column="19" />
-          <folding>
-            <element signature="e#3165#3166#0" expanded="true" />
-            <element signature="e#3208#3209#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/backend/tree/TreeNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-146">
@@ -628,10 +569,69 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2017.3.4/lib/openapi.jar!/com/intellij/ui/treeStructure/Tree.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="315" column="54" selection-start-line="315" selection-start-column="48" selection-end-line="315" selection-end-column="54" />
+          <folding>
+            <element signature="e#3165#3166#0" expanded="true" />
+            <element signature="e#3208#3209#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CPPBundleExperimental.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="35" column="20" lean-forward="true" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ToolchainSettingsPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ToolchainSettingsConfigurable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-765">
+          <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/backend/tree/TreeModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../toolchains/jdk-10.0.1/lib/src.zip!/java.desktop/javax/swing/event/TreeModelListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2017.3.4/lib/clion.jar!/com/jetbrains/cidr/cpp/toolchains/CPPToolchainsPanelKt.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CPPBundleExperimental.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/frontend/tree/TreeModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-221">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="629">
+          <caret line="44" column="43" selection-start-line="44" selection-start-column="43" selection-end-line="44" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#335#336#0" expanded="true" />
@@ -646,10 +646,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/backend/tree/TreeModel.java">
+    <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2017.3.4/lib/clion.jar!/com/jetbrains/cidr/cpp/toolchains/CPPToolchainsListener.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2017.3.4/lib/clion.jar!/com/jetbrains/cidr/cpp/toolchains/CPPToolSet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1078">
+          <caret line="293" lean-forward="true" selection-start-line="293" selection-end-line="293" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2017.3.4/lib/clion.jar!/com/jetbrains/cidr/cpp/toolchains/ToolSetInstallations.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2017.3.4/lib/clion.jar!/com/jetbrains/cidr/cpp/toolchains/CPPToolchains.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3594">
+          <caret line="35" column="125" lean-forward="true" selection-start-line="35" selection-start-column="125" selection-end-line="35" selection-end-column="125" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2017.3.4/lib/clion.jar!/com/jetbrains/cidr/cpp/toolchains/Checker.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2017.3.4/lib/clion.jar!/com/jetbrains/cidr/cpp/toolchains/CPPEnvironment.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-884">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2017.3.4/lib/clion.jar!/com/jetbrains/cidr/cpp/toolchains/CPPToolchainsPanel.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="67" column="56" selection-start-line="67" selection-start-column="51" selection-end-line="67" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2017.3.4/lib/clion.jar!/com/jetbrains/cidr/cpp/CPPModuleType.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1149">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2017.3.4/lib/clion.jar!/com/jetbrains/cidr/cpp/OpenCPPProjectAction.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2017.3.4/lib/clion.jar!/com/jetbrains/cidr/cpp/DetailsEditorHelper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-327">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
     </entry>
