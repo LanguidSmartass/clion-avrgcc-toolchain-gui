@@ -2,97 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="147c820a-4c87-4050-8d4b-f21902b43a99" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/MVCPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/ToolchainPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/PanelHolder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/ToolchainPanel.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/ToolchainPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/TreeNodeWithJPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/archiver/General.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/archiver/General.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/assembler/Debugging.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/assembler/Debugging.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/assembler/General.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/assembler/General.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/common/General.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/common/General.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/common/OutputFiles.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/common/OutputFiles.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/compiler/Debugging.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/compiler/Debugging.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/compiler/Directories.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/compiler/Directories.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/compiler/General.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/compiler/General.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/compiler/Miscellaneous.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/compiler/Miscellaneous.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/compiler/Optimization.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/compiler/Optimization.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/compiler/Preprocessor.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/compiler/Preprocessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/compiler/Symbols.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/compiler/Symbols.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/compiler/Warnings.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/compiler/Warnings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/compiler/compiler.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/compiler/compiler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/formElements/RecordsList.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/formElements/RecordsList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/PluginBundle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/archiver/Archiver.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/archiver/Archiver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/assembler/Assembler.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/assembler/Assembler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/linker/General.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/linker/General.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/linker/Libraries.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/linker/Libraries.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/linker/Linker.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/linker/Linker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/linker/MemorySettings.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/linker/MemorySettings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/linker/Miscellaneous.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/linker/Miscellaneous.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/linker/Optimization.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/linker/Optimization.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/AtmelSturioExample/.vs/GccApplication1/v14/.atsuo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/AtmelSturioExample/GccApplication1.atsln" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/AtmelSturioExample/GccApplication1/Debug/GccApplication1.eep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/AtmelSturioExample/GccApplication1/Debug/GccApplication1.elf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/AtmelSturioExample/GccApplication1/Debug/GccApplication1.hex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/AtmelSturioExample/GccApplication1/Debug/GccApplication1.lss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/AtmelSturioExample/GccApplication1/Debug/GccApplication1.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/AtmelSturioExample/GccApplication1/Debug/GccApplication1.srec" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/AtmelSturioExample/GccApplication1/Debug/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/AtmelSturioExample/GccApplication1/Debug/main.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/AtmelSturioExample/GccApplication1/Debug/main.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/AtmelSturioExample/GccApplication1/Debug/makedep.mk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/AtmelSturioExample/GccApplication1/GccApplication1.componentinfo.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/AtmelSturioExample/GccApplication1/GccApplication1.cppproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/AtmelSturioExample/GccApplication1/main.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/CPPBundleExperimental.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/TestLayout$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/TestLayout.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/ToolchainPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/ToolchainSettingsConfigurable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/ToolchainSettingsConfigurable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/backend/tree/NamedTreeNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/backend/tree/TreeModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/backend/tree/TreeNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/frontend/tree/ToolchainPanel$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/frontend/tree/ToolchainPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/frontend/tree/TreeModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AtmelSturioExample/.vs/GccApplication1/v14/.atsuo" beforeDir="false" afterPath="$PROJECT_DIR$/src/AtmelStudioExample/.vs/GccApplication1/v14/.atsuo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AtmelSturioExample/GccApplication1.atsln" beforeDir="false" afterPath="$PROJECT_DIR$/src/AtmelStudioExample/GccApplication1.atsln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AtmelSturioExample/GccApplication1/Debug/GccApplication1.eep" beforeDir="false" afterPath="$PROJECT_DIR$/src/AtmelStudioExample/GccApplication1/Debug/GccApplication1.eep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AtmelSturioExample/GccApplication1/Debug/GccApplication1.elf" beforeDir="false" afterPath="$PROJECT_DIR$/src/AtmelStudioExample/GccApplication1/Debug/GccApplication1.elf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AtmelSturioExample/GccApplication1/Debug/GccApplication1.hex" beforeDir="false" afterPath="$PROJECT_DIR$/src/AtmelStudioExample/GccApplication1/Debug/GccApplication1.hex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AtmelSturioExample/GccApplication1/Debug/GccApplication1.lss" beforeDir="false" afterPath="$PROJECT_DIR$/src/AtmelStudioExample/GccApplication1/Debug/GccApplication1.lss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AtmelSturioExample/GccApplication1/Debug/GccApplication1.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/AtmelStudioExample/GccApplication1/Debug/GccApplication1.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AtmelSturioExample/GccApplication1/Debug/GccApplication1.srec" beforeDir="false" afterPath="$PROJECT_DIR$/src/AtmelStudioExample/GccApplication1/Debug/GccApplication1.srec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AtmelSturioExample/GccApplication1/Debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/src/AtmelStudioExample/GccApplication1/Debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AtmelSturioExample/GccApplication1/Debug/makedep.mk" beforeDir="false" afterPath="$PROJECT_DIR$/src/AtmelStudioExample/GccApplication1/Debug/makedep.mk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AtmelSturioExample/GccApplication1/GccApplication1.componentinfo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/AtmelStudioExample/GccApplication1/GccApplication1.componentinfo.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AtmelSturioExample/GccApplication1/GccApplication1.cppproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/AtmelStudioExample/GccApplication1/GccApplication1.cppproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AtmelSturioExample/GccApplication1/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/AtmelStudioExample/GccApplication1/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CPPBundleExperimental.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/Plugin.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ToolchainPanel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ToolchainSettingsConfigurable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ToolchainSettingsConfigurable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backend/tree/ExtendedSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/MVCModelHack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backend/tree/NamedTreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/NamedTreeNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backend/tree/TreeModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/TreeModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backend/tree/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/TreeNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backend/tree/common/General.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/common/General.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backend/tree/device/General.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/device/General.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frontend/tree/JPanelExtractable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frontend/tree/ToolchainPanel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frontend/tree/TreeModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frontend/tree/common/General.form" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frontend/tree/common/General.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Plugin.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/Plugin.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/assembler/General.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/assembler/General.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/assembler/General.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/assembler/General.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/compiler/Debugging.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/compiler/Debugging.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/compiler/Directories.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/compiler/Directories.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/compiler/Directories.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/compiler/Directories.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/compiler/Symbols.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/compiler/Symbols.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/compiler/Symbols.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/compiler/Symbols.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/compiler/compiler.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/compiler/Compiler.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/compiler/compiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/compiler/Compiler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/formElements/RecordsList.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/formElements/RecordsList.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/formElements/RecordsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/formElements/RecordsList.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -104,18 +43,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ToolchainPanel.form" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/view/ToolchainPanel.form">
+      <file leaf-file-name="Assembler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/view/assembler/Assembler.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="Assembler.form" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/view/assembler/Assembler.form">
           <provider selected="true" editor-type-id="ui-designer" />
         </entry>
       </file>
-      <file leaf-file-name="ToolchainPanel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/view/ToolchainPanel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
-            </state>
-          </provider>
+      <file leaf-file-name="Archiver.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/view/archiver/Archiver.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="Archiver.form" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/view/archiver/Archiver.form">
+          <provider selected="true" editor-type-id="ui-designer" />
         </entry>
       </file>
     </leaf>
@@ -130,7 +75,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>mySplitter</find>
       <find>myPanel</find>
       <find>(JPanel)(new JBPanelWithEmptyText());</find>
       <find>var10000</find>
@@ -160,11 +104,13 @@
       <find>&quot;CheckBox</find>
       <find>&quot;CheckBox&quot;</find>
       <find>toString</find>
+      <find>cCompiler</find>
     </findStrings>
     <replaceStrings>
       <replace>TreeNode</replace>
       <replace>T</replace>
       <replace>TreeNodeWithJPanel</replace>
+      <replace>compiler</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -174,22 +120,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/frontend/tree/TreeModel.java" />
-        <option value="$PROJECT_DIR$/src/ToolchainSettingsPanel.java" />
-        <option value="$PROJECT_DIR$/src/frontend/tree/JPanelExtractable.java" />
-        <option value="$PROJECT_DIR$/src/frontend/tree/common/OutputFiles.java" />
-        <option value="$PROJECT_DIR$/src/backend/tree/device.java" />
-        <option value="$PROJECT_DIR$/src/TestLayout.java" />
-        <option value="$PROJECT_DIR$/src/TestLayout.form" />
-        <option value="$PROJECT_DIR$/src/frontend/tree/common/TestLayout.form" />
-        <option value="$PROJECT_DIR$/src/frontend/tree/common/General.form" />
-        <option value="$PROJECT_DIR$/src/frontend/tree/common/TestLayout.java" />
-        <option value="$PROJECT_DIR$/src/frontend/tree/common/aaaa" />
-        <option value="$PROJECT_DIR$/src/backend/tree/TreeModel.java" />
-        <option value="$PROJECT_DIR$/src/backend/tree/NamedTreeNode.java" />
-        <option value="$PROJECT_DIR$/src/backend/tree/ExtendedSettings.java" />
-        <option value="$PROJECT_DIR$/src/backend/tree/common/General.java" />
-        <option value="$PROJECT_DIR$/src/frontend/tree/common/General.java" />
         <option value="$PROJECT_DIR$/src/frontend/tree/Panel.form" />
         <option value="$PROJECT_DIR$/src/frontend/tree/ToolchainPanel.java" />
         <option value="$PROJECT_DIR$/src/model/MVCModelHack.java" />
@@ -211,13 +141,10 @@
         <option value="$PROJECT_DIR$/src/ToolchainSettingsConfigurable.java" />
         <option value="$PROJECT_DIR$/src/view/TreeModel.java" />
         <option value="$PROJECT_DIR$/src/view/assembler/Debugging.form" />
-        <option value="$PROJECT_DIR$/src/Plugin.properties" />
         <option value="$PROJECT_DIR$/src/view/cCompiler/cCompiler.form" />
         <option value="$PROJECT_DIR$/src/view/cCompiler/Preprocessor.form" />
         <option value="$PROJECT_DIR$/src/view/cCompiler/General.form" />
-        <option value="$PROJECT_DIR$/src/view/assembler/General.form" />
         <option value="$PROJECT_DIR$/src/view/cCompiler/Symbols.form" />
-        <option value="$PROJECT_DIR$/src/view/formElements/RecordsList.form" />
         <option value="$PROJECT_DIR$/src/view/cCompiler/Optimization.form" />
         <option value="$PROJECT_DIR$/src/view/cCompiler/Debugging.form" />
         <option value="$PROJECT_DIR$/src/view/cCompiler/Warnings.form" />
@@ -225,6 +152,25 @@
         <option value="$PROJECT_DIR$/src/view/cppCompiler/cppCompiler.form" />
         <option value="$PROJECT_DIR$/src/view/ToolchainPanel.java" />
         <option value="$PROJECT_DIR$/src/view/ToolchainPanel.form" />
+        <option value="$PROJECT_DIR$/src/view/linker/General.form" />
+        <option value="$PROJECT_DIR$/src/view/formElements/RecordsList.form" />
+        <option value="$PROJECT_DIR$/src/view/formElements/RecordsList.java" />
+        <option value="$PROJECT_DIR$/src/view/linker/Libraries.java" />
+        <option value="$PROJECT_DIR$/src/view/PluginBundle.java" />
+        <option value="$PROJECT_DIR$/src/view/compiler/Directories.java" />
+        <option value="$PROJECT_DIR$/src/view/compiler/Symbols.java" />
+        <option value="$PROJECT_DIR$/src/view/assembler/General.java" />
+        <option value="$PROJECT_DIR$/src/view/assembler/General.form" />
+        <option value="$PROJECT_DIR$/src/view/compiler/Directories.form" />
+        <option value="$PROJECT_DIR$/src/view/compiler/Symbols.form" />
+        <option value="$PROJECT_DIR$/src/view/linker/Libraries.form" />
+        <option value="$PROJECT_DIR$/src/view/linker/Optimization.form" />
+        <option value="$PROJECT_DIR$/src/view/linker/MemorySettings.form" />
+        <option value="$PROJECT_DIR$/src/view/linker/MemorySettings.java" />
+        <option value="$PROJECT_DIR$/src/view/linker/Miscellaneous.form" />
+        <option value="$PROJECT_DIR$/src/view/compiler/Compiler.form" />
+        <option value="$PROJECT_DIR$/src/view/linker/Linker.form" />
+        <option value="$PROJECT_DIR$/src/Plugin.properties" />
       </list>
     </option>
   </component>
@@ -272,7 +218,22 @@
               <item name="clion-avrgcc-toolchain-gui" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="archiver" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="clion-avrgcc-toolchain-gui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="clion-avrgcc-toolchain-gui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="archiver" type="462c0819:PsiDirectoryNode" />
+              <item name="Archiver" type="e9f4de52:FormNode" />
+            </path>
+            <path>
+              <item name="clion-avrgcc-toolchain-gui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="clion-avrgcc-toolchain-gui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="assembler" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="clion-avrgcc-toolchain-gui" type="b2602c69:ProjectViewProjectNode" />
@@ -280,6 +241,10 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
               <item name="ToolchainPanel" type="e9f4de52:FormNode" />
+            </path>
+            <path>
+              <item name="clion-avrgcc-toolchain-gui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -407,12 +372,12 @@
       <workItem from="1530900853101" duration="5015000" />
       <workItem from="1530905893173" duration="87000" />
       <workItem from="1530905996253" duration="719000" />
-      <workItem from="1530907492782" duration="723000" />
+      <workItem from="1530907492782" duration="4970000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94740000" />
+    <option name="totallyTimeSpent" value="98987000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -481,188 +446,109 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/../../toolchains/jdk-10.0.1/lib/src.zip!/java.base/jdk/internal/misc/Unsafe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="2293" column="23" selection-start-line="2293" selection-start-column="23" selection-end-line="2293" selection-end-column="23" />
-        </state>
-      </provider>
+    <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2018.1.3/lib/icons.jar!/actions/resume.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/common/General.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
+    <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2018.1.3/lib/icons.jar!/actions/new@2x.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2018.1.3/lib/clion.jar!/com/intellij/ide/IdeEventQueue.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="473" column="55" selection-start-line="473" selection-start-column="55" selection-end-line="473" selection-end-column="55" />
-        </state>
-      </provider>
+    <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2018.1.3/lib/icons.jar!/actions/new.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../toolchains/jdk-10.0.1/lib/src.zip!/java.desktop/java/awt/Container.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="1307" column="16" selection-start-line="1307" selection-start-column="16" selection-end-line="1307" selection-end-column="16" />
-        </state>
-      </provider>
+    <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2018.1.3/lib/icons.jar!/actions/edit@2x_dark.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/ToolchainPanel.java">
+    <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2018.1.3/lib/icons.jar!/actions/sortAsc.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2018.1.3/lib/icons.jar!/actions/sortAsc@2x.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2018.1.3/lib/icons.jar!/actions/stub.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2018.1.3/lib/icons.jar!/actions/up.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2018.1.3/lib/icons.jar!/actions/sortDesc@2x.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2018.1.3/lib/icons.jar!/fileTypes/any_type.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2018.1.3/lib/icons.jar!/gutter/colors@2x.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2018.1.3/lib/icons.jar!/gutter/extAnnotation@2x.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2018.1.3/lib/icons.jar!/gutter/extAnnotation_dark.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2018.1.3/lib/icons.jar!/gutter/extAnnotation.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2018.1.3/lib/icons.jar!/gutter/colors.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2018.1.3/lib/icons.jar!/toolbarDecorator/add.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2018.1.3/lib/icons.jar!/toolbarDecorator/add@2x.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2018.1.3/lib/icons.jar!/toolbarDecorator/edit@2x.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2018.1.3/lib/icons.jar!/toolbarDecorator/moveUp.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2018.1.3/lib/icons.jar!/toolbarDecorator/moveDown@2x.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2018.1.3/lib/icons.jar!/toolbarDecorator/remove@2x.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2018.1.3/lib/icons.jar!/toolbarDecorator/edit@2x_dark.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/formElements/RecordsList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="38" column="11" lean-forward="true" selection-start-line="35" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
+        <state relative-caret-position="238">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#866#867#0" expanded="true" />
-            <element signature="e#920#921#0" expanded="true" />
+            <element signature="e#392#393#0" expanded="true" />
+            <element signature="e#424#425#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2018.1.3/lib/openapi.jar!/com/intellij/ui/treeStructure/Tree.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="92" column="11" selection-start-line="92" selection-start-column="11" selection-end-line="92" selection-end-column="11" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/view/formElements/RecordsList.form">
+      <provider selected="true" editor-type-id="ui-designer" />
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../C++/IDEs/CLion 2018.1.3/lib/clion.jar!/com/intellij/openapi/application/impl/ApplicationImpl.class">
+    <entry file="file://$PROJECT_DIR$/src/view/PluginBundle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="1126" selection-start-line="1126" selection-end-line="1126" />
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CPPBundleExperimental.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../toolchains/jdk-10.0.1/lib/src.zip!/java.desktop/javax/swing/JComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-461">
-          <caret line="176" column="22" selection-start-line="176" selection-start-column="22" selection-end-line="176" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/PanelHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/common/GeneralOld.java" />
-    <entry file="file://$PROJECT_DIR$/src/view/common/GeneralOld.form" />
-    <entry file="file://$PROJECT_DIR$/src/view/common/General.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/assembler/General.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/archiver/General.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/archiver/General.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/common/OutputFiles.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/TreeModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MVCPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="170">
+          <caret line="10" column="38" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#540#541#0" expanded="true" />
-            <element signature="e#567#568#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ToolchainSettingsConfigurable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-68">
-          <caret line="18" column="12" lean-forward="true" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/assembler/Debugging.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Plugin.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="743">
-          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/compiler/General.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/compiler/compiler.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/compiler/compiler.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/compiler/General.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/compiler/Preprocessor.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/common/OutputFiles.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/formElements/RecordsList.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/formElements/RecordsList.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/view/compiler/Symbols.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/compiler/Directories.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/compiler/Directories.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/common/General.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/compiler/Preprocessor.java">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="17" column="50" lean-forward="true" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/assembler/General.form">
       <provider selected="true" editor-type-id="ui-designer" />
@@ -670,54 +556,101 @@
     <entry file="file://$PROJECT_DIR$/src/view/compiler/Symbols.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/compiler/Optimization.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/assembler/Debugging.form">
+    <entry file="file://$PROJECT_DIR$/src/view/compiler/Directories.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/compiler/Optimization.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/compiler/Debugging.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/compiler/Debugging.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/compiler/Warnings.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/compiler/Warnings.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/compiler/Miscellaneous.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/compiler/Miscellaneous.java">
+    <entry file="file://$PROJECT_DIR$/src/view/compiler/Directories.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="204">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="11" selection-end-line="16" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/cppCompiler/Debugging.form" />
-    <entry file="file://$PROJECT_DIR$/src/view/cppCompiler/cppCompiler.form" />
-    <entry file="file://$PROJECT_DIR$/src/view/TreeNodeWithJPanel.java">
+    <entry file="file://$PROJECT_DIR$/src/ToolchainSettingsConfigurable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/linker/Libraries.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="45" lean-forward="true" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/linker/Libraries.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/linker/Optimization.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/linker/Optimization.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/assembler/Debugging.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/ToolchainPanel.java">
+    <entry file="file://$PROJECT_DIR$/src/view/linker/MemorySettings.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+        <state relative-caret-position="204">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/linker/MemorySettings.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/assembler/General.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/linker/Miscellaneous.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/linker/Miscellaneous.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/compiler/Compiler.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/linker/Linker.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/linker/Linker.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Plugin.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1326">
+          <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/ToolchainPanel.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/assembler/Assembler.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/assembler/Assembler.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/archiver/Archiver.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/archiver/Archiver.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
   </component>

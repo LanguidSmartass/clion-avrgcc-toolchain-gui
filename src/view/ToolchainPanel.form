@@ -30,22 +30,29 @@
         <properties/>
         <border type="none"/>
         <children>
-          <nested-form id="c04b1" form-file="view/common/General.form">
+          <!-- COMMON -->
+          <nested-form id="c04b1comm" form-file="view/common/Common.form">
+            <constraints>
+              <card name="common"/>
+            </constraints>
+          </nested-form>
+          <nested-form id="c04b1comm1" form-file="view/common/General.form">
             <constraints>
               <card name="commonGeneral"/>
             </constraints>
           </nested-form>
-          <nested-form id="c04bc" form-file="view/common/OutputFiles.form">
+          <nested-form id="c04b1comm2" form-file="view/common/OutputFiles.form">
             <constraints>
               <card name="commonOutputFiles"/>
             </constraints>
           </nested-form>
+
+          <!-- C COMPILER -->
           <nested-form id="c04bcc" form-file="view/compiler/compiler.form">
             <constraints>
               <card name="cCompiler"/>
             </constraints>
           </nested-form>
-
           <nested-form id="c04bcc1" form-file="view/compiler/General.form">
             <constraints>
               <card name="cCompilerGeneral"/>
@@ -87,12 +94,12 @@
             </constraints>
           </nested-form>
 
-          <nested-form id="c04bccpp" form-file="view/compiler/compiler.form">
+          <!-- C++ COMPILER -->
+          <nested-form id="c04bccpp" form-file="view/compiler/Compiler.form">
             <constraints>
               <card name="cppCompiler"/>
             </constraints>
           </nested-form>
-
           <nested-form id="c04bccpp1" form-file="view/compiler/General.form">
             <constraints>
               <card name="cppCompilerGeneral"/>
@@ -134,12 +141,62 @@
             </constraints>
           </nested-form>
 
-          <nested-form id="36e01" form-file="view/assembler/General.form">
+          <!-- LINKER -->
+          <nested-form id="c04bcclink" form-file="view/linker/Linker.form">
+            <constraints>
+              <card name="linker"/>
+            </constraints>
+          </nested-form>
+          <nested-form id="c04bcclink1" form-file="view/linker/General.form">
+            <constraints>
+              <card name="linkerGeneral"/>
+            </constraints>
+          </nested-form>
+          <nested-form id="c04bcclink2" form-file="view/linker/Libraries.form">
+            <constraints>
+              <card name="linkerLibraries"/>
+            </constraints>
+          </nested-form>
+          <nested-form id="c04bcclink3" form-file="view/linker/Optimization.form">
+            <constraints>
+              <card name="linkerOptimization"/>
+            </constraints>
+          </nested-form>
+          <nested-form id="c04bcclink4" form-file="view/linker/MemorySettings.form">
+            <constraints>
+              <card name="linkerMemorySettings"/>
+            </constraints>
+          </nested-form>
+          <nested-form id="c04bcclink5" form-file="view/linker/Miscellaneous.form">
+            <constraints>
+              <card name="linkerMiscellaneous"/>
+            </constraints>
+          </nested-form>
+
+          <!-- ASSEMBLER -->
+          <nested-form id="36e01asm" form-file="view/assembler/Assembler.form">
+            <constraints>
+              <card name="assembler"/>
+            </constraints>
+          </nested-form>
+          <nested-form id="36e01asm1" form-file="view/assembler/General.form">
             <constraints>
               <card name="assemblerGeneral"/>
             </constraints>
           </nested-form>
-          <nested-form id="797c7" form-file="view/archiver/General.form">
+          <nested-form id="36e02asm2" form-file="view/assembler/Debugging.form">
+            <constraints>
+              <card name="assemblerDebugging"/>
+            </constraints>
+          </nested-form>
+
+          <!-- ARCHIVER -->
+          <nested-form id="797c7arch" form-file="view/archiver/Archiver.form">
+            <constraints>
+              <card name="archiver"/>
+            </constraints>
+          </nested-form>
+          <nested-form id="797c7arch1" form-file="view/archiver/General.form">
             <constraints>
               <card name="archiverGeneral"/>
             </constraints>

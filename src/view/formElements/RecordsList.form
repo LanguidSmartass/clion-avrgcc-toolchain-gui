@@ -16,7 +16,7 @@
         <properties/>
         <border type="none"/>
         <children>
-          <component id="f890f" class="javax.swing.JLabel">
+          <component id="f890f" class="javax.swing.JLabel" binding="descriptionLabel">
             <constraints>
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
@@ -24,7 +24,7 @@
               <text value="Label"/>
             </properties>
           </component>
-          <component id="28f6b" class="javax.swing.JButton" binding="button1" default-binding="true">
+          <component id="28f6b" class="javax.swing.JButton" binding="buttonAdd">
             <constraints>
               <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false">
                 <minimum-size width="30" height="30"/>
@@ -33,10 +33,11 @@
               </grid>
             </constraints>
             <properties>
-              <text value="Button"/>
+              <icon value="toolbarDecorator/add@2x.png"/>
+              <text value=""/>
             </properties>
           </component>
-          <component id="f9832" class="javax.swing.JButton" binding="button2" default-binding="true">
+          <component id="f9832" class="javax.swing.JButton" binding="buttonDelete">
             <constraints>
               <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false">
                 <minimum-size width="30" height="30"/>
@@ -45,10 +46,11 @@
               </grid>
             </constraints>
             <properties>
-              <text value="Button"/>
+              <icon value="toolbarDecorator/remove@2x.png"/>
+              <text value=""/>
             </properties>
           </component>
-          <component id="2e5e" class="javax.swing.JButton" binding="button3" default-binding="true">
+          <component id="2e5e" class="javax.swing.JButton" binding="buttonEdit">
             <constraints>
               <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false">
                 <minimum-size width="30" height="30"/>
@@ -57,10 +59,11 @@
               </grid>
             </constraints>
             <properties>
-              <text value="Button"/>
+              <icon value="toolbarDecorator/edit@2x_dark.png"/>
+              <text value=""/>
             </properties>
           </component>
-          <component id="d09e" class="javax.swing.JButton" binding="button4" default-binding="true">
+          <component id="d09e" class="javax.swing.JButton" binding="buttonModeUp">
             <constraints>
               <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false">
                 <minimum-size width="30" height="30"/>
@@ -69,10 +72,11 @@
               </grid>
             </constraints>
             <properties>
-              <text value="Button"/>
+              <icon value="toolbarDecorator/moveUp@2x.png"/>
+              <text value=""/>
             </properties>
           </component>
-          <component id="9203e" class="javax.swing.JButton" binding="button5" default-binding="true">
+          <component id="9203e" class="javax.swing.JButton" binding="buttonModeDown">
             <constraints>
               <grid row="0" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false">
                 <minimum-size width="30" height="30"/>
@@ -81,7 +85,8 @@
               </grid>
             </constraints>
             <properties>
-              <text value="Button"/>
+              <icon value="toolbarDecorator/moveDown@2x.png"/>
+              <text value=""/>
             </properties>
           </component>
           <grid id="ef783" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
