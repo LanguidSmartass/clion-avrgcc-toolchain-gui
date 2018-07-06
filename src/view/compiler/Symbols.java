@@ -12,7 +12,7 @@ public class Symbols {
     private RecordsList undefSymbolsRecords;
 
     Symbols() {
-        ResourceBundle bundle = PluginBundle.get();
+        ResourceBundle bundle = PluginBundle.getNodeNamesBundle();
         String defsymblabel = bundle.getString("settings.toolchain.avrgnu.cCompiler.symbols.label.defined");
         String undefsymblabel = bundle.getString("settings.toolchain.avrgnu.cCompiler.symbols.label.undefined");
         definedSymbolsRecords.setLabelText(defsymblabel);

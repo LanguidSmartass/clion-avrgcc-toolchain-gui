@@ -3,40 +3,83 @@ package view;
 
 import javax.swing.event.TreeModelListener;
 import javax.swing.tree.TreePath;
+import java.util.ResourceBundle;
 
 // temporarily hardcoded tree structure with names etc.
 public class TreeModel implements javax.swing.tree.TreeModel {
     private final TreeNodeWithJPanel root;
 
     public TreeModel() {
+        ResourceBundle nodeNameBundle = PluginBundle.getNodeNamesBundle();
+        ResourceBundle cardNameBundle = PluginBundle.getCardNamesBundle();
+
         root = new TreeNodeWithJPanel("Root");
 
-        TreeNodeWithJPanel device = new TreeNodeWithJPanel("Device");
+        TreeNodeWithJPanel device = new TreeNodeWithJPanel(
+                nodeNameBundle.getString("settings.toolchain.avrgnu.device"),
+                cardNameBundle.getString("cardname.toolchain.avrgnu.device")
+        );
         device.makeAsLeaf();
         root.addChild(device);
 
-        TreeNodeWithJPanel common = new TreeNodeWithJPanel("AVR/GNU Common");
+        TreeNodeWithJPanel common = new TreeNodeWithJPanel(
+                nodeNameBundle.getString("settings.toolchain.avrgnu.common"),
+                cardNameBundle.getString("cardname.toolchain.avrgnu.common")
+        );
         root.addChild(common);
         {
-            TreeNodeWithJPanel general  = new TreeNodeWithJPanel("General");
-            TreeNodeWithJPanel outfiles = new TreeNodeWithJPanel("Output Files");
+            TreeNodeWithJPanel general  = new TreeNodeWithJPanel(
+                    nodeNameBundle.getString("settings.toolchain.avrgnu.common.general"),
+                    cardNameBundle.getString("cardname.toolchain.avrgnu.common.general")
+            );
+            TreeNodeWithJPanel outfiles = new TreeNodeWithJPanel(
+                    nodeNameBundle.getString("settings.toolchain.avrgnu.common.outputfiles"),
+                    cardNameBundle.getString("cardname.toolchain.avrgnu.common.outputfiles")
+            );
             general.makeAsLeaf();
             outfiles.makeAsLeaf();
             common.addChild(general);
             common.addChild(outfiles);
         }
 
-        TreeNodeWithJPanel ccomp = new TreeNodeWithJPanel("AVR/GNU C Compiler");
+        TreeNodeWithJPanel ccomp = new TreeNodeWithJPanel(
+                nodeNameBundle.getString("settings.toolchain.avrgnu.cCompiler"),
+                cardNameBundle.getString("cardname.toolchain.avrgnu.cCompiler")
+        );
         root.addChild(ccomp);
         {
-            TreeNodeWithJPanel general = new TreeNodeWithJPanel("General");
-            TreeNodeWithJPanel preproc = new TreeNodeWithJPanel("Preprocessor");
-            TreeNodeWithJPanel symb    = new TreeNodeWithJPanel("Symbols");
-            TreeNodeWithJPanel dirs    = new TreeNodeWithJPanel("Directories");
-            TreeNodeWithJPanel optim   = new TreeNodeWithJPanel("Optimization");
-            TreeNodeWithJPanel debug   = new TreeNodeWithJPanel("Debugging");
-            TreeNodeWithJPanel warns   = new TreeNodeWithJPanel("Warnings");
-            TreeNodeWithJPanel misc    = new TreeNodeWithJPanel("Miscellaneous");
+            TreeNodeWithJPanel general = new TreeNodeWithJPanel(
+                    nodeNameBundle.getString("settings.toolchain.avrgnu.cCompiler.general"),
+                    cardNameBundle.getString("cardname.toolchain.avrgnu.cCompiler.general")
+            );
+            TreeNodeWithJPanel preproc = new TreeNodeWithJPanel(
+                    nodeNameBundle.getString("settings.toolchain.avrgnu.cCompiler.preproc"),
+                    cardNameBundle.getString("cardname.toolchain.avrgnu.cCompiler.preproc")
+            );
+            TreeNodeWithJPanel symb    = new TreeNodeWithJPanel(
+                    nodeNameBundle.getString("settings.toolchain.avrgnu.cCompiler.symbols"),
+                    cardNameBundle.getString("cardname.toolchain.avrgnu.cCompiler.symbols")
+            );
+            TreeNodeWithJPanel dirs    = new TreeNodeWithJPanel(
+                    nodeNameBundle.getString("settings.toolchain.avrgnu.cCompiler.directs"),
+                    cardNameBundle.getString("cardname.toolchain.avrgnu.cCompiler.directs")
+            );
+            TreeNodeWithJPanel optim   = new TreeNodeWithJPanel(
+                    nodeNameBundle.getString("settings.toolchain.avrgnu.cCompiler.optimzn"),
+                    cardNameBundle.getString("cardname.toolchain.avrgnu.cCompiler.optimzn")
+            );
+            TreeNodeWithJPanel debug   = new TreeNodeWithJPanel(
+                    nodeNameBundle.getString("settings.toolchain.avrgnu.cCompiler.debug"),
+                    cardNameBundle.getString("cardname.toolchain.avrgnu.cCompiler.debug")
+            );
+            TreeNodeWithJPanel warns   = new TreeNodeWithJPanel(
+                    nodeNameBundle.getString("settings.toolchain.avrgnu.cCompiler.warning"),
+                    cardNameBundle.getString("cardname.toolchain.avrgnu.cCompiler.warning")
+            );
+            TreeNodeWithJPanel misc    = new TreeNodeWithJPanel(
+                    nodeNameBundle.getString("settings.toolchain.avrgnu.cCompiler.misc"),
+                    cardNameBundle.getString("cardname.toolchain.avrgnu.cCompiler.misc")
+            );
             general.makeAsLeaf();
             preproc.makeAsLeaf();
             symb.makeAsLeaf();
@@ -55,17 +98,44 @@ public class TreeModel implements javax.swing.tree.TreeModel {
             ccomp.addChild(misc);
         }
 
-        TreeNodeWithJPanel cppcomp = new TreeNodeWithJPanel("AVR/GNU C++ Compiler");
+        TreeNodeWithJPanel cppcomp = new TreeNodeWithJPanel(
+                nodeNameBundle.getString("settings.toolchain.avrgnu.cppCompiler"),
+                cardNameBundle.getString("cardname.toolchain.avrgnu.cppCompiler")
+        );
         root.addChild(cppcomp);
         {
-            TreeNodeWithJPanel general = new TreeNodeWithJPanel("General");
-            TreeNodeWithJPanel preproc = new TreeNodeWithJPanel("Preprocessor");
-            TreeNodeWithJPanel symb    = new TreeNodeWithJPanel("Symbols");
-            TreeNodeWithJPanel dirs    = new TreeNodeWithJPanel("Directories");
-            TreeNodeWithJPanel optim   = new TreeNodeWithJPanel("Optimization");
-            TreeNodeWithJPanel debug   = new TreeNodeWithJPanel("Debugging");
-            TreeNodeWithJPanel warns   = new TreeNodeWithJPanel("Warnings");
-            TreeNodeWithJPanel misc    = new TreeNodeWithJPanel("Miscellaneous");
+            TreeNodeWithJPanel general = new TreeNodeWithJPanel(
+                    nodeNameBundle.getString("settings.toolchain.avrgnu.cCompiler.general"),
+                    cardNameBundle.getString("cardname.toolchain.avrgnu.cppCompiler.general")
+            );
+            TreeNodeWithJPanel preproc = new TreeNodeWithJPanel(
+                    nodeNameBundle.getString("settings.toolchain.avrgnu.cCompiler.preproc"),
+                    cardNameBundle.getString("cardname.toolchain.avrgnu.cppCompiler.preproc")
+            );
+            TreeNodeWithJPanel symb    = new TreeNodeWithJPanel(
+                    nodeNameBundle.getString("settings.toolchain.avrgnu.cCompiler.symbols"),
+                    cardNameBundle.getString("cardname.toolchain.avrgnu.cppCompiler.symbols")
+            );
+            TreeNodeWithJPanel dirs    = new TreeNodeWithJPanel(
+                    nodeNameBundle.getString("settings.toolchain.avrgnu.cCompiler.directs"),
+                    cardNameBundle.getString("cardname.toolchain.avrgnu.cppCompiler.directs")
+            );
+            TreeNodeWithJPanel optim   = new TreeNodeWithJPanel(
+                    nodeNameBundle.getString("settings.toolchain.avrgnu.cCompiler.optimzn"),
+                    cardNameBundle.getString("cardname.toolchain.avrgnu.cppCompiler.optimzn")
+            );
+            TreeNodeWithJPanel debug   = new TreeNodeWithJPanel(
+                    nodeNameBundle.getString("settings.toolchain.avrgnu.cCompiler.debug"),
+                    cardNameBundle.getString("cardname.toolchain.avrgnu.cppCompiler.debug")
+            );
+            TreeNodeWithJPanel warns   = new TreeNodeWithJPanel(
+                    nodeNameBundle.getString("settings.toolchain.avrgnu.cCompiler.warning"),
+                    cardNameBundle.getString("cardname.toolchain.avrgnu.cppCompiler.warning")
+            );
+            TreeNodeWithJPanel misc    = new TreeNodeWithJPanel(
+                    nodeNameBundle.getString("settings.toolchain.avrgnu.cCompiler.misc"),
+                    cardNameBundle.getString("cardname.toolchain.avrgnu.cppCompiler.misc")
+            );
             general.makeAsLeaf();
             preproc.makeAsLeaf();
             symb.makeAsLeaf();
@@ -84,14 +154,32 @@ public class TreeModel implements javax.swing.tree.TreeModel {
             cppcomp.addChild(misc);
         }
 
-        TreeNodeWithJPanel linker = new TreeNodeWithJPanel("AVR/GNU Linker");
+        TreeNodeWithJPanel linker = new TreeNodeWithJPanel(
+                nodeNameBundle.getString("settings.toolchain.avrgnu.linker"),
+                cardNameBundle.getString("cardname.toolchain.avrgnu.linker")
+        );
         root.addChild(linker);
         {
-            TreeNodeWithJPanel general = new TreeNodeWithJPanel("General");
-            TreeNodeWithJPanel libs    = new TreeNodeWithJPanel("Libraries");
-            TreeNodeWithJPanel optim   = new TreeNodeWithJPanel("Optimization");
-            TreeNodeWithJPanel memset  = new TreeNodeWithJPanel("Memory Settings");
-            TreeNodeWithJPanel misc    = new TreeNodeWithJPanel("Miscellaneous");
+            TreeNodeWithJPanel general = new TreeNodeWithJPanel(
+                    nodeNameBundle.getString("settings.toolchain.avrgnu.linker.general"),
+                    cardNameBundle.getString("cardname.toolchain.avrgnu.linker.general")
+            );
+            TreeNodeWithJPanel libs    = new TreeNodeWithJPanel(
+                    nodeNameBundle.getString("settings.toolchain.avrgnu.linker.libraries"),
+                    cardNameBundle.getString("cardname.toolchain.avrgnu.linker.libraries")
+            );
+            TreeNodeWithJPanel optim   = new TreeNodeWithJPanel(
+                    nodeNameBundle.getString("settings.toolchain.avrgnu.linker.optimization"),
+                    cardNameBundle.getString("cardname.toolchain.avrgnu.linker.optimization")
+            );
+            TreeNodeWithJPanel memset  = new TreeNodeWithJPanel(
+                    nodeNameBundle.getString("settings.toolchain.avrgnu.linker.memsettings"),
+                    cardNameBundle.getString("cardname.toolchain.avrgnu.linker.memsettings")
+            );
+            TreeNodeWithJPanel misc    = new TreeNodeWithJPanel(
+                    nodeNameBundle.getString("settings.toolchain.avrgnu.linker.misc"),
+                    cardNameBundle.getString("cardname.toolchain.avrgnu.linker.misc")
+            );
             general.makeAsLeaf();
             libs.makeAsLeaf();
             optim.makeAsLeaf();
@@ -104,21 +192,36 @@ public class TreeModel implements javax.swing.tree.TreeModel {
             linker.addChild(misc);
         }
 
-        TreeNodeWithJPanel asm = new TreeNodeWithJPanel("AVR/GNU Assembler");
+        TreeNodeWithJPanel asm = new TreeNodeWithJPanel(
+                nodeNameBundle.getString("settings.toolchain.avrgnu.assembler"),
+                cardNameBundle.getString("cardname.toolchain.avrgnu.assembler")
+        );
         root.addChild(asm);
         {
-            TreeNodeWithJPanel general = new TreeNodeWithJPanel("General");
-            TreeNodeWithJPanel debug   = new TreeNodeWithJPanel("Debugging");
+            TreeNodeWithJPanel general = new TreeNodeWithJPanel(
+                    nodeNameBundle.getString("settings.toolchain.avrgnu.assembler.general"),
+                    cardNameBundle.getString("cardname.toolchain.avrgnu.assembler.general")
+            );
+            TreeNodeWithJPanel debug   = new TreeNodeWithJPanel(
+                    nodeNameBundle.getString("settings.toolchain.avrgnu.assembler.debugging"),
+                    cardNameBundle.getString("cardname.toolchain.avrgnu.assembler.debugging")
+            );
             general.makeAsLeaf();
             debug.makeAsLeaf();
             asm.addChild(general);
             asm.addChild(debug);
         }
 
-        TreeNodeWithJPanel arch = new TreeNodeWithJPanel("AVR/GNU Archiver");
+        TreeNodeWithJPanel arch = new TreeNodeWithJPanel(
+                nodeNameBundle.getString("settings.toolchain.avrgnu.archiver"),
+                cardNameBundle.getString("cardname.toolchain.avrgnu.archiver")
+        );
         root.addChild(arch);
         {
-            TreeNodeWithJPanel general  = new TreeNodeWithJPanel("General");
+            TreeNodeWithJPanel general  = new TreeNodeWithJPanel(
+                    nodeNameBundle.getString("settings.toolchain.avrgnu.archiver.general"),
+                    cardNameBundle.getString("cardname.toolchain.avrgnu.archiver.general")
+            );
             general.makeAsLeaf();
             arch.addChild(general);
         }

@@ -19,7 +19,7 @@ public class MemorySettings {
     private RecordsList eepromRecords;
 
     MemorySettings() {
-        ResourceBundle bundle = PluginBundle.get();
+        ResourceBundle bundle = PluginBundle.getNodeNamesBundle();
         String flashLabel = bundle.getString("settings.toolchain.avrgnu.linker.memsettings.label.flash");
         String sramLabel = bundle.getString("settings.toolchain.avrgnu.linker.memsettings.label.sram");
         String eepromLabel = bundle.getString("settings.toolchain.avrgnu.linker.memsettings.label.eeprom");

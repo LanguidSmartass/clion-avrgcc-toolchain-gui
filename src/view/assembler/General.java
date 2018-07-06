@@ -13,7 +13,7 @@ public class General {
     private RecordsList incPathsRecords;
 
     General() {
-        ResourceBundle bundle = PluginBundle.get();
+        ResourceBundle bundle = PluginBundle.getNodeNamesBundle();
         String incPathsLabel = bundle.getString("settings.toolchain.avrgnu.assembler.general.label.incpath");
         incPathsRecords.setLabelText(incPathsLabel);
     }

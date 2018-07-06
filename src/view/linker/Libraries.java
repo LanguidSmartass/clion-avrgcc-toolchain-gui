@@ -12,7 +12,7 @@ public class Libraries {
     private RecordsList libsearchpathRecords;
 
     Libraries() {
-        ResourceBundle bundle = PluginBundle.get();
+        ResourceBundle bundle = PluginBundle.getNodeNamesBundle();
         String librariesstr = bundle.getString("settings.toolchain.avrgnu.linker.libraries.label.libraries");
         String libsearchpathstr = bundle.getString("settings.toolchain.avrgnu.linker.libraries.label.libsearchpath");
         librariesRecords.setLabelText(librariesstr);

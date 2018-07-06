@@ -4,21 +4,19 @@ import model.NamedTreeNode;
 import javax.swing.JPanel;
 
 public class TreeNodeWithJPanel extends NamedTreeNode {
-    private final PanelHolder panelHolder;
+    private final String cardName;
 
     public TreeNodeWithJPanel(String name) {
         super(name);
-        this.panelHolder = null;
+        this.cardName = "";
     }
 
-    public TreeNodeWithJPanel(String name, PanelHolder panel) {
-        super(name);
-        this.panelHolder = panel;
+    public TreeNodeWithJPanel(String nodeName, String cardName) {
+        super(nodeName);
+        this.cardName = cardName;
     }
 
-    public JPanel getPanel() {
-        if (panelHolder == null)
-            return null;
-        return panelHolder.getPanel();
+    public String getCardName() {
+        return cardName;
     }
 }

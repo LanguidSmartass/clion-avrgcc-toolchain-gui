@@ -3,7 +3,7 @@
   <grid id="27dc6" binding="topPanel" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="618" height="400"/>
+      <xy x="20" y="20" width="618" height="434"/>
     </constraints>
     <properties/>
     <border type="none"/>
@@ -30,7 +30,6 @@
         <properties/>
         <border type="none"/>
         <children>
-          <!-- COMMON -->
           <nested-form id="c04b1comm" form-file="view/common/Common.form">
             <constraints>
               <card name="common"/>
@@ -46,8 +45,6 @@
               <card name="commonOutputFiles"/>
             </constraints>
           </nested-form>
-
-          <!-- C COMPILER -->
           <nested-form id="c04bcc" form-file="view/compiler/compiler.form">
             <constraints>
               <card name="cCompiler"/>
@@ -93,8 +90,6 @@
               <card name="cCompilerMiscellaneous"/>
             </constraints>
           </nested-form>
-
-          <!-- C++ COMPILER -->
           <nested-form id="c04bccpp" form-file="view/compiler/Compiler.form">
             <constraints>
               <card name="cppCompiler"/>
@@ -140,8 +135,6 @@
               <card name="cppCompilerMiscellaneous"/>
             </constraints>
           </nested-form>
-
-          <!-- LINKER -->
           <nested-form id="c04bcclink" form-file="view/linker/Linker.form">
             <constraints>
               <card name="linker"/>
@@ -172,8 +165,6 @@
               <card name="linkerMiscellaneous"/>
             </constraints>
           </nested-form>
-
-          <!-- ASSEMBLER -->
           <nested-form id="36e01asm" form-file="view/assembler/Assembler.form">
             <constraints>
               <card name="assembler"/>
@@ -189,8 +180,6 @@
               <card name="assemblerDebugging"/>
             </constraints>
           </nested-form>
-
-          <!-- ARCHIVER -->
           <nested-form id="797c7arch" form-file="view/archiver/Archiver.form">
             <constraints>
               <card name="archiver"/>
