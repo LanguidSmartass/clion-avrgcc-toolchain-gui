@@ -6,6 +6,7 @@ import com.intellij.util.messages.Topic;
 import org.jetbrains.annotations.Nls;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+import view.TreeModel;
 
 import javax.swing.*;
 
@@ -13,8 +14,7 @@ public class ToolchainSettingsConfigurable implements SearchableConfigurable, Di
     public static final Topic<Listener> TOPIC;
     public static final String ID = "CPPToolchains";
     public static final String DISPLAY_NAME;
-    private ToolchainPanel myPanel = null;
-    private int myPreselectedToolchain;
+    private JPanel myPanel = null;
 
     @NotNull
     @Override
@@ -58,10 +58,8 @@ public class ToolchainSettingsConfigurable implements SearchableConfigurable, Di
     @Nullable
     @Override
     public JComponent createComponent() {
-
         if (this.myPanel == null) {
-            this.myPanel = new ToolchainPanel(this, this.myPreselectedToolchain);
-            this.myPanel.autoRecheckWithApplication();
+            this.myPanel = new MVCPanel().getViewPanel();
         }
         this.myPanel.setVisible(true);
         return this.myPanel;

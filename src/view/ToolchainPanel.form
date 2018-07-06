@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="view.ToolchainPanel">
+  <grid id="27dc6" binding="topPanel" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="618" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="5530a" class="com.intellij.ui.treeStructure.Tree" binding="treeView" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="8" fill="2" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="true"/>
+          <largeModel value="true"/>
+          <rootVisible value="false"/>
+        </properties>
+        <border type="etched"/>
+        <children/>
+      </grid>
+      <grid id="64c9d" binding="cardsPanel" layout-manager="CardLayout" hgap="0" vgap="0">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <nested-form id="c04b1" form-file="view/common/General.form">
+            <constraints>
+              <card name="commonGeneral"/>
+            </constraints>
+          </nested-form>
+          <nested-form id="c04bc" form-file="view/common/OutputFiles.form">
+            <constraints>
+              <card name="commonOutputFiles"/>
+            </constraints>
+          </nested-form>
+          <nested-form id="c04bcc" form-file="view/compiler/compiler.form">
+            <constraints>
+              <card name="cCompiler"/>
+            </constraints>
+          </nested-form>
+
+          <nested-form id="c04bcc1" form-file="view/compiler/General.form">
+            <constraints>
+              <card name="cCompilerGeneral"/>
+            </constraints>
+          </nested-form>
+          <nested-form id="c04bcc2" form-file="view/compiler/Preprocessor.form">
+            <constraints>
+              <card name="cCompilerPreprocessor"/>
+            </constraints>
+          </nested-form>
+          <nested-form id="c04bcc3" form-file="view/compiler/Symbols.form">
+            <constraints>
+              <card name="cCompilerSymbols"/>
+            </constraints>
+          </nested-form>
+          <nested-form id="c04bcc4" form-file="view/compiler/Directories.form">
+            <constraints>
+              <card name="cCompilerDirectories"/>
+            </constraints>
+          </nested-form>
+          <nested-form id="c04bcc5" form-file="view/compiler/Optimization.form">
+            <constraints>
+              <card name="cCompilerOptimization"/>
+            </constraints>
+          </nested-form>
+          <nested-form id="c04bcc6" form-file="view/compiler/Debugging.form">
+            <constraints>
+              <card name="cCompilerDebugging"/>
+            </constraints>
+          </nested-form>
+          <nested-form id="c04bcc7" form-file="view/compiler/Warnings.form">
+            <constraints>
+              <card name="cCompilerWarnings"/>
+            </constraints>
+          </nested-form>
+          <nested-form id="c04bcc8" form-file="view/compiler/Miscellaneous.form">
+            <constraints>
+              <card name="cCompilerMiscellaneous"/>
+            </constraints>
+          </nested-form>
+
+          <nested-form id="c04bccpp" form-file="view/compiler/compiler.form">
+            <constraints>
+              <card name="cppCompiler"/>
+            </constraints>
+          </nested-form>
+
+          <nested-form id="c04bccpp1" form-file="view/compiler/General.form">
+            <constraints>
+              <card name="cppCompilerGeneral"/>
+            </constraints>
+          </nested-form>
+          <nested-form id="c04bccpp2" form-file="view/compiler/Preprocessor.form">
+            <constraints>
+              <card name="cppCompilerPreprocessor"/>
+            </constraints>
+          </nested-form>
+          <nested-form id="c04bccpp3" form-file="view/compiler/Symbols.form">
+            <constraints>
+              <card name="cppCompilerSymbols"/>
+            </constraints>
+          </nested-form>
+          <nested-form id="cpp04bccpp4" form-file="view/compiler/Directories.form">
+            <constraints>
+              <card name="cppCompilerDirectories"/>
+            </constraints>
+          </nested-form>
+          <nested-form id="c04bccpp5" form-file="view/compiler/Optimization.form">
+            <constraints>
+              <card name="cppCompilerOptimization"/>
+            </constraints>
+          </nested-form>
+          <nested-form id="c04bccpp6" form-file="view/compiler/Debugging.form">
+            <constraints>
+              <card name="cppCompilerDebugging"/>
+            </constraints>
+          </nested-form>
+          <nested-form id="c04bccpp7" form-file="view/compiler/Warnings.form">
+            <constraints>
+              <card name="cppCompilerWarnings"/>
+            </constraints>
+          </nested-form>
+          <nested-form id="c04bccpp8" form-file="view/compiler/Miscellaneous.form">
+            <constraints>
+              <card name="cppCompilerMiscellaneous"/>
+            </constraints>
+          </nested-form>
+
+          <nested-form id="36e01" form-file="view/assembler/General.form">
+            <constraints>
+              <card name="assemblerGeneral"/>
+            </constraints>
+          </nested-form>
+          <nested-form id="797c7" form-file="view/archiver/General.form">
+            <constraints>
+              <card name="archiverGeneral"/>
+            </constraints>
+          </nested-form>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>

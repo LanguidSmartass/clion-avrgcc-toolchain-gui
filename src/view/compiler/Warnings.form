@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="view.compiler.Warnings">
+  <grid id="27dc6" binding="topPanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="a7775" binding="checkBoxPanel" layout-manager="GridLayoutManager" row-count="8" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="5d04c" class="javax.swing.JCheckBox" binding="allWarningsWallCheckBox" default-binding="true">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text resource-bundle="Plugin" key="settings.toolchain.avrgnu.cCompiler.warning.chbox.wall"/>
+            </properties>
+          </component>
+          <component id="6b5e" class="javax.swing.JCheckBox" binding="extraWarningsWextraCheckBox" default-binding="true">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text resource-bundle="Plugin" key="settings.toolchain.avrgnu.cCompiler.warning.chbox.wextra"/>
+            </properties>
+          </component>
+          <component id="192c" class="javax.swing.JCheckBox" binding="warnUndefinedIdentifierInCheckBox" default-binding="true">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text resource-bundle="Plugin" key="settings.toolchain.avrgnu.cCompiler.warning.chbox.wundef"/>
+            </properties>
+          </component>
+          <component id="a1e61" class="javax.swing.JCheckBox" binding="warningsAsErrorsWerrorCheckBox" default-binding="true">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text resource-bundle="Plugin" key="settings.toolchain.avrgnu.cCompiler.warning.chbox.werror"/>
+            </properties>
+          </component>
+          <component id="1f36e" class="javax.swing.JCheckBox" binding="checkSyntaxOnlyFsyntaxCheckBox" default-binding="true">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text resource-bundle="Plugin" key="settings.toolchain.avrgnu.cCompiler.warning.chbox.fsyntaxonly"/>
+            </properties>
+          </component>
+          <component id="7725b" class="javax.swing.JCheckBox" binding="pedanticPedanticCheckBox" default-binding="true">
+            <constraints>
+              <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text resource-bundle="Plugin" key="settings.toolchain.avrgnu.cCompiler.warning.chbox.pedantic"/>
+            </properties>
+          </component>
+          <component id="a341f" class="javax.swing.JCheckBox" binding="pedanticWarningsAsErrorsCheckBox" default-binding="true">
+            <constraints>
+              <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text resource-bundle="Plugin" key="settings.toolchain.avrgnu.cCompiler.warning.chbox.pedanticerr"/>
+            </properties>
+          </component>
+          <component id="d4347" class="javax.swing.JCheckBox" binding="inhibitAllWarningsWCheckBox" default-binding="true">
+            <constraints>
+              <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text resource-bundle="Plugin" key="settings.toolchain.avrgnu.cCompiler.warning.chbox.inhibitall"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
