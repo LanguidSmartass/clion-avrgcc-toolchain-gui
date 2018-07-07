@@ -1,7 +1,7 @@
 package view.compiler;
 
 import view.JPanelHolder;
-import view.PluginBundle;
+import view.resources.PluginBundle;
 import view.formElements.RecordsList;
 
 import javax.swing.*;
@@ -13,7 +13,7 @@ public class Symbols implements JPanelHolder {
     private RecordsList undefSymbolsRecords;
 
     public Symbols() {
-        ResourceBundle bundle = PluginBundle.getNodeNamesBundle();
+        ResourceBundle bundle = PluginBundle.getProjectsSettingsLabelsBundle();
         String defsymblabel = bundle.getString("settings.toolchain.avrgnu.compiler.c.symbols.label.defined");
         String undefsymblabel = bundle.getString("settings.toolchain.avrgnu.compiler.c.symbols.label.undefined");
         definedSymbolsRecords.setLabelText(defsymblabel);

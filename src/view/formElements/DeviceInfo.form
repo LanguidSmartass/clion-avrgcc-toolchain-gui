@@ -29,7 +29,7 @@
                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
-                  <text resource-bundle="gui/ProjectSettingsLabels" key="device.form.label.devname"/>
+                  <text resource-bundle="view/resources/ProjectSettingsLabels" key="device.form.label.devname"/>
                 </properties>
               </component>
               <component id="facd9" class="javax.swing.JLabel" binding="devName">
@@ -45,7 +45,7 @@
                   <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
-                  <text resource-bundle="gui/ProjectSettingsLabels" key="device.form.label.bootmem"/>
+                  <text resource-bundle="view/resources/ProjectSettingsLabels" key="device.form.label.bootmem"/>
                 </properties>
               </component>
               <component id="e8c1a" class="javax.swing.JLabel" binding="bootMem">
@@ -71,7 +71,7 @@
                   <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
-                  <text resource-bundle="gui/ProjectSettingsLabels" key="device.form.label.speed"/>
+                  <text resource-bundle="view/resources/ProjectSettingsLabels" key="device.form.label.speed"/>
                 </properties>
               </component>
               <component id="4f41e" class="javax.swing.JLabel" binding="eeprMem">
@@ -95,7 +95,7 @@
                   <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
-                  <text resource-bundle="gui/ProjectSettingsLabels" key="device.form.label.eeprmem"/>
+                  <text resource-bundle="view/resources/ProjectSettingsLabels" key="device.form.label.eeprmem"/>
                 </properties>
               </component>
               <component id="36500" class="javax.swing.JLabel">
@@ -103,7 +103,7 @@
                   <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
-                  <text resource-bundle="gui/ProjectSettingsLabels" key="device.form.label.voltage"/>
+                  <text resource-bundle="view/resources/ProjectSettingsLabels" key="device.form.label.voltage"/>
                 </properties>
               </component>
               <component id="2c637" class="javax.swing.JLabel">
@@ -111,7 +111,7 @@
                   <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
-                  <text resource-bundle="gui/ProjectSettingsLabels" key="device.form.label.family"/>
+                  <text resource-bundle="view/resources/ProjectSettingsLabels" key="device.form.label.family"/>
                 </properties>
               </component>
               <component id="67f86" class="javax.swing.JLabel" binding="voltage">
@@ -136,7 +136,7 @@
                 </constraints>
                 <properties>
                   <enabled value="true"/>
-                  <text resource-bundle="gui/ProjectSettingsLabels" key="device.form.label.datamem"/>
+                  <text resource-bundle="view/resources/ProjectSettingsLabels" key="device.form.label.datamem"/>
                   <visible value="true"/>
                 </properties>
               </component>
@@ -164,7 +164,7 @@
                     </constraints>
                     <properties>
                       <horizontalAlignment value="2"/>
-                      <text resource-bundle="gui/ProjectSettingsLabels" key="device.form.button.hyper.datasheet"/>
+                      <text resource-bundle="view/resources/ProjectSettingsLabels" key="device.form.button.hyper.datasheet"/>
                     </properties>
                   </component>
                   <component id="88ef9" class="javax.swing.JButton" binding="devicePageHyperlink">
@@ -173,7 +173,7 @@
                     </constraints>
                     <properties>
                       <horizontalAlignment value="2"/>
-                      <text resource-bundle="gui/ProjectSettingsLabels" key="device.form.button.hyper.devicepage"/>
+                      <text resource-bundle="view/resources/ProjectSettingsLabels" key="device.form.button.hyper.devicepage"/>
                     </properties>
                   </component>
                 </children>
@@ -200,7 +200,7 @@
                   </grid>
                 </constraints>
                 <properties>
-                  <text resource-bundle="gui/ProjectSettingsLabels" key="device.form.label.tools"/>
+                  <text resource-bundle="view/resources/ProjectSettingsLabels" key="device.form.label.tools"/>
                 </properties>
               </component>
               <hspacer id="1b74f">

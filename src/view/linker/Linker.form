@@ -21,7 +21,7 @@
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text resource-bundle="gui/ProjectSettingsLabels" key="avrgnu.linker.label.command"/>
+              <text resource-bundle="view/resources/ProjectSettingsLabels" key="avrgnu.linker.label.command"/>
             </properties>
           </component>
           <component id="7b98d" class="javax.swing.JLabel">
@@ -29,7 +29,7 @@
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text resource-bundle="gui/ProjectSettingsLabels" key="avrgnu.linker.label.alloptions"/>
+              <text resource-bundle="view/resources/ProjectSettingsLabels" key="avrgnu.linker.label.alloptions"/>
             </properties>
           </component>
           <component id="afdc" class="javax.swing.JTextArea" binding="optionsTextArea">

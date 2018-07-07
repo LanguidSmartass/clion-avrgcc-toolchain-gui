@@ -29,7 +29,7 @@
                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
-                  <text resource-bundle="gui/ProjectSettingsLabels" key="avrgnu.compiler.misc.label.otherflags"/>
+                  <text resource-bundle="view/resources/ProjectSettingsLabels" key="avrgnu.compiler.misc.label.otherflags"/>
                 </properties>
               </component>
               <component id="a7fe1" class="javax.swing.JTextField" binding="flagsTextField">
@@ -55,7 +55,7 @@
                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
-                  <text resource-bundle="gui/ProjectSettingsLabels" key="avrgnu.compiler.misc.chbox.verbose"/>
+                  <text resource-bundle="view/resources/ProjectSettingsLabels" key="avrgnu.compiler.misc.chbox.verbose"/>
                 </properties>
               </component>
               <component id="c6b83" class="javax.swing.JCheckBox" binding="supportANSIProgramsAnsiCheckBox" default-binding="true">
@@ -63,7 +63,7 @@
                   <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
-                  <text resource-bundle="gui/ProjectSettingsLabels" key="avrgnu.compiler.misc.chbox.ansisupport"/>
+                  <text resource-bundle="view/resources/ProjectSettingsLabels" key="avrgnu.compiler.misc.chbox.ansisupport"/>
                 </properties>
               </component>
               <component id="65fd6" class="javax.swing.JCheckBox" binding="doNotDeleteTemporaryCheckBox" default-binding="true">
@@ -71,7 +71,7 @@
                   <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
-                  <text resource-bundle="gui/ProjectSettingsLabels" key="avrgnu.compiler.misc.chbox.savetemps"/>
+                  <text resource-bundle="view/resources/ProjectSettingsLabels" key="avrgnu.compiler.misc.chbox.savetemps"/>
                 </properties>
               </component>
             </children>

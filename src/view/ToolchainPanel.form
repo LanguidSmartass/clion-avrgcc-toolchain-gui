@@ -46,7 +46,7 @@
             <properties>
               <horizontalAlignment value="0"/>
               <horizontalTextPosition value="0"/>
-              <text resource-bundle="gui/ProjectSettingsLabels" key="button.cancel"/>
+              <text resource-bundle="view/resources/ProjectSettingsLabels" key="button.cancel"/>
             </properties>
           </component>
           <hspacer id="db145">

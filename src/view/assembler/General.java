@@ -1,7 +1,7 @@
 package view.assembler;
 
 import view.JPanelHolder;
-import view.PluginBundle;
+import view.resources.PluginBundle;
 import view.formElements.RecordsList;
 
 import javax.swing.*;
@@ -14,7 +14,7 @@ public class General implements JPanelHolder {
     private JTextField flagsTextField;
 
     public General() {
-        ResourceBundle bundle = PluginBundle.getNodeNamesBundle();
+        ResourceBundle bundle = PluginBundle.getProjectsSettingsLabelsBundle();
         String incPathsLabel = bundle.getString("settings.toolchain.avrgnu.assembler.general.label.incpath");
         incPathsRecords.setLabelText(incPathsLabel);
     }

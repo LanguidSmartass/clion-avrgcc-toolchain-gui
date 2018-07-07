@@ -25,7 +25,7 @@
               </grid>
             </constraints>
             <properties>
-              <text resource-bundle="gui/ProjectSettingsLabels" key="avrgnu.common.outputfiles.chbox.hex"/>
+              <text resource-bundle="view/resources/ProjectSettingsLabels" key="avrgnu.common.outputfiles.chbox.hex"/>
             </properties>
           </component>
           <component id="703a8" class="javax.swing.JCheckBox" binding="lssGenerateLssFileCheckBox" default-binding="true">
@@ -37,7 +37,7 @@
               </grid>
             </constraints>
             <properties>
-              <text resource-bundle="gui/ProjectSettingsLabels" key="avrgnu.common.outputfiles.chbox.lss"/>
+              <text resource-bundle="view/resources/ProjectSettingsLabels" key="avrgnu.common.outputfiles.chbox.lss"/>
             </properties>
           </component>
           <component id="76c6c" class="javax.swing.JCheckBox" binding="eepGenerateEepFileCheckBox" default-binding="true">
@@ -49,7 +49,7 @@
               </grid>
             </constraints>
             <properties>
-              <text resource-bundle="gui/ProjectSettingsLabels" key="avrgnu.common.outputfiles.chbox.eep"/>
+              <text resource-bundle="view/resources/ProjectSettingsLabels" key="avrgnu.common.outputfiles.chbox.eep"/>
             </properties>
           </component>
           <component id="2e13c" class="javax.swing.JCheckBox" binding="srecGenerateSrecFileCheckBox" default-binding="true">
@@ -61,7 +61,7 @@
               </grid>
             </constraints>
             <properties>
-              <text resource-bundle="gui/ProjectSettingsLabels" key="avrgnu.common.outputfiles.chbox.srec"/>
+              <text resource-bundle="view/resources/ProjectSettingsLabels" key="avrgnu.common.outputfiles.chbox.srec"/>
             </properties>
           </component>
           <component id="b364a" class="javax.swing.JCheckBox" binding="usersignaturesGenerateUsersignaturesFileCheckBox" default-binding="true">
@@ -71,7 +71,7 @@
               </grid>
             </constraints>
             <properties>
-              <text resource-bundle="gui/ProjectSettingsLabels" key="avrgnu.common.outputfiles.chbox.usig"/>
+              <text resource-bundle="view/resources/ProjectSettingsLabels" key="avrgnu.common.outputfiles.chbox.usig"/>
             </properties>
           </component>
         </children>

@@ -29,7 +29,7 @@
                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
-                  <text resource-bundle="gui/ProjectSettingsLabels" key="avrgnu.compiler.optimzn.label.optlevel"/>
+                  <text resource-bundle="view/resources/ProjectSettingsLabels" key="avrgnu.compiler.optimzn.label.optlevel"/>
                 </properties>
               </component>
               <component id="44b1f" class="javax.swing.JComboBox" binding="optLvlComboBox">
@@ -62,7 +62,7 @@
                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
-                  <text resource-bundle="gui/ProjectSettingsLabels" key="avrgnu.compiler.optimzn.label.otherflags"/>
+                  <text resource-bundle="view/resources/ProjectSettingsLabels" key="avrgnu.compiler.optimzn.label.otherflags"/>
                 </properties>
               </component>
               <component id="cc84" class="javax.swing.JTextField" binding="flagsTextField">
@@ -88,7 +88,7 @@
                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
-                  <text resource-bundle="gui/ProjectSettingsLabels" key="avrgnu.compiler.optimzn.chbox.ffuncsect"/>
+                  <text resource-bundle="view/resources/ProjectSettingsLabels" key="avrgnu.compiler.optimzn.chbox.ffuncsect"/>
                 </properties>
               </component>
               <component id="bf937" class="javax.swing.JCheckBox" binding="prepareDataForGarbageCheckBox" default-binding="true">
@@ -96,7 +96,7 @@
                   <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
-                  <text resource-bundle="gui/ProjectSettingsLabels" key="avrgnu.compiler.optimzn.chbox.fdatasect"/>
+                  <text resource-bundle="view/resources/ProjectSettingsLabels" key="avrgnu.compiler.optimzn.chbox.fdatasect"/>
                 </properties>
               </component>
               <component id="6fb36" class="javax.swing.JCheckBox" binding="pachStructureMembersTogetherCheckBox" default-binding="true">
@@ -104,7 +104,7 @@
                   <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
-                  <text resource-bundle="gui/ProjectSettingsLabels" key="avrgnu.compiler.optimzn.chbox.fpackstruct"/>
+                  <text resource-bundle="view/resources/ProjectSettingsLabels" key="avrgnu.compiler.optimzn.chbox.fpackstruct"/>
                 </properties>
               </component>
               <component id="20126" class="javax.swing.JCheckBox" binding="allocateOnlyAsManyCheckBox" default-binding="true">
@@ -112,7 +112,7 @@
                   <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
-                  <text resource-bundle="gui/ProjectSettingsLabels" key="avrgnu.compiler.optimzn.chbox.fshortenums"/>
+                  <text resource-bundle="view/resources/ProjectSettingsLabels" key="avrgnu.compiler.optimzn.chbox.fshortenums"/>
                 </properties>
               </component>
               <component id="a803e" class="javax.swing.JCheckBox" binding="useRjmpRcallLimitedCheckBox" default-binding="true">
@@ -120,7 +120,7 @@
                   <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
-                  <text resource-bundle="gui/ProjectSettingsLabels" key="avrgnu.compiler.optimzn.chbox.mshortcalls"/>
+                  <text resource-bundle="view/resources/ProjectSettingsLabels" key="avrgnu.compiler.optimzn.chbox.mshortcalls"/>
                 </properties>
               </component>
             </children>

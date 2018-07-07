@@ -21,7 +21,7 @@
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text resource-bundle="gui/ProjectSettingsLabels" key="avrgnu.compiler.warning.chbox.wall"/>
+              <text resource-bundle="view/resources/ProjectSettingsLabels" key="avrgnu.compiler.warning.chbox.wall"/>
             </properties>
           </component>
           <component id="6b5e" class="javax.swing.JCheckBox" binding="extraWarningsWextraCheckBox" default-binding="true">
@@ -29,7 +29,7 @@
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text resource-bundle="gui/ProjectSettingsLabels" key="avrgnu.compiler.warning.chbox.wextra"/>
+              <text resource-bundle="view/resources/ProjectSettingsLabels" key="avrgnu.compiler.warning.chbox.wextra"/>
             </properties>
           </component>
           <component id="192c" class="javax.swing.JCheckBox" binding="warnUndefinedIdentifierInCheckBox" default-binding="true">
@@ -37,7 +37,7 @@
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text resource-bundle="gui/ProjectSettingsLabels" key="avrgnu.compiler.warning.chbox.wundef"/>
+              <text resource-bundle="view/resources/ProjectSettingsLabels" key="avrgnu.compiler.warning.chbox.wundef"/>
             </properties>
           </component>
           <component id="a1e61" class="javax.swing.JCheckBox" binding="warningsAsErrorsWerrorCheckBox" default-binding="true">
@@ -45,7 +45,7 @@
               <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text resource-bundle="gui/ProjectSettingsLabels" key="avrgnu.compiler.warning.chbox.werror"/>
+              <text resource-bundle="view/resources/ProjectSettingsLabels" key="avrgnu.compiler.warning.chbox.werror"/>
             </properties>
           </component>
           <component id="1f36e" class="javax.swing.JCheckBox" binding="checkSyntaxOnlyFsyntaxCheckBox" default-binding="true">
@@ -53,7 +53,7 @@
               <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text resource-bundle="gui/ProjectSettingsLabels" key="avrgnu.compiler.warning.chbox.fsyntaxonly"/>
+              <text resource-bundle="view/resources/ProjectSettingsLabels" key="avrgnu.compiler.warning.chbox.fsyntaxonly"/>
             </properties>
           </component>
           <component id="7725b" class="javax.swing.JCheckBox" binding="pedanticPedanticCheckBox" default-binding="true">
@@ -61,7 +61,7 @@
               <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text resource-bundle="gui/ProjectSettingsLabels" key="avrgnu.compiler.warning.chbox.pedantic"/>
+              <text resource-bundle="view/resources/ProjectSettingsLabels" key="avrgnu.compiler.warning.chbox.pedantic"/>
             </properties>
           </component>
           <component id="a341f" class="javax.swing.JCheckBox" binding="pedanticWarningsAsErrorsCheckBox" default-binding="true">
@@ -69,7 +69,7 @@
               <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text resource-bundle="gui/ProjectSettingsLabels" key="avrgnu.compiler.warning.chbox.pedanticerr"/>
+              <text resource-bundle="view/resources/ProjectSettingsLabels" key="avrgnu.compiler.warning.chbox.pedanticerr"/>
             </properties>
           </component>
           <component id="d4347" class="javax.swing.JCheckBox" binding="inhibitAllWarningsWCheckBox" default-binding="true">
@@ -77,7 +77,7 @@
               <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text resource-bundle="gui/ProjectSettingsLabels" key="avrgnu.compiler.warning.chbox.inhibitall"/>
+              <text resource-bundle="view/resources/ProjectSettingsLabels" key="avrgnu.compiler.warning.chbox.inhibitall"/>
             </properties>
           </component>
         </children>

@@ -21,7 +21,7 @@
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text resource-bundle="gui/ProjectSettingsLabels" key="avrgnu.linker.general.chbox.nostartfiles"/>
+              <text resource-bundle="view/resources/ProjectSettingsLabels" key="avrgnu.linker.general.chbox.nostartfiles"/>
             </properties>
           </component>
           <component id="746d1" class="javax.swing.JCheckBox" binding="doNotUseDefaultCheckBox" default-binding="true">
@@ -29,7 +29,7 @@
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text resource-bundle="gui/ProjectSettingsLabels" key="avrgnu.linker.general.chbox.nodefaultlibs"/>
+              <text resource-bundle="view/resources/ProjectSettingsLabels" key="avrgnu.linker.general.chbox.nodefaultlibs"/>
             </properties>
           </component>
           <component id="d239" class="javax.swing.JCheckBox" binding="noStartupOrDefaultCheckBox" default-binding="true">
@@ -37,7 +37,7 @@
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text resource-bundle="gui/ProjectSettingsLabels" key="avrgnu.linker.general.chbox.nostdlib"/>
+              <text resource-bundle="view/resources/ProjectSettingsLabels" key="avrgnu.linker.general.chbox.nostdlib"/>
             </properties>
           </component>
           <component id="bf895" class="javax.swing.JCheckBox" binding="omitSymbolInformationWlCheckBox" default-binding="true">
@@ -45,7 +45,7 @@
               <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text resource-bundle="gui/ProjectSettingsLabels" key="avrgnu.linker.general.chbox.omitsymb"/>
+              <text resource-bundle="view/resources/ProjectSettingsLabels" key="avrgnu.linker.general.chbox.omitsymb"/>
             </properties>
           </component>
           <component id="180e1" class="javax.swing.JCheckBox" binding="linkStaticallyWlStaticCheckBox" default-binding="true">
@@ -53,7 +53,7 @@
               <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text resource-bundle="gui/ProjectSettingsLabels" key="avrgnu.linker.general.chbox.linkstatic"/>
+              <text resource-bundle="view/resources/ProjectSettingsLabels" key="avrgnu.linker.general.chbox.linkstatic"/>
             </properties>
           </component>
           <component id="8fb49" class="javax.swing.JCheckBox" binding="generateMAPFileWlCheckBox" default-binding="true">
@@ -61,7 +61,7 @@
               <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text resource-bundle="gui/ProjectSettingsLabels" key="avrgnu.linker.general.chbox.genmapfile"/>
+              <text resource-bundle="view/resources/ProjectSettingsLabels" key="avrgnu.linker.general.chbox.genmapfile"/>
             </properties>
           </component>
           <component id="bfa13" class="javax.swing.JCheckBox" binding="useVprintfLibraryWlCheckBox" default-binding="true">
@@ -69,7 +69,7 @@
               <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text resource-bundle="gui/ProjectSettingsLabels" key="avrgnu.linker.general.chbox.vprintf"/>
+              <text resource-bundle="view/resources/ProjectSettingsLabels" key="avrgnu.linker.general.chbox.vprintf"/>
             </properties>
           </component>
         </children>

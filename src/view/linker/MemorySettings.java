@@ -1,7 +1,7 @@
 package view.linker;
 
 import view.JPanelHolder;
-import view.PluginBundle;
+import view.resources.PluginBundle;
 import view.formElements.RecordsList;
 
 import javax.swing.*;
@@ -20,7 +20,7 @@ public class MemorySettings implements JPanelHolder {
     private JTextField segValSyntTextField;
 
     public MemorySettings() {
-        ResourceBundle bundle = PluginBundle.getNodeNamesBundle();
+        ResourceBundle bundle = PluginBundle.getProjectsSettingsLabelsBundle();
         String flashLabel = bundle.getString("settings.toolchain.avrgnu.linker.memsettings.label.flash");
         String sramLabel = bundle.getString("settings.toolchain.avrgnu.linker.memsettings.label.sram");
         String eepromLabel = bundle.getString("settings.toolchain.avrgnu.linker.memsettings.label.eeprom");

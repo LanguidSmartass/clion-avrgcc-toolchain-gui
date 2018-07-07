@@ -2,42 +2,63 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="147c820a-4c87-4050-8d4b-f21902b43a99" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/gui/ApplicationSettingsLabels.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/gui/ProjectSettingsFlags.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/toolchain/Toolchain.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/toolchain/Toolchain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/resources/PluginBundle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/Plugin.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/Plugin.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/CardsNames.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/CardsNames.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/MVCPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/MVCPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/Plugin.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/controller/ToolchainPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/controller/ToolchainPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/model/common/General.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/model/common/General.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/CardsNames.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/PluginBundle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/ToolchainPanel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/ToolchainPanel$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/ToolchainPanel$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/ToolchainPanel$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/ToolchainPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/ToolchainPanel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/TreeModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/TreeModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/device/Device$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/device/Device$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/archiver/Archiver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/archiver/Archiver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/archiver/General.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/archiver/General.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/assembler/Assembler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/assembler/Assembler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/assembler/Debugging.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/assembler/Debugging.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/assembler/General.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/assembler/General.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/common/General.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/common/General.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/common/OutputFiles.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/common/OutputFiles.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/compiler/Compiler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/compiler/Compiler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/compiler/Debugging.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/compiler/Debugging.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/compiler/Directories.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/compiler/Directories.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/compiler/General.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/compiler/General.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/compiler/Miscellaneous.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/compiler/Miscellaneous.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/compiler/Optimization.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/compiler/Optimization.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/compiler/Preprocessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/compiler/Preprocessor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/compiler/Symbols.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/compiler/Symbols.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/compiler/Warnings.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/compiler/Warnings.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/device/ChangeDevice.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/device/ChangeDevice.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/device/Device.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/device/Device.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MVCPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MVCPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Plugin.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/ToolchainPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ToolchainPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/common/General.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/common/General.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/CardsNames.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/formElements/DeviceInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/formElements/DeviceInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/formElements/RecordsList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/formElements/RecordsList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/linker/General.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/linker/General.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/linker/Libraries.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/linker/Libraries.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/linker/Linker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/linker/Linker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/linker/MemorySettings.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/linker/MemorySettings.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/linker/Miscellaneous.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/linker/Miscellaneous.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/linker/Optimization.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/linker/Optimization.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/toolchain/Toolchain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/toolchain/Toolchain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/gui/ApplicationSettingsLabels.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/resources/ApplicationSettingsLabels.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/gui/CardsNamesEmbedded.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/resources/CardNamesEmbedded.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/gui/ProjectSettingsFlags.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/resources/ProjectSettingsFlags.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/gui/ProjectSettingsLabels.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/resources/ProjectSettingsLabels.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/PluginBundle.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/ToolchainPanel.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ToolchainPanel.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/ToolchainPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ToolchainPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/TreeModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/TreeModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/archiver/Archiver.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/archiver/Archiver.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/archiver/Archiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/archiver/Archiver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/archiver/General.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/archiver/General.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/archiver/General.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/archiver/General.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/assembler/Assembler.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/assembler/Assembler.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/assembler/Assembler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/assembler/Assembler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/assembler/Debugging.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/assembler/Debugging.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/assembler/Debugging.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/assembler/Debugging.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/assembler/General.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/assembler/General.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/assembler/General.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/assembler/General.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/common/General.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/common/General.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/common/General.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/common/General.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/common/OutputFiles.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/common/OutputFiles.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/compiler/Compiler.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/compiler/Compiler.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/compiler/Compiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/compiler/Compiler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/compiler/Debugging.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/compiler/Debugging.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/compiler/Debugging.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/compiler/Debugging.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/compiler/Directories.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/compiler/Directories.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/compiler/General.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/compiler/General.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/compiler/Miscellaneous.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/compiler/Miscellaneous.form" afterDir="false" />
@@ -49,17 +70,15 @@
       <change beforePath="$PROJECT_DIR$/src/view/compiler/Warnings.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/compiler/Warnings.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/device/ChangeDevice.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/device/ChangeDevice.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/device/Device.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/device/Device.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/device/Device.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/device/Device.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/formElements/DeviceInfo.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/formElements/DeviceInfo.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/formElements/RecordsList.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/formElements/RecordsList.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/formElements/RecordsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/formElements/RecordsList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/linker/General.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/linker/General.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/linker/Libraries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/linker/Libraries.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/linker/Linker.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/linker/Linker.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/linker/Linker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/linker/Linker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/linker/MemorySettings.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/linker/MemorySettings.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/linker/MemorySettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/linker/MemorySettings.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/linker/Miscellaneous.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/linker/Miscellaneous.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/linker/Optimization.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/linker/Optimization.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/linker/Optimization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/linker/Optimization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/toolchain/Toolchain.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/toolchain/Toolchain.form" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -71,8 +90,8 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="General.form" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/view/linker/General.form">
+      <file leaf-file-name="Toolchain.form" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/view/toolchain/Toolchain.form">
           <provider selected="true" editor-type-id="ui-designer" />
         </entry>
       </file>
@@ -88,7 +107,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>var10000</find>
       <find>dispose()</find>
       <find>myEmptyToolchainEditor</find>
       <find>myToolSetKind =</find>
@@ -118,6 +136,7 @@
       <find>settings</find>
       <find>cCompiler</find>
       <find>updatePanelView</find>
+      <find>gui/ApplicationSettingsLabels</find>
     </findStrings>
     <replaceStrings>
       <replace>TreeNode</replace>
@@ -135,22 +154,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/view/linker/Optimization.java" />
-        <option value="$PROJECT_DIR$/src/view/compiler/Symbols.java" />
-        <option value="$PROJECT_DIR$/src/view/linker/Libraries.java" />
         <option value="$PROJECT_DIR$/src/view/linker/MemorySettings.java" />
         <option value="$PROJECT_DIR$/src/view/assembler/General.java" />
-        <option value="$PROJECT_DIR$/src/view/PluginBundle.java" />
         <option value="$PROJECT_DIR$/src/view/TreeNodeWithJPanel.java" />
         <option value="$PROJECT_DIR$/src/view/NodeWithCardName.java" />
         <option value="$PROJECT_DIR$/src/view/formElements/DeviceInfo.java" />
         <option value="$PROJECT_DIR$/src/view/device/Device.java" />
         <option value="$PROJECT_DIR$/src/view/toolchain/PackageConfig.form" />
         <option value="$PROJECT_DIR$/src/view/toolchain/PackageConfig.java" />
-        <option value="$PROJECT_DIR$/src/view/TreeModel.java" />
         <option value="$PROJECT_DIR$/src/view/CardsNames.properties" />
         <option value="$PROJECT_DIR$/src/Plugin.properties" />
-        <option value="$PROJECT_DIR$/src/view/ToolchainPanel.java" />
         <option value="$PROJECT_DIR$/src/MVCPanel.java" />
         <option value="$PROJECT_DIR$/resources/gui/Plugin.properties" />
         <option value="$PROJECT_DIR$/src/view/ToolchainPanel.form" />
@@ -158,34 +171,40 @@
         <option value="$PROJECT_DIR$/src/view/toolchain/Toolchain.java" />
         <option value="$PROJECT_DIR$/src/controller/ToolchainPanel.java" />
         <option value="$PROJECT_DIR$/src/model/common/General.java" />
-        <option value="$PROJECT_DIR$/src/view/toolchain/Toolchain.form" />
-        <option value="$PROJECT_DIR$/src/view/common/OutputFiles.form" />
         <option value="$PROJECT_DIR$/src/view/compiler/Directories.java" />
         <option value="$PROJECT_DIR$/resources/gui/ProjectSettingsFlags.properties" />
         <option value="$PROJECT_DIR$/resources/gui/CardsNamesEmbedded.properties" />
-        <option value="$PROJECT_DIR$/src/view/compiler/Preprocessor.form" />
-        <option value="$PROJECT_DIR$/src/view/compiler/General.form" />
-        <option value="$PROJECT_DIR$/src/view/compiler/Warnings.form" />
-        <option value="$PROJECT_DIR$/src/view/linker/General.form" />
-        <option value="$PROJECT_DIR$/src/view/linker/Optimization.form" />
-        <option value="$PROJECT_DIR$/src/view/linker/MemorySettings.form" />
-        <option value="$PROJECT_DIR$/src/view/linker/Miscellaneous.form" />
-        <option value="$PROJECT_DIR$/src/view/compiler/Compiler.form" />
-        <option value="$PROJECT_DIR$/src/view/linker/Linker.form" />
-        <option value="$PROJECT_DIR$/src/view/assembler/Assembler.form" />
         <option value="$PROJECT_DIR$/src/view/assembler/Debugging.form" />
-        <option value="$PROJECT_DIR$/src/view/archiver/Archiver.form" />
         <option value="$PROJECT_DIR$/src/view/archiver/General.form" />
-        <option value="$PROJECT_DIR$/src/view/assembler/General.form" />
-        <option value="$PROJECT_DIR$/src/view/common/General.form" />
-        <option value="$PROJECT_DIR$/src/view/compiler/Debugging.form" />
-        <option value="$PROJECT_DIR$/src/view/compiler/Miscellaneous.form" />
-        <option value="$PROJECT_DIR$/src/view/compiler/Optimization.form" />
-        <option value="$PROJECT_DIR$/src/view/device/Device.form" />
-        <option value="$PROJECT_DIR$/src/view/device/ChangeDevice.form" />
         <option value="$PROJECT_DIR$/src/view/formElements/RecordsList.form" />
         <option value="$PROJECT_DIR$/resources/gui/ProjectSettingsLabels.properties" />
+        <option value="$PROJECT_DIR$/src/view/linker/Miscellaneous.form" />
+        <option value="$PROJECT_DIR$/src/view/PluginBundle.java" />
+        <option value="$PROJECT_DIR$/src/view/resources/PluginBundle.java" />
+        <option value="$PROJECT_DIR$/src/view/TreeModel.java" />
+        <option value="$PROJECT_DIR$/src/view/resources/CardNamesEmbedded.properties" />
+        <option value="$PROJECT_DIR$/src/view/ToolchainPanel.java" />
+        <option value="$PROJECT_DIR$/src/view/archiver/Archiver.form" />
+        <option value="$PROJECT_DIR$/src/view/resources/ProjectSettingsLabels.properties" />
+        <option value="$PROJECT_DIR$/src/view/assembler/Assembler.form" />
+        <option value="$PROJECT_DIR$/src/view/assembler/General.form" />
+        <option value="$PROJECT_DIR$/src/view/common/General.form" />
+        <option value="$PROJECT_DIR$/src/view/common/OutputFiles.form" />
+        <option value="$PROJECT_DIR$/src/view/compiler/Compiler.form" />
+        <option value="$PROJECT_DIR$/src/view/compiler/Debugging.form" />
+        <option value="$PROJECT_DIR$/src/view/compiler/General.form" />
+        <option value="$PROJECT_DIR$/src/view/compiler/Miscellaneous.form" />
+        <option value="$PROJECT_DIR$/src/view/compiler/Optimization.form" />
+        <option value="$PROJECT_DIR$/src/view/compiler/Preprocessor.form" />
+        <option value="$PROJECT_DIR$/src/view/compiler/Warnings.form" />
+        <option value="$PROJECT_DIR$/src/view/device/Device.form" />
+        <option value="$PROJECT_DIR$/src/view/device/ChangeDevice.form" />
         <option value="$PROJECT_DIR$/src/view/formElements/DeviceInfo.form" />
+        <option value="$PROJECT_DIR$/src/view/linker/Linker.form" />
+        <option value="$PROJECT_DIR$/src/view/linker/General.form" />
+        <option value="$PROJECT_DIR$/src/view/linker/MemorySettings.form" />
+        <option value="$PROJECT_DIR$/src/view/linker/Optimization.form" />
+        <option value="$PROJECT_DIR$/src/view/toolchain/Toolchain.form" />
       </list>
     </option>
   </component>
@@ -225,12 +244,6 @@
             <path>
               <item name="clion-avrgcc-toolchain-gui" type="b2602c69:ProjectViewProjectNode" />
               <item name="clion-avrgcc-toolchain-gui" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="gui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="clion-avrgcc-toolchain-gui" type="b2602c69:ProjectViewProjectNode" />
-              <item name="clion-avrgcc-toolchain-gui" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -244,7 +257,15 @@
               <item name="clion-avrgcc-toolchain-gui" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="linker" type="462c0819:PsiDirectoryNode" />
+              <item name="toolchain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="clion-avrgcc-toolchain-gui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="clion-avrgcc-toolchain-gui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="toolchain" type="462c0819:PsiDirectoryNode" />
+              <item name="Toolchain" type="e9f4de52:FormNode" />
             </path>
             <path>
               <item name="clion-avrgcc-toolchain-gui" type="b2602c69:ProjectViewProjectNode" />
@@ -272,8 +293,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Programming\Java\projects\clion-avrgcc-toolchain-gui\resources\guiforms" />
       <recent name="D:\Programming\Java\projects\clion-avrgcc-toolchain-gui\src\view\resources" />
+      <recent name="D:\Programming\Java\projects\clion-avrgcc-toolchain-gui\resources\guiforms" />
       <recent name="D:\Programming\Java\projects\clion-avrgcc-toolchain-gui\src\view\assembler" />
       <recent name="D:\Programming\Java\projects\clion-avrgcc-toolchain-gui\src\frontend\tree\common" />
     </key>
@@ -379,12 +400,12 @@
       <workItem from="1530905893173" duration="87000" />
       <workItem from="1530905996253" duration="719000" />
       <workItem from="1530907492782" duration="13912000" />
-      <workItem from="1530957618818" duration="19254000" />
+      <workItem from="1530957618818" duration="22415000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127183000" />
+    <option name="totallyTimeSpent" value="130344000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -397,6 +418,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="11" weight="0.32943678" />
@@ -406,7 +428,7 @@
       <window_info anchor="right" id="Maven Projects" order="2" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="0" />
-      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.49895832" weight="0.32837406" />
+      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.49895832" visible="true" weight="0.32837406" />
       <window_info anchor="bottom" id="Terminal" order="2" weight="0.32943678" />
       <window_info id="Designer" order="7" />
       <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.74050635" visible="true" weight="0.19479166" />
@@ -446,27 +468,10 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/view/device/ChangeDevice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/view/device/Device.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="329">
           <caret line="26" column="46" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/TreeModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-          <folding>
-            <element signature="method#TreeModel#0;class#TreeModel#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -530,18 +535,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/ToolchainPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="92" column="53" lean-forward="true" selection-start-line="92" selection-start-column="35" selection-end-line="92" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3089#3090#0" expanded="true" />
-            <element signature="e#3130#3131#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ToolchainSettingsConfigurable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-725">
@@ -563,23 +556,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/toolchain/Toolchain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#549#550#0" expanded="true" />
-            <element signature="e#589#590#0" expanded="true" />
-            <element signature="e#556#557#0" expanded="true" />
-            <element signature="e#587#588#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/toolchain/Toolchain.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/common/General.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-187">
@@ -597,34 +573,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/gui/ApplicationSettingsLabels.properties">
+    <entry file="file://$PROJECT_DIR$/src/view/resources/ApplicationSettingsLabels.properties">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/gui/CardsNamesEmbedded.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/gui/ProjectSettingsFlags.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="12" column="47" lean-forward="true" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/linker/Libraries.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/linker/Optimization.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/linker/MemorySettings.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/linker/Miscellaneous.form">
-      <provider selected="true" editor-type-id="ui-designer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/archiver/General.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -633,19 +583,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/archiver/Archiver.form">
-      <provider selected="true" editor-type-id="ui-designer" />
+    <entry file="file://$PROJECT_DIR$/src/view/resources/ProjectSettingsFlags.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="12" column="47" lean-forward="true" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/ToolchainPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2591">
+          <caret line="156" lean-forward="true" selection-start-line="156" selection-end-line="156" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3709#3710#0" expanded="true" />
+            <element signature="e#3762#3763#0" expanded="true" />
+            <element signature="e#4008#4009#0" expanded="true" />
+            <element signature="e#4039#4040#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/resources/PluginBundle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/TreeModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="28" column="51" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/resources/CardNamesEmbedded.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/toolchain/Toolchain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#573#574#0" expanded="true" />
+            <element signature="e#620#621#0" expanded="true" />
+            <element signature="e#666#667#0" expanded="true" />
+            <element signature="e#697#698#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/archiver/General.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/archiver/Archiver.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/assembler/Assembler.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/assembler/Debugging.form">
+    <entry file="file://$PROJECT_DIR$/src/view/assembler/General.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/assembler/General.form">
+    <entry file="file://$PROJECT_DIR$/src/view/assembler/Debugging.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/common/Common.form">
@@ -656,6 +662,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/common/OutputFiles.form">
       <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/resources/ProjectSettingsLabels.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="124" column="47" selection-start-line="124" selection-start-column="47" selection-end-line="124" selection-end-column="47" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/compiler/Compiler.form">
       <provider selected="true" editor-type-id="ui-designer" />
@@ -684,29 +697,37 @@
     <entry file="file://$PROJECT_DIR$/src/view/compiler/Warnings.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/device/ChangeDevice.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/view/device/Device.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/gui/ProjectSettingsLabels.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2210">
-          <caret line="130" column="22" selection-start-line="130" selection-start-column="22" selection-end-line="130" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/formElements/RecordsList.form">
+    <entry file="file://$PROJECT_DIR$/src/view/device/ChangeDevice.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/formElements/DeviceInfo.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/formElements/RecordsList.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/linker/Linker.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/linker/General.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/linker/Libraries.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/linker/MemorySettings.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/linker/Miscellaneous.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/linker/Optimization.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/toolchain/Toolchain.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
   </component>

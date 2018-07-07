@@ -2,6 +2,7 @@ package view;
 
 import com.intellij.openapi.Disposable;
 import com.intellij.ui.treeStructure.Tree;
+import view.resources.PluginBundle;
 
 import javax.swing.*;
 import javax.swing.event.TreeSelectionListener;
@@ -148,11 +149,11 @@ public class ToolchainPanel extends JPanel implements Disposable {
         archiver = new view.archiver.Archiver();
         archiverGeneral = new view.archiver.General();
 
-        ResourceBundle cardNameBundle = PluginBundle.getCardNamesBundle();
+        ResourceBundle cardNameBundle = PluginBundle.getCardNamesEmbeddedBundle();
 
         cardsPanel.add(toolchain.getPanel(), cardNameBundle.getString("toolchain"));
 
-        cardsPanel.add(device.getPanel(), cardNameBundle.getString("toolchain.device"));
+        cardsPanel.add(device.getPanel(), cardNameBundle.getString("device"));
 
         cardsPanel.add(common.getPanel(), cardNameBundle.getString("avrgnu.common"));
         cardsPanel.add(commonGeneral.getPanel(), cardNameBundle.getString("avrgnu.common.general"));

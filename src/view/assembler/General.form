@@ -21,7 +21,7 @@
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text resource-bundle="gui/ProjectSettingsLabels" key="avrgnu.assembler.general.label.asmflg"/>
+              <text resource-bundle="view/resources/ProjectSettingsLabels" key="avrgnu.assembler.general.label.asmflg"/>
             </properties>
           </component>
           <component id="9c590" class="javax.swing.JTextField" binding="flagsTextField">
@@ -47,7 +47,7 @@
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text resource-bundle="gui/ProjectSettingsLabels" key="avrgnu.assembler.general.chbox.anver"/>
+              <text resource-bundle="view/resources/ProjectSettingsLabels" key="avrgnu.assembler.general.chbox.anver"/>
             </properties>
           </component>
         </children>
