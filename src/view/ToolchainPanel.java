@@ -60,6 +60,26 @@ public class ToolchainPanel extends JPanel implements Disposable {
         this.model = model;
         treeView.setModel(model);
 
+    }
+
+    public void addTreeListener(TreeSelectionListener tl) {
+        treeView.addTreeSelectionListener(tl);
+    }
+
+    public void updatePanelView(String cardName) {
+        CardLayout layout = (CardLayout)cardsPanel.getLayout();
+        layout.show(cardsPanel, cardName);
+    }
+
+    @Override
+    public void dispose() {
+    }
+
+    public JPanel getPanel() {
+        return topPanel;
+    }
+
+    private void createUIComponents() {
         cardsPanel = new JPanel(new CardLayout());
 
         common = new view.common.Common();
@@ -95,7 +115,7 @@ public class ToolchainPanel extends JPanel implements Disposable {
         archiver = new view.archiver.Archiver();
         archiverGeneral = new view.archiver.General();
 
-        ResourceBundle cardNameBundle = PluginBundle.getNodeNamesBundle();
+        ResourceBundle cardNameBundle = PluginBundle.getCardNamesBundle();
 
         cardsPanel.add(common.getPanel(), cardNameBundle.getString("cardname.toolchain.avrgnu.common"));
         cardsPanel.add(commonGeneral.getPanel(), cardNameBundle.getString("cardname.toolchain.avrgnu.common.general"));
@@ -134,25 +154,6 @@ public class ToolchainPanel extends JPanel implements Disposable {
 
         cardsPanel.add(archiver.getPanel(), cardNameBundle.getString("cardname.toolchain.avrgnu.archiver"));
         cardsPanel.add(archiverGeneral.getPanel(), cardNameBundle.getString("cardname.toolchain.avrgnu.archiver.general"));
-    }
-
-    public void addTreeListener(TreeSelectionListener tl) {
-        treeView.addTreeSelectionListener(tl);
-    }
-
-    public void updatePanelView(JPanel panel) {
-    }
-
-    @Override
-    public void dispose() {
-    }
-
-    public JPanel getPanel() {
-        return topPanel;
-    }
-
-    private void createUIComponents() {
-        // TODO: place custom component creation code here
     }
 }
 

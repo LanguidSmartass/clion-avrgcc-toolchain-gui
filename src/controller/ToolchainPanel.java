@@ -35,7 +35,7 @@ public class ToolchainPanel {
 //            System.out.println(path.getPathComponent(i).toString());
 //        }
         TreeNodeWithJPanel node = (TreeNodeWithJPanel)e.getPath().getLastPathComponent();
-        view.updatePanelView(node.getPanel());
+        view.updatePanelView(node.getCardName());
     }
 
 }
