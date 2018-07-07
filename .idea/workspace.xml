@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="147c820a-4c87-4050-8d4b-f21902b43a99" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/model/MVCModelHack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/clion-avrgcc-toolchain-gui/view/PanelHolder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/ToolchainPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ToolchainPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/MVCModelHack.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/PluginBundle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/PluginBundle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/ToolchainPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ToolchainPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/ToolchainPanel.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ToolchainPanel.form" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -182,7 +177,6 @@
         <option value="$PROJECT_DIR$/src/view/linker/MemorySettings.form" />
         <option value="$PROJECT_DIR$/src/view/linker/Miscellaneous.java" />
         <option value="$PROJECT_DIR$/src/view/linker/Optimization.java" />
-        <option value="$PROJECT_DIR$/src/view/ToolchainPanel.form" />
         <option value="$PROJECT_DIR$/src/view/compiler/Directories.java" />
         <option value="$PROJECT_DIR$/src/view/compiler/Symbols.java" />
         <option value="$PROJECT_DIR$/src/view/linker/Libraries.java" />
@@ -191,6 +185,7 @@
         <option value="$PROJECT_DIR$/src/controller/ToolchainPanel.java" />
         <option value="$PROJECT_DIR$/src/view/PluginBundle.java" />
         <option value="$PROJECT_DIR$/src/view/ToolchainPanel.java" />
+        <option value="$PROJECT_DIR$/src/view/ToolchainPanel.form" />
       </list>
     </option>
   </component>
@@ -376,12 +371,12 @@
       <workItem from="1530900853101" duration="5015000" />
       <workItem from="1530905893173" duration="87000" />
       <workItem from="1530905996253" duration="719000" />
-      <workItem from="1530907492782" duration="12486000" />
+      <workItem from="1530907492782" duration="13001000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106503000" />
+    <option name="totallyTimeSpent" value="107018000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -744,9 +739,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/ToolchainPanel.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/view/compiler/Directories.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -873,6 +865,9 @@
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/ToolchainPanel.form">
+      <provider selected="true" editor-type-id="ui-designer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/CardsNames.properties">
       <provider selected="true" editor-type-id="text-editor">
