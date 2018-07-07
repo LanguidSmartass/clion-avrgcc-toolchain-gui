@@ -1,7 +1,7 @@
 package controller;
 
 import view.TreeModel;
-import view.TreeNodeWithJPanel;
+import view.NodeWithCardName;
 
 import javax.swing.event.TreeSelectionEvent;
 import javax.swing.event.TreeSelectionListener;
@@ -34,7 +34,7 @@ public class ToolchainPanel {
 //        for (int i = 0; i < path.getPathCount(); ++i) {
 //            System.out.println(path.getPathComponent(i).toString());
 //        }
-        TreeNodeWithJPanel node = (TreeNodeWithJPanel)e.getPath().getLastPathComponent();
+        NodeWithCardName node = (NodeWithCardName)e.getPath().getLastPathComponent();
         view.updatePanelView(node.getCardName());
     }
 

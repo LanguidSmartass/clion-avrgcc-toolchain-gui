@@ -21,8 +21,12 @@ public class ToolchainPanel extends JPanel implements Disposable {
     private JPanel topPanel;
     private Tree treeView;
     private JPanel cardsPanel;
+    private JButton buttonGenCMakeLists;
+    private JButton button2;
+    private JButton button3;
     private view.TreeModel model;
 
+    private view.device.Device device;
     private view.common.Common common;
     private view.common.General commonGeneral;
     private view.common.OutputFiles commonOutputFiles;
@@ -82,6 +86,7 @@ public class ToolchainPanel extends JPanel implements Disposable {
     private void createUIComponents() {
         cardsPanel = new JPanel(new CardLayout());
 
+        device = new view.device.Device();
         common = new view.common.Common();
         commonGeneral = new view.common.General();
         commonOutputFiles = new view.common.OutputFiles();
@@ -116,6 +121,8 @@ public class ToolchainPanel extends JPanel implements Disposable {
         archiverGeneral = new view.archiver.General();
 
         ResourceBundle cardNameBundle = PluginBundle.getCardNamesBundle();
+
+        cardsPanel.add(device.getPanel(), cardNameBundle.getString("cardname.toolchain.device"));
 
         cardsPanel.add(common.getPanel(), cardNameBundle.getString("cardname.toolchain.avrgnu.common"));
         cardsPanel.add(commonGeneral.getPanel(), cardNameBundle.getString("cardname.toolchain.avrgnu.common.general"));
