@@ -1,8 +1,10 @@
 package view.linker;
 
+import view.JPanelHolder;
+
 import javax.swing.*;
 
-public class General {
+public class General implements JPanelHolder {
     private JPanel topPanel;
     private JCheckBox doNotUseStandardCheckBox;
     private JCheckBox doNotUseDefaultCheckBox;
@@ -12,4 +14,9 @@ public class General {
     private JCheckBox generateMAPFileWlCheckBox;
     private JCheckBox useVprintfLibraryWlCheckBox;
     private JPanel vertAlignPanel;
+
+    @Override
+    public JPanel getPanel() {
+        return topPanel;
+    }
 }

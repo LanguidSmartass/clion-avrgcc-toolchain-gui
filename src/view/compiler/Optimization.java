@@ -1,8 +1,10 @@
 package view.compiler;
 
+import view.JPanelHolder;
+
 import javax.swing.*;
 
-public class Optimization {
+public class Optimization implements JPanelHolder {
     private JPanel topPanel;
     private JFormattedTextField formattedTextField2;
     private JComboBox comboBox1;
@@ -15,4 +17,9 @@ public class Optimization {
     private JPanel optimComboBoxPanel;
     private JPanel otherFlagsTextFieldPanel;
     private JPanel checkBoxPanel;
+
+    @Override
+    public JPanel getPanel() {
+        return topPanel;
+    }
 }

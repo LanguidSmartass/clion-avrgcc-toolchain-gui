@@ -1,8 +1,10 @@
 package view.compiler;
 
+import view.JPanelHolder;
+
 import javax.swing.*;
 
-public class Warnings {
+public class Warnings implements JPanelHolder {
     private JPanel topPanel;
     private JCheckBox allWarningsWallCheckBox;
     private JCheckBox extraWarningsWextraCheckBox;
@@ -13,4 +15,9 @@ public class Warnings {
     private JCheckBox pedanticWarningsAsErrorsCheckBox;
     private JCheckBox inhibitAllWarningsWCheckBox;
     private JPanel checkBoxPanel;
+
+    @Override
+    public JPanel getPanel() {
+        return topPanel;
+    }
 }

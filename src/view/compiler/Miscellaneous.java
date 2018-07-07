@@ -1,8 +1,10 @@
 package view.compiler;
 
+import view.JPanelHolder;
+
 import javax.swing.*;
 
-public class Miscellaneous {
+public class Miscellaneous implements JPanelHolder {
     private JPanel topPanel;
     private JPanel vertAlignPanel;
     private JPanel otherFlagsTextFieldPanel;
@@ -11,4 +13,9 @@ public class Miscellaneous {
     private JCheckBox verboseVCheckBox;
     private JCheckBox supportANSIProgramsAnsiCheckBox;
     private JCheckBox doNotDeleteTemporaryCheckBox;
+
+    @Override
+    public JPanel getPanel() {
+        return topPanel;
+    }
 }

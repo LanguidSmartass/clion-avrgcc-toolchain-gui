@@ -1,13 +1,10 @@
 package controller;
 
-import model.NamedTreeNode;
-import view.PanelHolder;
 import view.TreeModel;
 import view.TreeNodeWithJPanel;
 
 import javax.swing.event.TreeSelectionEvent;
 import javax.swing.event.TreeSelectionListener;
-import javax.swing.tree.TreePath;
 
 public class ToolchainPanel {
     private TreeModel model;
