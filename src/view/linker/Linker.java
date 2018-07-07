@@ -6,9 +6,9 @@ import javax.swing.*;
 
 public class Linker implements JPanelHolder {
     private JPanel topPanel;
-    private JFormattedTextField avrGFormattedTextField;
-    private JTextArea allOptionsTextArea;
+    private JTextArea optionsTextArea;
     private JPanel vertAlignPanel;
+    private JTextField commandTextField;
 
     @Override
     public JPanel getPanel() {

@@ -15,7 +15,6 @@ public class MVCPanel extends JPanel implements Disposable {
         model = new TreeModel();
         view = new view.ToolchainPanel(model);
         controller = new controller.ToolchainPanel(model, view);
-//        this.add(view);
         viewPanel = view.getPanel();
     }
 

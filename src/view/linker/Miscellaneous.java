@@ -6,8 +6,8 @@ import javax.swing.*;
 
 public class Miscellaneous implements JPanelHolder {
     private JPanel topPanel;
-    private JFormattedTextField flagsTextField;
     private JPanel vertAlignPanel;
+    private JTextField flagsTextField;
 
     @Override
     public JPanel getPanel() {

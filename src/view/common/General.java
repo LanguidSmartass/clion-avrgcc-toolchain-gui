@@ -7,9 +7,9 @@ import javax.swing.*;
 public class General implements JPanelHolder {
     private JCheckBox relaxBranchesMrelaxCheckBox;
     private JCheckBox externalRamCheckForCheckBox;
-    private JFormattedTextField formattedTextField1;
-    private JTextArea textArea1;
     private JPanel topPanel;
+    private JList incPathsList;
+    private JTextField devNameTextField;
 
     @Override
     public JPanel getPanel() {

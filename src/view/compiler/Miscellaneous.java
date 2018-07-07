@@ -9,10 +9,10 @@ public class Miscellaneous implements JPanelHolder {
     private JPanel vertAlignPanel;
     private JPanel otherFlagsTextFieldPanel;
     private JPanel checkBoxPanel;
-    private JFormattedTextField formattedTextField1;
     private JCheckBox verboseVCheckBox;
     private JCheckBox supportANSIProgramsAnsiCheckBox;
     private JCheckBox doNotDeleteTemporaryCheckBox;
+    private JTextField flagsTextField;
 
     @Override
     public JPanel getPanel() {

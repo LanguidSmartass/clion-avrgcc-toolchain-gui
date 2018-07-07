@@ -12,12 +12,12 @@ public class MemorySettings implements JPanelHolder {
     private JPanel stackAddrPanel;
     private JPanel segmValSyntPanel;
     private JPanel avrPortGccPanel;
-    private JFormattedTextField formattedTextField1;
-    private JFormattedTextField formattedTextField2;
     private JTextArea textArea1;
     private RecordsList flashRecords;
     private RecordsList sramRecords;
     private RecordsList eepromRecords;
+    private JTextField stackAddrTextField;
+    private JTextField segValSyntTextField;
 
     public MemorySettings() {
         ResourceBundle bundle = PluginBundle.getNodeNamesBundle();

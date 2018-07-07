@@ -24,6 +24,7 @@ public class Device implements JPanelHolder {
             public void actionPerformed(ActionEvent e) {
                 JDialog d = new ChangeDevice();
                 d.pack();
+                d.setLocationRelativeTo(null);
                 d.setVisible(true);
             }
         });

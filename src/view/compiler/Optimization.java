@@ -6,8 +6,7 @@ import javax.swing.*;
 
 public class Optimization implements JPanelHolder {
     private JPanel topPanel;
-    private JFormattedTextField formattedTextField2;
-    private JComboBox comboBox1;
+    private JComboBox optLvlComboBox;
     private JCheckBox prepareFunctionsForGarbageCheckBox;
     private JCheckBox prepareDataForGarbageCheckBox;
     private JCheckBox pachStructureMembersTogetherCheckBox;
@@ -17,6 +16,7 @@ public class Optimization implements JPanelHolder {
     private JPanel optimComboBoxPanel;
     private JPanel otherFlagsTextFieldPanel;
     private JPanel checkBoxPanel;
+    private JTextField flagsTextField;
 
     @Override
     public JPanel getPanel() {

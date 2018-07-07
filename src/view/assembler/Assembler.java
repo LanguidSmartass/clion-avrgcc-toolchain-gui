@@ -6,8 +6,8 @@ import javax.swing.*;
 
 public class Assembler implements JPanelHolder {
     private JPanel topPanel;
-    private JFormattedTextField formattedTextField1;
-    private JTextArea textArea1;
+    private JTextArea optionsTextArea;
+    private JTextField commandTextField;
 
     @Override
     public JPanel getPanel() {

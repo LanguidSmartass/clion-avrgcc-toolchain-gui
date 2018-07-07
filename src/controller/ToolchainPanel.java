@@ -30,10 +30,6 @@ public class ToolchainPanel {
     }
 
     private void switchPanel(TreeSelectionEvent e) {
-//        TreePath path = e.getPath();
-//        for (int i = 0; i < path.getPathCount(); ++i) {
-//            System.out.println(path.getPathComponent(i).toString());
-//        }
         NodeWithCardName node = (NodeWithCardName)e.getPath().getLastPathComponent();
         view.updatePanelView(node.getCardName());
     }

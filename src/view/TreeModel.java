@@ -15,29 +15,33 @@ public class TreeModel implements javax.swing.tree.TreeModel {
 
         root = new NodeWithCardName("Root");
 
+        NodeWithCardName toolchain = new NodeWithCardName(
+                nodeNameBundle.getString("settings.toolchain.toolchain"),
+                cardNameBundle.getString("toolchain")
+        );
+        toolchain.makeAsLeaf();
+        root.addChild(toolchain);
+
         NodeWithCardName device = new NodeWithCardName(
                 nodeNameBundle.getString("settings.toolchain.device"),
-                cardNameBundle.getString("cardname.toolchain.device")
+                cardNameBundle.getString("toolchain.device")
         );
         device.makeAsLeaf();
         root.addChild(device);
-        {
-
-        }
 
         NodeWithCardName common = new NodeWithCardName(
                 nodeNameBundle.getString("settings.toolchain.avrgnu.common"),
-                cardNameBundle.getString("cardname.toolchain.avrgnu.common")
+                cardNameBundle.getString("avrgnu.common")
         );
         root.addChild(common);
         {
             NodeWithCardName general  = new NodeWithCardName(
                     nodeNameBundle.getString("settings.toolchain.avrgnu.common.general"),
-                    cardNameBundle.getString("cardname.toolchain.avrgnu.common.general")
+                    cardNameBundle.getString("avrgnu.common.general")
             );
             NodeWithCardName outfiles = new NodeWithCardName(
                     nodeNameBundle.getString("settings.toolchain.avrgnu.common.outputfiles"),
-                    cardNameBundle.getString("cardname.toolchain.avrgnu.common.outputfiles")
+                    cardNameBundle.getString("avrgnu.common.outputfiles")
             );
             general.makeAsLeaf();
             outfiles.makeAsLeaf();
@@ -46,42 +50,42 @@ public class TreeModel implements javax.swing.tree.TreeModel {
         }
 
         NodeWithCardName ccomp = new NodeWithCardName(
-                nodeNameBundle.getString("settings.toolchain.avrgnu.cCompiler"),
-                cardNameBundle.getString("cardname.toolchain.avrgnu.cCompiler")
+                nodeNameBundle.getString("settings.toolchain.avrgnu.compiler.c"),
+                cardNameBundle.getString("avrgnu.compiler.c")
         );
         root.addChild(ccomp);
         {
             NodeWithCardName general = new NodeWithCardName(
-                    nodeNameBundle.getString("settings.toolchain.avrgnu.cCompiler.general"),
-                    cardNameBundle.getString("cardname.toolchain.avrgnu.cCompiler.general")
+                    nodeNameBundle.getString("settings.toolchain.avrgnu.compiler.c.general"),
+                    cardNameBundle.getString("avrgnu.compiler.c.general")
             );
             NodeWithCardName preproc = new NodeWithCardName(
-                    nodeNameBundle.getString("settings.toolchain.avrgnu.cCompiler.preproc"),
-                    cardNameBundle.getString("cardname.toolchain.avrgnu.cCompiler.preproc")
+                    nodeNameBundle.getString("settings.toolchain.avrgnu.compiler.c.preproc"),
+                    cardNameBundle.getString("avrgnu.compiler.c.preproc")
             );
             NodeWithCardName symb    = new NodeWithCardName(
-                    nodeNameBundle.getString("settings.toolchain.avrgnu.cCompiler.symbols"),
-                    cardNameBundle.getString("cardname.toolchain.avrgnu.cCompiler.symbols")
+                    nodeNameBundle.getString("settings.toolchain.avrgnu.compiler.c.symbols"),
+                    cardNameBundle.getString("avrgnu.compiler.c.symbols")
             );
             NodeWithCardName dirs    = new NodeWithCardName(
-                    nodeNameBundle.getString("settings.toolchain.avrgnu.cCompiler.directs"),
-                    cardNameBundle.getString("cardname.toolchain.avrgnu.cCompiler.directs")
+                    nodeNameBundle.getString("settings.toolchain.avrgnu.compiler.c.directs"),
+                    cardNameBundle.getString("avrgnu.compiler.c.directs")
             );
             NodeWithCardName optim   = new NodeWithCardName(
-                    nodeNameBundle.getString("settings.toolchain.avrgnu.cCompiler.optimzn"),
-                    cardNameBundle.getString("cardname.toolchain.avrgnu.cCompiler.optimzn")
+                    nodeNameBundle.getString("settings.toolchain.avrgnu.compiler.c.optimzn"),
+                    cardNameBundle.getString("avrgnu.compiler.c.optimzn")
             );
             NodeWithCardName debug   = new NodeWithCardName(
-                    nodeNameBundle.getString("settings.toolchain.avrgnu.cCompiler.debug"),
-                    cardNameBundle.getString("cardname.toolchain.avrgnu.cCompiler.debug")
+                    nodeNameBundle.getString("settings.toolchain.avrgnu.compiler.c.debug"),
+                    cardNameBundle.getString("avrgnu.compiler.c.debug")
             );
             NodeWithCardName warns   = new NodeWithCardName(
-                    nodeNameBundle.getString("settings.toolchain.avrgnu.cCompiler.warning"),
-                    cardNameBundle.getString("cardname.toolchain.avrgnu.cCompiler.warning")
+                    nodeNameBundle.getString("settings.toolchain.avrgnu.compiler.c.warning"),
+                    cardNameBundle.getString("avrgnu.compiler.c.warning")
             );
             NodeWithCardName misc    = new NodeWithCardName(
-                    nodeNameBundle.getString("settings.toolchain.avrgnu.cCompiler.misc"),
-                    cardNameBundle.getString("cardname.toolchain.avrgnu.cCompiler.misc")
+                    nodeNameBundle.getString("settings.toolchain.avrgnu.compiler.c.misc"),
+                    cardNameBundle.getString("avrgnu.compiler.c.misc")
             );
             general.makeAsLeaf();
             preproc.makeAsLeaf();
@@ -102,42 +106,42 @@ public class TreeModel implements javax.swing.tree.TreeModel {
         }
 
         NodeWithCardName cppcomp = new NodeWithCardName(
-                nodeNameBundle.getString("settings.toolchain.avrgnu.cppCompiler"),
-                cardNameBundle.getString("cardname.toolchain.avrgnu.cppCompiler")
+                nodeNameBundle.getString("settings.toolchain.avrgnu.compiler.cpp"),
+                cardNameBundle.getString("avrgnu.compiler.cpp")
         );
         root.addChild(cppcomp);
         {
             NodeWithCardName general = new NodeWithCardName(
-                    nodeNameBundle.getString("settings.toolchain.avrgnu.cCompiler.general"),
-                    cardNameBundle.getString("cardname.toolchain.avrgnu.cppCompiler.general")
+                    nodeNameBundle.getString("settings.toolchain.avrgnu.compiler.c.general"),
+                    cardNameBundle.getString("avrgnu.compiler.cpp.general")
             );
             NodeWithCardName preproc = new NodeWithCardName(
-                    nodeNameBundle.getString("settings.toolchain.avrgnu.cCompiler.preproc"),
-                    cardNameBundle.getString("cardname.toolchain.avrgnu.cppCompiler.preproc")
+                    nodeNameBundle.getString("settings.toolchain.avrgnu.compiler.c.preproc"),
+                    cardNameBundle.getString("avrgnu.compiler.cpp.preproc")
             );
             NodeWithCardName symb    = new NodeWithCardName(
-                    nodeNameBundle.getString("settings.toolchain.avrgnu.cCompiler.symbols"),
-                    cardNameBundle.getString("cardname.toolchain.avrgnu.cppCompiler.symbols")
+                    nodeNameBundle.getString("settings.toolchain.avrgnu.compiler.c.symbols"),
+                    cardNameBundle.getString("avrgnu.compiler.cpp.symbols")
             );
             NodeWithCardName dirs    = new NodeWithCardName(
-                    nodeNameBundle.getString("settings.toolchain.avrgnu.cCompiler.directs"),
-                    cardNameBundle.getString("cardname.toolchain.avrgnu.cppCompiler.directs")
+                    nodeNameBundle.getString("settings.toolchain.avrgnu.compiler.c.directs"),
+                    cardNameBundle.getString("avrgnu.compiler.cpp.directs")
             );
             NodeWithCardName optim   = new NodeWithCardName(
-                    nodeNameBundle.getString("settings.toolchain.avrgnu.cCompiler.optimzn"),
-                    cardNameBundle.getString("cardname.toolchain.avrgnu.cppCompiler.optimzn")
+                    nodeNameBundle.getString("settings.toolchain.avrgnu.compiler.c.optimzn"),
+                    cardNameBundle.getString("avrgnu.compiler.cpp.optimzn")
             );
             NodeWithCardName debug   = new NodeWithCardName(
-                    nodeNameBundle.getString("settings.toolchain.avrgnu.cCompiler.debug"),
-                    cardNameBundle.getString("cardname.toolchain.avrgnu.cppCompiler.debug")
+                    nodeNameBundle.getString("settings.toolchain.avrgnu.compiler.c.debug"),
+                    cardNameBundle.getString("avrgnu.compiler.cpp.debug")
             );
             NodeWithCardName warns   = new NodeWithCardName(
-                    nodeNameBundle.getString("settings.toolchain.avrgnu.cCompiler.warning"),
-                    cardNameBundle.getString("cardname.toolchain.avrgnu.cppCompiler.warning")
+                    nodeNameBundle.getString("settings.toolchain.avrgnu.compiler.c.warning"),
+                    cardNameBundle.getString("avrgnu.compiler.cpp.warning")
             );
             NodeWithCardName misc    = new NodeWithCardName(
-                    nodeNameBundle.getString("settings.toolchain.avrgnu.cCompiler.misc"),
-                    cardNameBundle.getString("cardname.toolchain.avrgnu.cppCompiler.misc")
+                    nodeNameBundle.getString("settings.toolchain.avrgnu.compiler.c.misc"),
+                    cardNameBundle.getString("avrgnu.compiler.cpp.misc")
             );
             general.makeAsLeaf();
             preproc.makeAsLeaf();
@@ -159,29 +163,29 @@ public class TreeModel implements javax.swing.tree.TreeModel {
 
         NodeWithCardName linker = new NodeWithCardName(
                 nodeNameBundle.getString("settings.toolchain.avrgnu.linker"),
-                cardNameBundle.getString("cardname.toolchain.avrgnu.linker")
+                cardNameBundle.getString("avrgnu.linker")
         );
         root.addChild(linker);
         {
             NodeWithCardName general = new NodeWithCardName(
                     nodeNameBundle.getString("settings.toolchain.avrgnu.linker.general"),
-                    cardNameBundle.getString("cardname.toolchain.avrgnu.linker.general")
+                    cardNameBundle.getString("avrgnu.linker.general")
             );
             NodeWithCardName libs    = new NodeWithCardName(
                     nodeNameBundle.getString("settings.toolchain.avrgnu.linker.libraries"),
-                    cardNameBundle.getString("cardname.toolchain.avrgnu.linker.libraries")
+                    cardNameBundle.getString("avrgnu.linker.libraries")
             );
             NodeWithCardName optim   = new NodeWithCardName(
                     nodeNameBundle.getString("settings.toolchain.avrgnu.linker.optimization"),
-                    cardNameBundle.getString("cardname.toolchain.avrgnu.linker.optimization")
+                    cardNameBundle.getString("avrgnu.linker.optimization")
             );
             NodeWithCardName memset  = new NodeWithCardName(
                     nodeNameBundle.getString("settings.toolchain.avrgnu.linker.memsettings"),
-                    cardNameBundle.getString("cardname.toolchain.avrgnu.linker.memsettings")
+                    cardNameBundle.getString("avrgnu.linker.memsettings")
             );
             NodeWithCardName misc    = new NodeWithCardName(
                     nodeNameBundle.getString("settings.toolchain.avrgnu.linker.misc"),
-                    cardNameBundle.getString("cardname.toolchain.avrgnu.linker.misc")
+                    cardNameBundle.getString("avrgnu.linker.misc")
             );
             general.makeAsLeaf();
             libs.makeAsLeaf();
@@ -197,17 +201,17 @@ public class TreeModel implements javax.swing.tree.TreeModel {
 
         NodeWithCardName asm = new NodeWithCardName(
                 nodeNameBundle.getString("settings.toolchain.avrgnu.assembler"),
-                cardNameBundle.getString("cardname.toolchain.avrgnu.assembler")
+                cardNameBundle.getString("avrgnu.assembler")
         );
         root.addChild(asm);
         {
             NodeWithCardName general = new NodeWithCardName(
                     nodeNameBundle.getString("settings.toolchain.avrgnu.assembler.general"),
-                    cardNameBundle.getString("cardname.toolchain.avrgnu.assembler.general")
+                    cardNameBundle.getString("avrgnu.assembler.general")
             );
             NodeWithCardName debug   = new NodeWithCardName(
                     nodeNameBundle.getString("settings.toolchain.avrgnu.assembler.debugging"),
-                    cardNameBundle.getString("cardname.toolchain.avrgnu.assembler.debugging")
+                    cardNameBundle.getString("avrgnu.assembler.debugging")
             );
             general.makeAsLeaf();
             debug.makeAsLeaf();
@@ -217,13 +221,13 @@ public class TreeModel implements javax.swing.tree.TreeModel {
 
         NodeWithCardName arch = new NodeWithCardName(
                 nodeNameBundle.getString("settings.toolchain.avrgnu.archiver"),
-                cardNameBundle.getString("cardname.toolchain.avrgnu.archiver")
+                cardNameBundle.getString("avrgnu.archiver")
         );
         root.addChild(arch);
         {
             NodeWithCardName general  = new NodeWithCardName(
                     nodeNameBundle.getString("settings.toolchain.avrgnu.archiver.general"),
-                    cardNameBundle.getString("cardname.toolchain.avrgnu.archiver.general")
+                    cardNameBundle.getString("avrgnu.archiver.general")
             );
             general.makeAsLeaf();
             arch.addChild(general);

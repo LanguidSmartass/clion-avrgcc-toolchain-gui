@@ -6,11 +6,11 @@ import javax.swing.*;
 
 public class Debugging implements JPanelHolder {
     private JPanel topPanel;
-    private JComboBox comboBox1;
-    private JFormattedTextField formattedTextField1;
+    private JComboBox dbgLvlComboBox;
     private JPanel vertAlignPanel;
     private JPanel dbgLvlComboBoxPanel;
     private JPanel dbgFlagsTextFieldPanel;
+    private JTextField flagsTextField;
 
     @Override
     public JPanel getPanel() {

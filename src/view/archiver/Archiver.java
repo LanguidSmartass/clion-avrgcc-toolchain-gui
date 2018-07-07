@@ -6,9 +6,9 @@ import javax.swing.*;
 
 public class Archiver implements JPanelHolder {
     private JPanel topPanel;
-    private JFormattedTextField formattedTextField1;
-    private JTextArea textArea1;
+    private JTextArea optionsTextArea;
     private JPanel vertAlignPanel;
+    private JTextField commandTextField;
 
     @Override
     public JPanel getPanel() {

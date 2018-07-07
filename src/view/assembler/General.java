@@ -9,9 +9,9 @@ import java.util.ResourceBundle;
 
 public class General implements JPanelHolder {
     private JPanel topPanel;
-    private JFormattedTextField asmFlagsTextField;
     private JCheckBox announceVersionVCheckBox;
     private RecordsList incPathsRecords;
+    private JTextField flagsTextField;
 
     public General() {
         ResourceBundle bundle = PluginBundle.getNodeNamesBundle();

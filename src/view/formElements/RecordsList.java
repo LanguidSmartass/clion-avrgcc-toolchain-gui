@@ -8,10 +8,10 @@ public class RecordsList {
     private JButton buttonEdit;
     private JButton buttonModeUp;
     private JButton buttonModeDown;
-    private JTextArea textArea1;
     private JPanel topPanel;
     private JPanel buttonsLabelPanel;
     private JLabel descriptionLabel;
+    private JList list;
 
     public void setLabelText(String text) {
         descriptionLabel.setText(text);

@@ -1,7 +1,5 @@
 package model.common;
 
-import model.MVCModelHack;
-
 import java.util.ArrayList;
 import java.util.Stack;
 

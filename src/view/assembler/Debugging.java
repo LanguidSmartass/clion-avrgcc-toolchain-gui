@@ -5,7 +5,7 @@ import view.JPanelHolder;
 import javax.swing.*;
 
 public class Debugging implements JPanelHolder {
-    private JComboBox comboBox1;
+    private JComboBox dbgLvlComboBox;
     private JPanel topPanel;
     private JPanel vertAlignPanel;
 

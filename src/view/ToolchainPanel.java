@@ -1,31 +1,28 @@
 package view;
 
-import model.NamedTreeNode;
 import com.intellij.openapi.Disposable;
 import com.intellij.ui.treeStructure.Tree;
-import view.archiver.Archiver;
-import view.archiver.General;
-import view.assembler.Assembler;
-import view.compiler.*;
-import view.compiler.Compiler;
-import view.linker.Libraries;
-import view.linker.Linker;
-import view.linker.MemorySettings;
 
 import javax.swing.*;
 import javax.swing.event.TreeSelectionListener;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.IOException;
 import java.util.ResourceBundle;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 public class ToolchainPanel extends JPanel implements Disposable {
     private JPanel topPanel;
     private Tree treeView;
     private JPanel cardsPanel;
     private JButton buttonGenCMakeLists;
-    private JButton button2;
-    private JButton button3;
+    private JButton saveButton;
+    private JButton OKButton;
     private view.TreeModel model;
 
+    private view.toolchain.Toolchain toolchain;
     private view.device.Device device;
     private view.common.Common common;
     private view.common.General commonGeneral;
@@ -64,6 +61,36 @@ public class ToolchainPanel extends JPanel implements Disposable {
         this.model = model;
         treeView.setModel(model);
 
+        buttonGenCMakeLists.addActionListener(new ActionListener() {
+            /**
+             * Invoked when an action occurs.
+             *
+             * @param e the event to be processed
+             */
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+            }
+        });
+        OKButton.addActionListener(new ActionListener() {
+            /**
+             * Invoked when an action occurs.
+             *
+             * @param e the event to be processed
+             */
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String data = "Test data";
+                System.out.println(System.getProperty("user.dir"));
+                try {
+                    Files.write(Paths.get("CMakeLists.txt"), data.getBytes());
+                } catch (IOException e1) {
+                    e1.printStackTrace();
+                }
+
+                dispose();
+            }
+        });
     }
 
     public void addTreeListener(TreeSelectionListener tl) {
@@ -86,6 +113,7 @@ public class ToolchainPanel extends JPanel implements Disposable {
     private void createUIComponents() {
         cardsPanel = new JPanel(new CardLayout());
 
+        toolchain = new view.toolchain.Toolchain();
         device = new view.device.Device();
         common = new view.common.Common();
         commonGeneral = new view.common.General();
@@ -122,45 +150,47 @@ public class ToolchainPanel extends JPanel implements Disposable {
 
         ResourceBundle cardNameBundle = PluginBundle.getCardNamesBundle();
 
-        cardsPanel.add(device.getPanel(), cardNameBundle.getString("cardname.toolchain.device"));
+        cardsPanel.add(toolchain.getPanel(), cardNameBundle.getString("toolchain"));
 
-        cardsPanel.add(common.getPanel(), cardNameBundle.getString("cardname.toolchain.avrgnu.common"));
-        cardsPanel.add(commonGeneral.getPanel(), cardNameBundle.getString("cardname.toolchain.avrgnu.common.general"));
-        cardsPanel.add(commonOutputFiles.getPanel(), cardNameBundle.getString("cardname.toolchain.avrgnu.common.outputfiles"));
+        cardsPanel.add(device.getPanel(), cardNameBundle.getString("toolchain.device"));
 
-        cardsPanel.add(cCompiler.getPanel(), cardNameBundle.getString("cardname.toolchain.avrgnu.cCompiler"));
-        cardsPanel.add(cCompilerGeneral.getPanel(), cardNameBundle.getString("cardname.toolchain.avrgnu.cCompiler.general"));
-        cardsPanel.add(cCompilerPreprocessor.getPanel(), cardNameBundle.getString("cardname.toolchain.avrgnu.cCompiler.preproc"));
-        cardsPanel.add(cCompilerSymbols.getPanel(), cardNameBundle.getString("cardname.toolchain.avrgnu.cCompiler.symbols"));
-        cardsPanel.add(cCompilerDirectories.getPanel(), cardNameBundle.getString("cardname.toolchain.avrgnu.cCompiler.directs"));
-        cardsPanel.add(cCompilerOptimization.getPanel(), cardNameBundle.getString("cardname.toolchain.avrgnu.cCompiler.optimzn"));
-        cardsPanel.add(cCompilerDebugging.getPanel(), cardNameBundle.getString("cardname.toolchain.avrgnu.cCompiler.debug"));
-        cardsPanel.add(cCompilerWarnings.getPanel(), cardNameBundle.getString("cardname.toolchain.avrgnu.cCompiler.warning"));
-        cardsPanel.add(cCompilerMiscellaneous.getPanel(), cardNameBundle.getString("cardname.toolchain.avrgnu.cCompiler.misc"));
+        cardsPanel.add(common.getPanel(), cardNameBundle.getString("avrgnu.common"));
+        cardsPanel.add(commonGeneral.getPanel(), cardNameBundle.getString("avrgnu.common.general"));
+        cardsPanel.add(commonOutputFiles.getPanel(), cardNameBundle.getString("avrgnu.common.outputfiles"));
 
-        cardsPanel.add(cppCompiler.getPanel(), cardNameBundle.getString("cardname.toolchain.avrgnu.cppCompiler"));
-        cardsPanel.add(cppCompilerGeneral.getPanel(), cardNameBundle.getString("cardname.toolchain.avrgnu.cppCompiler.general"));
-        cardsPanel.add(cppCompilerPreprocessor.getPanel(), cardNameBundle.getString("cardname.toolchain.avrgnu.cppCompiler.preproc"));
-        cardsPanel.add(cppCompilerSymbols.getPanel(), cardNameBundle.getString("cardname.toolchain.avrgnu.cppCompiler.symbols"));
-        cardsPanel.add(cppCompilerDirectories.getPanel(), cardNameBundle.getString("cardname.toolchain.avrgnu.cppCompiler.directs"));
-        cardsPanel.add(cppCompilerOptimization.getPanel(), cardNameBundle.getString("cardname.toolchain.avrgnu.cppCompiler.optimzn"));
-        cardsPanel.add(cppCompilerDebugging.getPanel(), cardNameBundle.getString("cardname.toolchain.avrgnu.cppCompiler.debug"));
-        cardsPanel.add(cppCompilerWarnings.getPanel(), cardNameBundle.getString("cardname.toolchain.avrgnu.cppCompiler.warning"));
-        cardsPanel.add(cppCompilerMiscellaneous.getPanel(), cardNameBundle.getString("cardname.toolchain.avrgnu.cppCompiler.misc"));
+        cardsPanel.add(cCompiler.getPanel(), cardNameBundle.getString("avrgnu.compiler.c"));
+        cardsPanel.add(cCompilerGeneral.getPanel(), cardNameBundle.getString("avrgnu.compiler.c.general"));
+        cardsPanel.add(cCompilerPreprocessor.getPanel(), cardNameBundle.getString("avrgnu.compiler.c.preproc"));
+        cardsPanel.add(cCompilerSymbols.getPanel(), cardNameBundle.getString("avrgnu.compiler.c.symbols"));
+        cardsPanel.add(cCompilerDirectories.getPanel(), cardNameBundle.getString("avrgnu.compiler.c.directs"));
+        cardsPanel.add(cCompilerOptimization.getPanel(), cardNameBundle.getString("avrgnu.compiler.c.optimzn"));
+        cardsPanel.add(cCompilerDebugging.getPanel(), cardNameBundle.getString("avrgnu.compiler.c.debug"));
+        cardsPanel.add(cCompilerWarnings.getPanel(), cardNameBundle.getString("avrgnu.compiler.c.warning"));
+        cardsPanel.add(cCompilerMiscellaneous.getPanel(), cardNameBundle.getString("avrgnu.compiler.c.misc"));
 
-        cardsPanel.add(linker.getPanel(), cardNameBundle.getString("cardname.toolchain.avrgnu.linker"));
-        cardsPanel.add(linkerGeneral.getPanel(), cardNameBundle.getString("cardname.toolchain.avrgnu.linker.general"));
-        cardsPanel.add(linkerLibraries.getPanel(), cardNameBundle.getString("cardname.toolchain.avrgnu.linker.libraries"));
-        cardsPanel.add(linkerOptimization.getPanel(), cardNameBundle.getString("cardname.toolchain.avrgnu.linker.optimization"));
-        cardsPanel.add(linkerMemorySettings.getPanel(), cardNameBundle.getString("cardname.toolchain.avrgnu.linker.memsettings"));
-        cardsPanel.add(linkerMiscellaneous.getPanel(), cardNameBundle.getString("cardname.toolchain.avrgnu.linker.misc"));
+        cardsPanel.add(cppCompiler.getPanel(), cardNameBundle.getString("avrgnu.compiler.cpp"));
+        cardsPanel.add(cppCompilerGeneral.getPanel(), cardNameBundle.getString("avrgnu.compiler.cpp.general"));
+        cardsPanel.add(cppCompilerPreprocessor.getPanel(), cardNameBundle.getString("avrgnu.compiler.cpp.preproc"));
+        cardsPanel.add(cppCompilerSymbols.getPanel(), cardNameBundle.getString("avrgnu.compiler.cpp.symbols"));
+        cardsPanel.add(cppCompilerDirectories.getPanel(), cardNameBundle.getString("avrgnu.compiler.cpp.directs"));
+        cardsPanel.add(cppCompilerOptimization.getPanel(), cardNameBundle.getString("avrgnu.compiler.cpp.optimzn"));
+        cardsPanel.add(cppCompilerDebugging.getPanel(), cardNameBundle.getString("avrgnu.compiler.cpp.debug"));
+        cardsPanel.add(cppCompilerWarnings.getPanel(), cardNameBundle.getString("avrgnu.compiler.cpp.warning"));
+        cardsPanel.add(cppCompilerMiscellaneous.getPanel(), cardNameBundle.getString("avrgnu.compiler.cpp.misc"));
 
-        cardsPanel.add(assembler.getPanel(), cardNameBundle.getString("cardname.toolchain.avrgnu.assembler"));
-        cardsPanel.add(assemblerGeneral.getPanel(), cardNameBundle.getString("cardname.toolchain.avrgnu.assembler.general"));
-        cardsPanel.add(assemblerDebugging.getPanel(), cardNameBundle.getString("cardname.toolchain.avrgnu.assembler.debugging"));
+        cardsPanel.add(linker.getPanel(), cardNameBundle.getString("avrgnu.linker"));
+        cardsPanel.add(linkerGeneral.getPanel(), cardNameBundle.getString("avrgnu.linker.general"));
+        cardsPanel.add(linkerLibraries.getPanel(), cardNameBundle.getString("avrgnu.linker.libraries"));
+        cardsPanel.add(linkerOptimization.getPanel(), cardNameBundle.getString("avrgnu.linker.optimization"));
+        cardsPanel.add(linkerMemorySettings.getPanel(), cardNameBundle.getString("avrgnu.linker.memsettings"));
+        cardsPanel.add(linkerMiscellaneous.getPanel(), cardNameBundle.getString("avrgnu.linker.misc"));
 
-        cardsPanel.add(archiver.getPanel(), cardNameBundle.getString("cardname.toolchain.avrgnu.archiver"));
-        cardsPanel.add(archiverGeneral.getPanel(), cardNameBundle.getString("cardname.toolchain.avrgnu.archiver.general"));
+        cardsPanel.add(assembler.getPanel(), cardNameBundle.getString("avrgnu.assembler"));
+        cardsPanel.add(assemblerGeneral.getPanel(), cardNameBundle.getString("avrgnu.assembler.general"));
+        cardsPanel.add(assemblerDebugging.getPanel(), cardNameBundle.getString("avrgnu.assembler.debugging"));
+
+        cardsPanel.add(archiver.getPanel(), cardNameBundle.getString("avrgnu.archiver"));
+        cardsPanel.add(archiverGeneral.getPanel(), cardNameBundle.getString("avrgnu.archiver.general"));
     }
 }
 
