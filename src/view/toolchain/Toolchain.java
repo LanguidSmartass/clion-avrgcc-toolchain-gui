@@ -14,9 +14,9 @@ import java.util.ResourceBundle;
 
 public class Toolchain implements JPanelHolder {
     private JPanel topPanel;
-    private JComboBox toolchainsComboBox;
-    private JList flavourList;
-    DefaultListModel flavourListModel;
+    private JComboBox<String> toolchainsComboBox;
+    private JList<String> flavourList;
+    private DefaultListModel<String> flavourListModel;
     private JButton addFlavourButton;
     private JButton setAsDefaultButton;
     private JButton deleteFlavourButton;
@@ -38,11 +38,13 @@ public class Toolchain implements JPanelHolder {
             @Override
             public void actionPerformed(ActionEvent e) {
                 flavourListModel.clear();
-                int comboIdx = toolchainsComboBox.getSelectedIndex();
-                ApplicationSettings.Toolchain toolchain = applicationSettings.getToolchainList().get(comboIdx);
+                String toolchainName = (String)toolchainsComboBox.getSelectedItem();
+//                ApplicationSettings.Toolchain toolchain = applicationSettings.getToolchainList().get(comboIdx);
+                ArrayList<String> flavourNames = applicationSettings.getToolchainFlavours(toolchainName);
                 int i = 0;
-                for (ApplicationSettings.Toolchain.Flavour flavour : toolchain.flavourList) {
-                    flavourListModel.add(i++, flavour);
+                for (String flavourName : flavourNames) {
+                    if (flavourListModel.contains(flavourName)) continue;
+                    flavourListModel.add(i++, flavourName);
                 }
                 flavourList.updateUI();
             }
@@ -56,8 +58,8 @@ public class Toolchain implements JPanelHolder {
             @Override
             public void actionPerformed(ActionEvent e) {
                 int comboIdx = toolchainsComboBox.getSelectedIndex();
-                ApplicationSettings.Toolchain toolchain = applicationSettings.getToolchainList().get(comboIdx);
-                JDialog d = new AddFlavour(toolchain.flavourList);
+                String toolchainName = (String)toolchainsComboBox.getSelectedItem();
+                JDialog d = new AddFlavour(applicationSettings, toolchainName);
                 d.pack();
                 d.setLocationRelativeTo(null);
                 d.setVisible(true);
@@ -75,10 +77,6 @@ public class Toolchain implements JPanelHolder {
     }
 
     private void createUIComponents() {
-        ResourceBundle appSettingsLabels = PluginBundle.getApplicationSettingsLabelsBundle();
-
-        applicationSettings = ApplicationSettings.getInstance();
-        ApplicationSettings.ToolchainList toolchainList = applicationSettings.getToolchainList();
 
         ArrayList<String> keys = new ArrayList<>();
         keys.add("toolchain.configuration.combobox.asm");
@@ -89,19 +87,19 @@ public class Toolchain implements JPanelHolder {
         keys.add("toolchain.configuration.combobox.arm32.c");
         keys.add("toolchain.configuration.combobox.arm32.cpp");
 
+        ResourceBundle appSettingsLabels = PluginBundle.getApplicationSettingsLabelsBundle();
+        applicationSettings = ApplicationSettings.getInstance();
         for (String key : keys) {
             String toolchainLabel = appSettingsLabels.getString(key);
             if (applicationSettings.hasToolchain(toolchainLabel)) continue;
-            ApplicationSettings.Toolchain toolchain = new ApplicationSettings.Toolchain(toolchainLabel);
-            applicationSettings.addToolchain(toolchain);
+            applicationSettings.addToolchain(toolchainLabel);
         }
-
-        toolchainsComboBox = new ComboBox();
-        for (ApplicationSettings.Toolchain toolchain : toolchainList) {
+        toolchainsComboBox = new ComboBox<>();
+        for (String toolchain : applicationSettings.getToolchains()) {
             toolchainsComboBox.addItem(toolchain);
         }
 
-        flavourListModel = new DefaultListModel();
-        flavourList = new JBList(flavourListModel);
+        flavourListModel = new DefaultListModel<>();
+        flavourList = new JBList<>(flavourListModel);
     }
 }

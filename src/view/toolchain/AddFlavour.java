@@ -4,6 +4,7 @@ import model.persistence.ApplicationSettings;
 
 import javax.swing.*;
 import java.awt.event.*;
+import java.io.File;
 
 public class AddFlavour extends JDialog {
     private JPanel contentPane;
@@ -11,11 +12,14 @@ public class AddFlavour extends JDialog {
     private JButton buttonCancel;
     private JTextField flavourNameTextField;
     private JTextField pathTextField;
-    private JButton viewResourcesApplicationSettingsLabelsButton;
-    private ApplicationSettings.Toolchain.FlavourList flavourList;
+    private JButton basePathSelectButton;
 
-    public AddFlavour(ApplicationSettings.Toolchain.FlavourList flavourList) {
-        this.flavourList = flavourList;
+    private ApplicationSettings applicationSettings;
+    private String toolchainName;
+
+    public AddFlavour(ApplicationSettings applicationSettings, String toolchainName) {
+        this.applicationSettings = applicationSettings;
+        this.toolchainName = toolchainName;
 
         setContentPane(contentPane);
         setModal(true);
@@ -48,7 +52,7 @@ public class AddFlavour extends JDialog {
             }
         }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
 
-        viewResourcesApplicationSettingsLabelsButton.addActionListener(new ActionListener() {
+        basePathSelectButton.addActionListener(new ActionListener() {
             /**
              * Invoked when an action occurs.
              *
@@ -56,7 +60,12 @@ public class AddFlavour extends JDialog {
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                JFileChooser fc = new JFileChooser();
+                fc.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+                int returnVal = fc.showOpenDialog(contentPane);
+                if (returnVal == JFileChooser.APPROVE_OPTION) {
+                    pathTextField.setText(fc.getSelectedFile().getAbsolutePath());
+                }
             }
         });
 
@@ -80,7 +89,11 @@ public class AddFlavour extends JDialog {
             return;
         }
         String flavourPath = pathTextField.getText();
-        this.flavourList.add(new ApplicationSettings.Toolchain.Flavour(flavourName,flavourPath));
+        if (flavourPath.isEmpty()) {
+            System.out.println("Flavour Path is emtpy!");
+            return;
+        }
+        this.applicationSettings.addToolchainFlavour(toolchainName, flavourName, flavourPath);
     }
 
     private void onOK() {
@@ -94,10 +107,10 @@ public class AddFlavour extends JDialog {
     }
 
     public static void main(String[] args) {
-        ApplicationSettings.Toolchain.FlavourList flavourList = new ApplicationSettings.Toolchain.FlavourList();
-        AddFlavour dialog = new AddFlavour(flavourList);
-        dialog.pack();
-        dialog.setVisible(true);
-        System.exit(0);
+//        ApplicationSettings.Toolchain toolchain = new ApplicationSettings.Toolchain("Test name");
+//        AddFlavour dialog = new AddFlavour(toolchain);
+//        dialog.pack();
+//        dialog.setVisible(true);
+//        System.exit(0);
     }
 }

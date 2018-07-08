@@ -8,7 +8,10 @@ import org.jetbrains.annotations.Nullable;
 import javax.swing.*;
 import javax.swing.event.ListDataListener;
 import javax.tools.Tool;
+import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 @State(
         name = "AVRGCC.Application.Configuration",
@@ -19,7 +22,12 @@ import java.util.ArrayList;
 public class ApplicationSettings implements PersistentStateComponent<ApplicationSettings.State> {
 
     public static class State {
-        public ToolchainList toolchains = new ToolchainList();
+        public ArrayList<String> toolchainNames = new ArrayList<>();
+        // <ToolchainName, <FlavourName, FlavourPath>
+        public HashMap<String, HashMap<String, String>> toolchainFlavours = new HashMap<>();
+        // <ToolchainName, FlavourName>
+        public HashMap<String, String> defaultFlavours = new HashMap<>();
+        public State() {}
     }
 
     private State state = new State();
@@ -40,161 +48,85 @@ public class ApplicationSettings implements PersistentStateComponent<Application
 
     }
 
+    private boolean toolchainExists(String toolchainName) {
+        if (!state.toolchainNames.contains(toolchainName)) return false;
+        if (!state.toolchainFlavours.containsKey(toolchainName)) return false;
+//        if (state.defaultFlavours.containsKey(toolchainName)) return true;
+        return true;
+    }
+
+    private boolean flavourExists(String toolchainName, String flavourName) {
+        if (state.toolchainFlavours.get(toolchainName) == null)
+            state.toolchainFlavours.replace(toolchainName, new HashMap<>()); // repair broken
+        return state.toolchainFlavours.get(toolchainName).containsKey(flavourName);
+    }
+
+    private boolean toolchainHasDefaultFlavour(String toolchainName) {
+        return state.defaultFlavours.containsKey(toolchainName);
+    }
+
+    private void insertToolchain(String toolchainName) {
+        state.toolchainNames.add(toolchainName);
+        state.toolchainFlavours.put(toolchainName, new HashMap<>());
+    }
+
     /* USABLE API STARTS HERE */
     public static ApplicationSettings getInstance() {
         return ServiceManager.getService(ApplicationSettings.class);
     }
 
-    public ToolchainList getToolchainList() { return state.toolchains; }
-
-    public boolean hasToolchain(String name) {
-        for (Toolchain toolchain : state.toolchains) {
-            if (toolchain.name.equals(name))
-                return true;
-        }
-        return false;
+    public boolean hasToolchain(String toolchainName) {
+        return toolchainExists(toolchainName);
     }
 
-    public Toolchain getToolchain(String name) {
-        for (Toolchain toolchain : state.toolchains) {
-            if (toolchain.name.equals(name))
-                return toolchain;
-        }
-        System.out.println("No toolchain with a name |" + name + "|");
-        return null;
+    public void addToolchain(String toolchainName) {
+        if (toolchainExists(toolchainName)) return;
+        insertToolchain(toolchainName);
     }
 
-    public void addToolchain(Toolchain toolchain) {
-        state.toolchains.add(toolchain);
+    public ArrayList<String> getToolchains() {
+        return state.toolchainNames;
     }
 
-    public void addFlavour(Toolchain toolchain, Toolchain.Flavour flavour) {
-        if (toolchainDoesNotExist(toolchain)) {
-            return;
-        }
-        if (toolchain.flavourList.contains(flavour)) return;
-        toolchain.flavourList.add(flavour);
+    public void addToolchainFlavour(String toolchainName, String flavourName, String flavourPath) {
+        if (!toolchainExists(toolchainName)) return;
+        if (flavourExists(toolchainName, flavourName)) return;
+        state.toolchainFlavours.get(toolchainName).put(flavourName, flavourPath);
+        if (toolchainHasDefaultFlavour(toolchainName)) return;
+        state.defaultFlavours.put(toolchainName, flavourName);
     }
 
-    public void addFlavour(Toolchain toolchain, String flavourName, String flavourPath) {
-        if (toolchainDoesNotExist(toolchain)) return;
-        if (toolchainHasFlavour(toolchain, flavourName)) return;
-        toolchain.flavourList.add(new Toolchain.Flavour(flavourName, flavourPath));
+    public void deleteToolchainFlavour(String toolchainName, String flavourName) {
+        if (!toolchainExists(toolchainName)) return;
+        if (!flavourExists(toolchainName, flavourName)) return;
+        state.toolchainFlavours.get(toolchainName).remove(flavourName);
+
+        if (!toolchainHasDefaultFlavour(toolchainName)) return;
+        if (!state.defaultFlavours.get(toolchainName).equals(flavourName)) return;
+        // just delete the default flavour for now
+        state.defaultFlavours.remove(toolchainName);
     }
 
-    public void deleteFlavour(Toolchain toolchain, Toolchain.Flavour flavour) {
-        if (flavourIsNotInToolchain(toolchain, flavour)) return;
-        toolchain.flavourList.remove(flavour);
+    public ArrayList<String> getToolchainFlavours(String toolchainName) {
+        if (!toolchainExists(toolchainName)) return null;
+        if (state.toolchainFlavours.get(toolchainName).isEmpty()) return new ArrayList<>();
+        return new ArrayList<>(state.toolchainFlavours.get(toolchainName).keySet());
     }
 
-    public void setDefaultFlavour(Toolchain toolchain, Toolchain.Flavour flavour) {
-        if (flavourIsNotInToolchain(toolchain, flavour)) return;
-        toolchain.defaultFlavour = flavour;
+    public String getToolchainDefaultFlavour(String toolchainName) {
+        return state.defaultFlavours.get(toolchainName);
     }
 
-    public boolean toolchainDoesNotExist(Toolchain toolchain) {
-        if (!state.toolchains.contains(toolchain)) {
-            System.out.println("No such toolchain!");
-            return true;
-        }
-        return false;
+    public void setToolchainDefaultFlavour(String toolchainName, String flavourName) {
+        if (!toolchainExists(toolchainName)) return;
+        if (!flavourExists(toolchainName, flavourName)) return;
+        if (!toolchainHasDefaultFlavour(toolchainName)) return;
+        state.defaultFlavours.replace(toolchainName, flavourName);
     }
 
-    public boolean flavourIsNotInToolchain(Toolchain toolchain, Toolchain.Flavour flavour) {
-        if (toolchainDoesNotExist(toolchain)) {
-            return true;
-        }
-        if (!toolchain.flavourList.contains(flavour)) {
-            System.out.println("No such flavour!");
-            return true;
-        }
-        return false;
+    public String getToolchainFlavourPath(String toolchainName, String flavourName) {
+        if (!toolchainExists(toolchainName)) return null;
+        if (!flavourExists(toolchainName, flavourName)) return null;
+        return state.toolchainFlavours.get(toolchainName).get(flavourName);
     }
-
-    private boolean toolchainHasFlavour(Toolchain toolchain, String flavourName) {
-        for (Toolchain.Flavour flavour : toolchain.flavourList) {
-            if (flavour.name.equals(flavourName)) return true;
-        }
-        return false;
-    }
-
-    public static class Toolchain {
-        public static class Flavour {
-            public String name = new String();
-            public String path = new String();
-
-            public Flavour(String name, String path) {
-                this.name = name;
-                this.path = path;
-            }
-
-            @Override
-            public String toString() {
-                return name;
-            }
-        }
-        public static class FlavourList extends ArrayList<Flavour> implements ListModel {
-            /**
-             * Returns the length of the list.
-             *
-             * @return the length of the list
-             */
-            @Override
-            public int getSize() {
-                return this.size();
-            }
-
-            /**
-             * Returns the value at the specified index.
-             *
-             * @param index the requested index
-             * @return the value at <code>index</code>
-             */
-            @Override
-            public Object getElementAt(int index) {
-                return this.get(index);
-            }
-
-            /**
-             * Adds a listener to the list that's notified each time a change
-             * to the data model occurs.
-             *
-             * @param l the <code>ListDataListener</code> to be added
-             */
-            @Override
-            public void addListDataListener(ListDataListener l) {
-
-            }
-
-            /**
-             * Removes a listener from the list that's notified each time a
-             * change to the data model occurs.
-             *
-             * @param l the <code>ListDataListener</code> to be removed
-             */
-            @Override
-            public void removeListDataListener(ListDataListener l) {
-
-            }
-        }
-
-        public FlavourList flavourList = new FlavourList();
-        public Flavour defaultFlavour = null;
-        public String name = new String();
-
-        public Toolchain(String name) {
-            this.name = name;
-        }
-
-        public void addFlavour(Flavour flavour) {
-            this.flavourList.add(flavour);
-        }
-
-        @Override
-        public String toString() {
-            return name;
-        }
-    }
-
-    public static class ToolchainList extends ArrayList<Toolchain> {}
 }
