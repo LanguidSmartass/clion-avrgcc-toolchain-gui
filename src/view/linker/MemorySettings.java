@@ -21,9 +21,9 @@ public class MemorySettings implements JPanelHolder {
 
     public MemorySettings() {
         ResourceBundle bundle = PluginBundle.getProjectsSettingsLabelsBundle();
-        String flashLabel = bundle.getString("settings.toolchain.avrgnu.linker.memsettings.label.flash");
-        String sramLabel = bundle.getString("settings.toolchain.avrgnu.linker.memsettings.label.sram");
-        String eepromLabel = bundle.getString("settings.toolchain.avrgnu.linker.memsettings.label.eeprom");
+        String flashLabel = bundle.getString("avrgnu.linker.memsettings.label.flash");
+        String sramLabel = bundle.getString("avrgnu.linker.memsettings.label.sram");
+        String eepromLabel = bundle.getString("avrgnu.linker.memsettings.label.eeprom");
         flashRecords.setLabelText(flashLabel);
         sramRecords.setLabelText(sramLabel);
         eepromRecords.setLabelText(eepromLabel);

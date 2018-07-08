@@ -14,8 +14,8 @@ public class Libraries implements JPanelHolder {
 
     public Libraries() {
         ResourceBundle bundle = PluginBundle.getProjectsSettingsLabelsBundle();
-        String librariesstr = bundle.getString("settings.toolchain.avrgnu.linker.libraries.label.libraries");
-        String libsearchpathstr = bundle.getString("settings.toolchain.avrgnu.linker.libraries.label.libsearchpath");
+        String librariesstr = bundle.getString("avrgnu.linker.libraries.label.libraries");
+        String libsearchpathstr = bundle.getString("avrgnu.linker.libraries.label.libsearchpath");
         librariesRecords.setLabelText(librariesstr);
         libsearchpathRecords.setLabelText(libsearchpathstr);
     }

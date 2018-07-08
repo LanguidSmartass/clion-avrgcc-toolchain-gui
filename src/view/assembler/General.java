@@ -15,7 +15,7 @@ public class General implements JPanelHolder {
 
     public General() {
         ResourceBundle bundle = PluginBundle.getProjectsSettingsLabelsBundle();
-        String incPathsLabel = bundle.getString("settings.toolchain.avrgnu.assembler.general.label.incpath");
+        String incPathsLabel = bundle.getString("avrgnu.assembler.general.label.incpath");
         incPathsRecords.setLabelText(incPathsLabel);
     }
 

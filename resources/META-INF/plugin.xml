@@ -1,6 +1,6 @@
 <idea-plugin>
   <id>com.ivan.novoselov.clion-avrgcc-toolchain-gui</id>
-  <name>Plugin display name here</name>
+  <name>Atmel Studio Ripoff</name>
   <version>1.0</version>
   <vendor email="jedi.orden@gmail.com" url="https://www.linkedin.com/in/ivan-novoselov/">YourCompany</vendor>
 
@@ -24,8 +24,7 @@
   <depends>com.intellij.modules.lang</depends>
   -->
   <depends>com.intellij.modules.clion</depends>
-    <depends>com.intellij.modules.ultimate</depends>
-  <!--<depends> com.intellij.</depends>-->
+  <depends>com.intellij.modules.ultimate</depends>
   <extensions defaultExtensionNs="com.intellij">
     <applicationConfigurable groupId="build"
                              groupWeight="195"
@@ -34,6 +33,8 @@
                              displayName="Toolchains Experimental"
                              id="preferences.ToolchainConfigurable"
                              instance="ToolchainSettingsConfigurable" />
+    <applicationService serviceImplementation="model.persistence.ApplicationSettings"/>
+    <projectService serviceImplementation="model.persistence.ProjectSettings"/>
   </extensions>
 
   <actions>

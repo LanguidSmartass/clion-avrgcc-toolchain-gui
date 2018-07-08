@@ -61,7 +61,7 @@
             <properties>
               <horizontalAlignment value="0"/>
               <horizontalTextPosition value="0"/>
-              <text resource-bundle="gui/ProjectSettingsLabels" key="button.save"/>
+              <text resource-bundle="view/resources/ProjectSettingsLabels" key="button.save"/>
             </properties>
           </component>
           <component id="407c6" class="javax.swing.JButton" binding="OKButton" default-binding="true">
@@ -71,7 +71,7 @@
             <properties>
               <horizontalAlignment value="0"/>
               <horizontalTextPosition value="0"/>
-              <text resource-bundle="gui/ProjectSettingsLabels" key="button.ok"/>
+              <text resource-bundle="view/resources/ProjectSettingsLabels" key="button.ok"/>
             </properties>
           </component>
         </children>

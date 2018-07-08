@@ -1,5 +1,6 @@
 import com.intellij.openapi.Disposable;
 
+import model.persistence.ApplicationSettings;
 import view.TreeModel;
 
 import javax.swing.JPanel;
@@ -10,6 +11,7 @@ public class MVCPanel extends JPanel implements Disposable {
     private view.ToolchainPanel view;
     private controller.ToolchainPanel controller;
     private JPanel viewPanel;
+
 
     public MVCPanel() {
         model = new TreeModel();

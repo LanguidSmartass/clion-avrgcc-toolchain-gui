@@ -13,7 +13,7 @@ public class Directories implements JPanelHolder {
 
     public Directories() {
         ResourceBundle bundle = PluginBundle.getProjectsSettingsLabelsBundle();
-        String dirslabel = bundle.getString("avrgnu.cCompiler.directs.label.incpath");
+        String dirslabel = bundle.getString("avrgnu.compiler.directs.label.incpath");
         directoriesRecords.setLabelText(dirslabel);
     }
 
