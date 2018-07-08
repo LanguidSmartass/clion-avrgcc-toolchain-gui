@@ -34,6 +34,7 @@
                              id="preferences.ToolchainConfigurable"
                              instance="ToolchainSettingsConfigurable" />
     <applicationService serviceImplementation="model.persistence.ApplicationSettings"/>
+    <projectService serviceImplementation="model.persistence.ProjectSettings"/>
   </extensions>
 
   <actions>
