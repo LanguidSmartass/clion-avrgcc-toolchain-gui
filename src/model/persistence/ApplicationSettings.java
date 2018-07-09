@@ -109,6 +109,7 @@ public class ApplicationSettings implements PersistentStateComponent<Application
 
     public ArrayList<String> getToolchainFlavours(String toolchainName) {
         if (!toolchainExists(toolchainName)) return null;
+        if (state.toolchainFlavours.get(toolchainName) == null) return new ArrayList<>();
         if (state.toolchainFlavours.get(toolchainName).isEmpty()) return new ArrayList<>();
         return new ArrayList<>(state.toolchainFlavours.get(toolchainName).keySet());
     }
@@ -128,5 +129,11 @@ public class ApplicationSettings implements PersistentStateComponent<Application
         if (!toolchainExists(toolchainName)) return null;
         if (!flavourExists(toolchainName, flavourName)) return null;
         return state.toolchainFlavours.get(toolchainName).get(flavourName);
+    }
+
+    public void setToolchainFlavourPath(String toolchainName, String flavourName, String flavourPath) {
+        if (!toolchainExists(toolchainName)) return;
+        if (!flavourExists(toolchainName, flavourName)) return;
+        state.toolchainFlavours.get(toolchainName).replace(flavourName, flavourPath);
     }
 }
