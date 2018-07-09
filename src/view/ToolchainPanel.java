@@ -81,14 +81,6 @@ public class ToolchainPanel extends JPanel implements Disposable {
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-                String data = "Test data";
-                System.out.println(System.getProperty("user.dir"));
-                try {
-                    Files.write(Paths.get("CMakeLists.txt"), data.getBytes());
-                } catch (IOException e1) {
-                    e1.printStackTrace();
-                }
-
                 dispose();
             }
         });
