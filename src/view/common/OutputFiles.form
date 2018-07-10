@@ -16,7 +16,7 @@
         <properties/>
         <border type="none"/>
         <children>
-          <component id="43845" class="javax.swing.JCheckBox" binding="hexGenerateHexFileCheckBox" default-binding="true">
+          <component id="43845" class="javax.swing.JCheckBox" binding="hexCheckBox">
             <constraints>
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="-1" height="30"/>
@@ -28,7 +28,7 @@
               <text resource-bundle="view/resources/ProjectSettingsLabels" key="avrgnu.common.outputfiles.chbox.hex"/>
             </properties>
           </component>
-          <component id="703a8" class="javax.swing.JCheckBox" binding="lssGenerateLssFileCheckBox" default-binding="true">
+          <component id="703a8" class="javax.swing.JCheckBox" binding="lssCheckBox">
             <constraints>
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="-1" height="30"/>
@@ -40,7 +40,7 @@
               <text resource-bundle="view/resources/ProjectSettingsLabels" key="avrgnu.common.outputfiles.chbox.lss"/>
             </properties>
           </component>
-          <component id="76c6c" class="javax.swing.JCheckBox" binding="eepGenerateEepFileCheckBox" default-binding="true">
+          <component id="76c6c" class="javax.swing.JCheckBox" binding="eepCheckBox">
             <constraints>
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="-1" height="30"/>
@@ -52,7 +52,7 @@
               <text resource-bundle="view/resources/ProjectSettingsLabels" key="avrgnu.common.outputfiles.chbox.eep"/>
             </properties>
           </component>
-          <component id="2e13c" class="javax.swing.JCheckBox" binding="srecGenerateSrecFileCheckBox" default-binding="true">
+          <component id="2e13c" class="javax.swing.JCheckBox" binding="srecCheckBox">
             <constraints>
               <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="-1" height="30"/>
@@ -64,7 +64,7 @@
               <text resource-bundle="view/resources/ProjectSettingsLabels" key="avrgnu.common.outputfiles.chbox.srec"/>
             </properties>
           </component>
-          <component id="b364a" class="javax.swing.JCheckBox" binding="usersignaturesGenerateUsersignaturesFileCheckBox" default-binding="true">
+          <component id="b364a" class="javax.swing.JCheckBox" binding="usignCheckBox">
             <constraints>
               <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <maximum-size width="-1" height="30"/>

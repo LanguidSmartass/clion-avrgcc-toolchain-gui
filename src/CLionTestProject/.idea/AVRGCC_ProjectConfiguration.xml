@@ -3,9 +3,17 @@
   <component name="AVRGCC.Project.Configuration">
     <option name="commonFlags">
       <map>
-        <entry key="-mrelax" value="false" />
-        <entry key="extRamOvfCheck" value="true" />
+        <entry key="-ansi" value="true" />
+        <entry key="-mrelax" value="true" />
+        <entry key="-v" value="true" />
+        <entry key=".eep" value="false" />
+        <entry key=".hex" value="true" />
+        <entry key=".srec" value="true" />
+        <entry key=".usersignatures" value="true" />
+        <entry key="extRamOvfCheck" value="false" />
       </map>
     </option>
+    <option name="compCDebugLevel" value="Default (-g2)" />
+    <option name="compCOtherMiscFlags" value="44643643646515" />
   </component>
 </project>
