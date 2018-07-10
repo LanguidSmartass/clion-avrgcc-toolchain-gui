@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AVRGCC.Project.Configuration">
+    <option name="commonFlags">
+      <map>
+        <entry key="-mrelax" value="false" />
+        <entry key="extRamOvfCheck" value="true" />
+      </map>
+    </option>
+  </component>
+</project>

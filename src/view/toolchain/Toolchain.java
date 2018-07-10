@@ -34,7 +34,7 @@ public class Toolchain implements JPanelHolder {
     private ApplicationSettings applicationSettings;
 
     public Toolchain() {
-        initStringContainingElements();
+        initMutableElements();
 
         toolchainsComboBox.addActionListener(new ActionListener() {
             /**
@@ -166,7 +166,7 @@ public class Toolchain implements JPanelHolder {
         updateFlavourPathTextField(flavourPath);
     }
 
-    private void initStringContainingElements() {
+    private void initMutableElements() {
         // Must follow strictly in that order
         initToolchainComboBox();
         initFlavourList();

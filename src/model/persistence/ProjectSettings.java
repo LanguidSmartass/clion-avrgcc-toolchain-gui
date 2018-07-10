@@ -276,8 +276,9 @@ public class ProjectSettings implements PersistentStateComponent<ProjectSettings
     }
 
     public static ProjectSettings getInstance() {
-        Project p = ProjectManager.getInstance().getOpenProjects()[0];
-        return ProjectSettings.getInstance(p);
+        Project[] projects = ProjectManager.getInstance().getOpenProjects();
+        if (projects.length == 0) return null;
+        return ProjectSettings.getInstance(projects[0]);
     }
 
     public static ProjectSettings getInstance(@NotNull Project project) {
