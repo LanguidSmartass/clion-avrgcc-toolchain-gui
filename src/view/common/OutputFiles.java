@@ -24,11 +24,11 @@ public class OutputFiles implements JPanelHolder {
     private final String usignResourceTag = "avrgnu.common.general.chbox.usersignatures";
 
     public OutputFiles() {
-        JCheckBoxPersistence.initCheckBox(hexCheckBox, hexResourceTag);
-        JCheckBoxPersistence.initCheckBox(lssCheckBox, lssResourceTag);
-        JCheckBoxPersistence.initCheckBox(eepCheckBox, eepResourceTag);
-        JCheckBoxPersistence.initCheckBox(srecCheckBox, srecResourceTag);
-        JCheckBoxPersistence.initCheckBox(usignCheckBox, usignResourceTag);
+        JCheckBoxPersistence.initCommonCheckBox(hexCheckBox, hexResourceTag);
+        JCheckBoxPersistence.initCommonCheckBox(lssCheckBox, lssResourceTag);
+        JCheckBoxPersistence.initCommonCheckBox(eepCheckBox, eepResourceTag);
+        JCheckBoxPersistence.initCommonCheckBox(srecCheckBox, srecResourceTag);
+        JCheckBoxPersistence.initCommonCheckBox(usignCheckBox, usignResourceTag);
         hexCheckBox.addActionListener(new ActionListener() {
             /**
              * Invoked when an action occurs.
@@ -37,7 +37,7 @@ public class OutputFiles implements JPanelHolder {
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-                JCheckBoxPersistence.processCheckBoxAction(hexCheckBox, hexResourceTag);
+                JCheckBoxPersistence.processCommonCheckBoxAction(hexCheckBox, hexResourceTag);
             }
         });
         lssCheckBox.addActionListener(new ActionListener() {
@@ -48,7 +48,7 @@ public class OutputFiles implements JPanelHolder {
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-                JCheckBoxPersistence.processCheckBoxAction(lssCheckBox, lssResourceTag);
+                JCheckBoxPersistence.processCommonCheckBoxAction(lssCheckBox, lssResourceTag);
             }
         });
         eepCheckBox.addActionListener(new ActionListener() {
@@ -59,7 +59,7 @@ public class OutputFiles implements JPanelHolder {
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-                JCheckBoxPersistence.processCheckBoxAction(eepCheckBox, eepResourceTag);
+                JCheckBoxPersistence.processCommonCheckBoxAction(eepCheckBox, eepResourceTag);
             }
         });
         srecCheckBox.addActionListener(new ActionListener() {
@@ -70,7 +70,7 @@ public class OutputFiles implements JPanelHolder {
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-                JCheckBoxPersistence.processCheckBoxAction(srecCheckBox, srecResourceTag);
+                JCheckBoxPersistence.processCommonCheckBoxAction(srecCheckBox, srecResourceTag);
             }
         });
         usignCheckBox.addActionListener(new ActionListener() {
@@ -81,7 +81,7 @@ public class OutputFiles implements JPanelHolder {
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-                JCheckBoxPersistence.processCheckBoxAction(usignCheckBox, usignResourceTag);
+                JCheckBoxPersistence.processCommonCheckBoxAction(usignCheckBox, usignResourceTag);
             }
         });
     }

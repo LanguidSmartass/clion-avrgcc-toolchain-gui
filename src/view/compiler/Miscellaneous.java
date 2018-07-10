@@ -1,6 +1,5 @@
 package view.compiler;
 
-import model.persistence.ProjectSettings;
 import view.JPanelHolder;
 import view.util.JCheckBoxPersistence;
 
@@ -11,6 +10,8 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
 public class Miscellaneous implements JPanelHolder {
+    private CompilerSelector compiler;
+            
     private JPanel topPanel;
     private JPanel vertAlignPanel;
     private JPanel otherFlagsTextFieldPanel;
@@ -26,11 +27,10 @@ public class Miscellaneous implements JPanelHolder {
     private final String supportANSIProgramsAnsiResourceTag = "avrgnu.compiler.misc.chbox.ansisupport";
     private final String doNotDeleteTemporaryResourceTag = "avrgnu.compiler.misc.chbox.savetemps";
 
-    public Miscellaneous() {
-        initTextField();
-        JCheckBoxPersistence.initCheckBox(verboseVCheckBox, verboseVResourceTag);
-        JCheckBoxPersistence.initCheckBox(supportANSIProgramsAnsiCheckBox, supportANSIProgramsAnsiResourceTag);
-        JCheckBoxPersistence.initCheckBox(doNotDeleteTemporaryCheckBox, doNotDeleteTemporaryResourceTag);
+    public Miscellaneous(CompilerSelector compiler) {
+        this.compiler = compiler;
+        
+        initMutableComponents();
         verboseVCheckBox.addActionListener(new ActionListener() {
             /**
              * Invoked when an action occurs.
@@ -39,7 +39,7 @@ public class Miscellaneous implements JPanelHolder {
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-                JCheckBoxPersistence.processCheckBoxAction(verboseVCheckBox, verboseVResourceTag);
+                JCheckBoxPersistence.processCompilerCheckBoxAction(compiler, verboseVCheckBox, verboseVResourceTag);
             }
         });
         supportANSIProgramsAnsiCheckBox.addActionListener(new ActionListener() {
@@ -50,7 +50,7 @@ public class Miscellaneous implements JPanelHolder {
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-                JCheckBoxPersistence.processCheckBoxAction(supportANSIProgramsAnsiCheckBox, supportANSIProgramsAnsiResourceTag);
+                JCheckBoxPersistence.processCompilerCheckBoxAction(compiler, supportANSIProgramsAnsiCheckBox, supportANSIProgramsAnsiResourceTag);
             }
         });
         doNotDeleteTemporaryCheckBox.addActionListener(new ActionListener() {
@@ -61,7 +61,7 @@ public class Miscellaneous implements JPanelHolder {
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-                JCheckBoxPersistence.processCheckBoxAction(doNotDeleteTemporaryCheckBox, doNotDeleteTemporaryResourceTag);
+                JCheckBoxPersistence.processCompilerCheckBoxAction(compiler, doNotDeleteTemporaryCheckBox, doNotDeleteTemporaryResourceTag);
             }
         });
         flagsTextField.addKeyListener(new KeyAdapter() {
@@ -84,16 +84,22 @@ public class Miscellaneous implements JPanelHolder {
     }
 
     private void initTextField() {
-        ProjectSettings projectSettings = ProjectSettings.getInstance();
-        if (projectSettings == null) return;
-        String text = projectSettings.getCompCOtherMiscFlags();
+        String text = compiler.getCompilerOtherMiscFlags();
         if (text == null) return;
         flagsTextField.setText(text);
     }
 
+    private void initCheckBoxes() {
+        JCheckBoxPersistence.initCompilerCheckBox(compiler, verboseVCheckBox, verboseVResourceTag);
+        JCheckBoxPersistence.initCompilerCheckBox(compiler, supportANSIProgramsAnsiCheckBox, supportANSIProgramsAnsiResourceTag);
+        JCheckBoxPersistence.initCompilerCheckBox(compiler, doNotDeleteTemporaryCheckBox, doNotDeleteTemporaryResourceTag);
+    }
+
+    private void initMutableComponents() {
+        initCheckBoxes();
+        initTextField();
+    }
     private void saveTextField(String text) {
-        ProjectSettings projectSettings = ProjectSettings.getInstance();
-        if (projectSettings == null) return;
-        projectSettings.setCompCOtherMiscFlags(text);
+        compiler.setCompilerOtherMiscFlags(text);
     }
 }

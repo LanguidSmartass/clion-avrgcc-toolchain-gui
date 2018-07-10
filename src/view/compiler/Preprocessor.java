@@ -8,6 +8,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Preprocessor implements JPanelHolder {
+    private CompilerSelector compiler;
+    
     private JPanel topPanel;
     private JPanel vertAlignPanel;
 
@@ -17,9 +19,11 @@ public class Preprocessor implements JPanelHolder {
     private final String nostdincResourceTag = "avrgnu.compiler.preproc.chbox.nostdinc";
     private final String preprocessOnlyEResourceTag = "avrgnu.compiler.preproc.chbox.preproconly";
 
-    public Preprocessor() {
-        JCheckBoxPersistence.initCheckBox(nostdincCheckBox, nostdincResourceTag);
-        JCheckBoxPersistence.initCheckBox(preprocessOnlyECheckBox, preprocessOnlyEResourceTag);
+    public Preprocessor(CompilerSelector compiler) {
+        this.compiler = compiler;
+        
+        JCheckBoxPersistence.initCompilerCheckBox(compiler, nostdincCheckBox, nostdincResourceTag);
+        JCheckBoxPersistence.initCompilerCheckBox(compiler, preprocessOnlyECheckBox, preprocessOnlyEResourceTag);
         nostdincCheckBox.addActionListener(new ActionListener() {
             /**
              * Invoked when an action occurs.
@@ -28,7 +32,7 @@ public class Preprocessor implements JPanelHolder {
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-                JCheckBoxPersistence.processCheckBoxAction(nostdincCheckBox, nostdincResourceTag);
+                JCheckBoxPersistence.processCompilerCheckBoxAction(compiler, nostdincCheckBox, nostdincResourceTag);
             }
         });
         preprocessOnlyECheckBox.addActionListener(new ActionListener() {
@@ -39,7 +43,7 @@ public class Preprocessor implements JPanelHolder {
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-                JCheckBoxPersistence.processCheckBoxAction(preprocessOnlyECheckBox, preprocessOnlyEResourceTag);
+                JCheckBoxPersistence.processCompilerCheckBoxAction(compiler, preprocessOnlyECheckBox, preprocessOnlyEResourceTag);
             }
         });
     }

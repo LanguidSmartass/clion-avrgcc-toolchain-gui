@@ -8,11 +8,15 @@ import javax.swing.*;
 import java.util.ResourceBundle;
 
 public class Symbols implements JPanelHolder {
+    private CompilerSelector compiler;
+
     private JPanel topPanel;
     private RecordsList definedSymbolsRecords;
     private RecordsList undefSymbolsRecords;
 
-    public Symbols() {
+    public Symbols(CompilerSelector compiler) {
+        this.compiler = compiler;
+
         ResourceBundle bundle = PluginBundle.getProjectsSettingsLabelsBundle();
         String defsymblabel = bundle.getString("avrgnu.compiler.symbols.label.defined");
         String undefsymblabel = bundle.getString("avrgnu.compiler.symbols.label.undefined");

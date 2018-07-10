@@ -1,6 +1,5 @@
 package view.compiler;
 
-import model.persistence.ProjectSettings;
 import view.JPanelHolder;
 import view.resources.PluginBundle;
 
@@ -13,22 +12,31 @@ import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 public class Debugging implements JPanelHolder {
+    private CompilerSelector compiler;
+
     private JPanel topPanel;
     private JPanel vertAlignPanel;
     private JPanel dbgLvlComboBoxPanel;
     private JPanel dbgFlagsTextFieldPanel;
 
     private JComboBox<String> dbgLvlComboBox;
-    private ArrayList<String> dbgLevels;
+    private ArrayList<String> dbgLevelLabels;
+    private ArrayList<String> dbgLevelFlags;
 
     private final String dbgLvlnnLabelTag = "avrgnu.compiler.debug.combobox.dbglevel.none";
     private final String dbgLvlg1LabelTag = "avrgnu.compiler.debug.combobox.dbglevel.g1";
     private final String dbgLvlg2LabelTag = "avrgnu.compiler.debug.combobox.dbglevel.g2";
     private final String dbgLvlg3LabelTag = "avrgnu.compiler.debug.combobox.dbglevel.g3";
+    // there is no 'none' tag
+    private final String dbgLvlg1FlagTag = "avrgnu.compiler.debug.combobox.dbglevel.g1";
+    private final String dbgLvlg2FlagTag = "avrgnu.compiler.debug.combobox.dbglevel.g2";
+    private final String dbgLvlg3FlagTag = "avrgnu.compiler.debug.combobox.dbglevel.g3";
 
     private JTextField flagsTextField;
 
-    public Debugging() {
+    public Debugging(CompilerSelector compiler) {
+        this.compiler = compiler;
+
         initMutableComponents();
         flagsTextField.addKeyListener(new KeyAdapter() {
             /**
@@ -61,37 +69,45 @@ public class Debugging implements JPanelHolder {
     }
 
     private void initComboBox() {
-        ResourceBundle bundle = PluginBundle.getProjectsSettingsLabelsBundle();
-        dbgLevels = new ArrayList<>();
-        dbgLevels.add(bundle.getString(dbgLvlnnLabelTag));
-        dbgLevels.add(bundle.getString(dbgLvlg1LabelTag));
-        dbgLevels.add(bundle.getString(dbgLvlg2LabelTag));
-        dbgLevels.add(bundle.getString(dbgLvlg3LabelTag));
+        ResourceBundle labelsBundle = PluginBundle.getProjectsSettingsLabelsBundle();
+        ResourceBundle flagsBundle  = PluginBundle.getProjectsSettingsFlagsBundle();
+        dbgLevelLabels = new ArrayList<>();
+        dbgLevelLabels.add(labelsBundle.getString(dbgLvlnnLabelTag));
+        dbgLevelLabels.add(labelsBundle.getString(dbgLvlg1LabelTag));
+        dbgLevelLabels.add(labelsBundle.getString(dbgLvlg2LabelTag));
+        dbgLevelLabels.add(labelsBundle.getString(dbgLvlg3LabelTag));
 
-        ProjectSettings projectSettings = ProjectSettings.getInstance();
-        if (projectSettings == null) return;
-        String selDbgLvl = projectSettings.getCompCDebugLevel();
-        if (selDbgLvl == null) return;
-
-        int i = 0;
-        int idx = 0;
-        for (String lvl : dbgLevels) {
+        for (String lvl : dbgLevelLabels) {
             dbgLvlComboBox.addItem(lvl);
-            if (lvl.equals(selDbgLvl)) idx = i;
-            ++i;
         }
-        // reset the default data if 'selDbgLvl' is incorrect
-        if (idx >= dbgLevels.size()) {
-            projectSettings.setCompCDebugLevel(dbgLevels.get(0));
+
+        dbgLevelFlags = new ArrayList<>();
+        dbgLevelFlags.add("");
+        dbgLevelFlags.add(flagsBundle.getString(dbgLvlg1FlagTag));
+        dbgLevelFlags.add(flagsBundle.getString(dbgLvlg2FlagTag));
+        dbgLevelFlags.add(flagsBundle.getString(dbgLvlg3FlagTag));
+
+        String selectedDbgLvlFlag = compiler.getCompilerDebugLevel();//projectSettings.getCompCDebugLevel();
+        if (selectedDbgLvlFlag == null) return;
+
+        int idx = -1;
+        for (int i = 0; i < dbgLevelFlags.size(); ++i) {
+            if (dbgLevelFlags.get(i).equals(selectedDbgLvlFlag)) {
+                idx = i;
+                break;
+            }
+        }
+
+        // reset the default data if 'selectedDbgLvlFlag' is incorrect
+        if (idx == -1) {
+            compiler.setCompilerDebugLevel(dbgLevelFlags.get(0));
             idx = 0;
         }
         dbgLvlComboBox.setSelectedIndex(idx);
     }
 
     private void initTextField() {
-        ProjectSettings projectSettings = ProjectSettings.getInstance();
-        if (projectSettings == null) return;
-        String text = projectSettings.getCompCOtherDebugFlags();
+        String text = compiler.getCompilerOtherDebugFlags();
         if (text == null) return;
         flagsTextField.setText(text);
     }
@@ -102,15 +118,11 @@ public class Debugging implements JPanelHolder {
     }
 
     private void saveComboBox(int idx) {
-        if ((idx < 0) || (idx >= dbgLevels.size())) return;
-        ProjectSettings projectSettings = ProjectSettings.getInstance();
-        if (projectSettings == null) return;
-        projectSettings.setCompCDebugLevel(dbgLevels.get(idx));
+        if ((idx < 0) || (idx >= dbgLevelFlags.size())) return;
+        compiler.setCompilerDebugLevel(dbgLevelFlags.get(idx));
     }
 
     private void saveTextField(String text) {
-        ProjectSettings projectSettings = ProjectSettings.getInstance();
-        if (projectSettings == null) return;
-        projectSettings.setCompCOtherDebugFlags(text);
+        compiler.setCompilerOtherDebugFlags(text);
     }
 }

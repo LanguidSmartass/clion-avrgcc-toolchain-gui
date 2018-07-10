@@ -8,6 +8,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Warnings implements JPanelHolder {
+    private CompilerSelector compiler;
+    
     private JPanel topPanel;
     private JPanel checkBoxPanel;
 
@@ -29,15 +31,17 @@ public class Warnings implements JPanelHolder {
     private final String pedanticWarningsAsErrorsResourceTag = "avrgnu.compiler.warning.chbox.pedanticerr";
     private final String inhibitAllWarningsWResourceTag = "avrgnu.compiler.warning.chbox.inhibitall";
 
-    public Warnings() {
-        JCheckBoxPersistence.initCheckBox(allWarningsWallCheckBox, allWarningsWallResourceTag);
-        JCheckBoxPersistence.initCheckBox(extraWarningsWextraCheckBox, extraWarningsWextraResourceTag);
-        JCheckBoxPersistence.initCheckBox(warnUndefinedIdentifierInCheckBox, warnUndefinedIdentifierInResourceTag);
-        JCheckBoxPersistence.initCheckBox(warningsAsErrorsWerrorCheckBox, warningsAsErrorsWerrorResourceTag);
-        JCheckBoxPersistence.initCheckBox(checkSyntaxOnlyFsyntaxCheckBox, checkSyntaxOnlyFsyntaxResourceTag);
-        JCheckBoxPersistence.initCheckBox(pedanticPedanticCheckBox, pedanticPedanticResourceTag);
-        JCheckBoxPersistence.initCheckBox(pedanticWarningsAsErrorsCheckBox, pedanticWarningsAsErrorsResourceTag);
-        JCheckBoxPersistence.initCheckBox(inhibitAllWarningsWCheckBox, inhibitAllWarningsWResourceTag);
+    public Warnings(CompilerSelector compiler) {
+        this.compiler = compiler;
+        
+        JCheckBoxPersistence.initCompilerCheckBox(compiler, allWarningsWallCheckBox, allWarningsWallResourceTag);
+        JCheckBoxPersistence.initCompilerCheckBox(compiler, extraWarningsWextraCheckBox, extraWarningsWextraResourceTag);
+        JCheckBoxPersistence.initCompilerCheckBox(compiler, warnUndefinedIdentifierInCheckBox, warnUndefinedIdentifierInResourceTag);
+        JCheckBoxPersistence.initCompilerCheckBox(compiler, warningsAsErrorsWerrorCheckBox, warningsAsErrorsWerrorResourceTag);
+        JCheckBoxPersistence.initCompilerCheckBox(compiler, checkSyntaxOnlyFsyntaxCheckBox, checkSyntaxOnlyFsyntaxResourceTag);
+        JCheckBoxPersistence.initCompilerCheckBox(compiler, pedanticPedanticCheckBox, pedanticPedanticResourceTag);
+        JCheckBoxPersistence.initCompilerCheckBox(compiler, pedanticWarningsAsErrorsCheckBox, pedanticWarningsAsErrorsResourceTag);
+        JCheckBoxPersistence.initCompilerCheckBox(compiler, inhibitAllWarningsWCheckBox, inhibitAllWarningsWResourceTag);
         allWarningsWallCheckBox.addActionListener(new ActionListener() {
             /**
              * Invoked when an action occurs.
@@ -46,7 +50,7 @@ public class Warnings implements JPanelHolder {
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-                JCheckBoxPersistence.processCheckBoxAction(allWarningsWallCheckBox, allWarningsWallResourceTag);
+                JCheckBoxPersistence.processCompilerCheckBoxAction(compiler, allWarningsWallCheckBox, allWarningsWallResourceTag);
             }
         });
         extraWarningsWextraCheckBox.addActionListener(new ActionListener() {
@@ -57,7 +61,7 @@ public class Warnings implements JPanelHolder {
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-                JCheckBoxPersistence.processCheckBoxAction(extraWarningsWextraCheckBox, extraWarningsWextraResourceTag);
+                JCheckBoxPersistence.processCompilerCheckBoxAction(compiler, extraWarningsWextraCheckBox, extraWarningsWextraResourceTag);
             }
         });
         warnUndefinedIdentifierInCheckBox.addActionListener(new ActionListener() {
@@ -68,7 +72,7 @@ public class Warnings implements JPanelHolder {
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-                JCheckBoxPersistence.processCheckBoxAction(warnUndefinedIdentifierInCheckBox, warnUndefinedIdentifierInResourceTag);
+                JCheckBoxPersistence.processCompilerCheckBoxAction(compiler, warnUndefinedIdentifierInCheckBox, warnUndefinedIdentifierInResourceTag);
             }
         });
         warningsAsErrorsWerrorCheckBox.addActionListener(new ActionListener() {
@@ -79,7 +83,7 @@ public class Warnings implements JPanelHolder {
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-                JCheckBoxPersistence.processCheckBoxAction(warningsAsErrorsWerrorCheckBox, warningsAsErrorsWerrorResourceTag);
+                JCheckBoxPersistence.processCompilerCheckBoxAction(compiler, warningsAsErrorsWerrorCheckBox, warningsAsErrorsWerrorResourceTag);
             }
         });
         checkSyntaxOnlyFsyntaxCheckBox.addActionListener(new ActionListener() {
@@ -90,7 +94,7 @@ public class Warnings implements JPanelHolder {
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-                JCheckBoxPersistence.processCheckBoxAction(checkSyntaxOnlyFsyntaxCheckBox, checkSyntaxOnlyFsyntaxResourceTag);
+                JCheckBoxPersistence.processCompilerCheckBoxAction(compiler, checkSyntaxOnlyFsyntaxCheckBox, checkSyntaxOnlyFsyntaxResourceTag);
             }
         });
         pedanticPedanticCheckBox.addActionListener(new ActionListener() {
@@ -101,7 +105,7 @@ public class Warnings implements JPanelHolder {
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-                JCheckBoxPersistence.processCheckBoxAction(pedanticPedanticCheckBox, pedanticPedanticResourceTag);
+                JCheckBoxPersistence.processCompilerCheckBoxAction(compiler, pedanticPedanticCheckBox, pedanticPedanticResourceTag);
             }
         });
         pedanticWarningsAsErrorsCheckBox.addActionListener(new ActionListener() {
@@ -112,7 +116,7 @@ public class Warnings implements JPanelHolder {
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-                JCheckBoxPersistence.processCheckBoxAction(pedanticWarningsAsErrorsCheckBox, pedanticWarningsAsErrorsResourceTag);
+                JCheckBoxPersistence.processCompilerCheckBoxAction(compiler, pedanticWarningsAsErrorsCheckBox, pedanticWarningsAsErrorsResourceTag);
             }
         });
         inhibitAllWarningsWCheckBox.addActionListener(new ActionListener() {
@@ -123,7 +127,7 @@ public class Warnings implements JPanelHolder {
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-                JCheckBoxPersistence.processCheckBoxAction(inhibitAllWarningsWCheckBox, inhibitAllWarningsWResourceTag);
+                JCheckBoxPersistence.processCompilerCheckBoxAction(compiler, inhibitAllWarningsWCheckBox, inhibitAllWarningsWResourceTag);
             }
         });
     }

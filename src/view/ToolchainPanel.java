@@ -2,6 +2,8 @@ package view;
 
 import com.intellij.openapi.Disposable;
 import com.intellij.ui.treeStructure.Tree;
+import view.compiler.SelectorC;
+import view.compiler.SelectorCpp;
 import view.resources.PluginBundle;
 
 import javax.swing.*;
@@ -111,24 +113,30 @@ public class ToolchainPanel extends JPanel implements Disposable {
         common = new view.common.Common();
         commonGeneral = new view.common.General();
         commonOutputFiles = new view.common.OutputFiles();
-        cCompiler = new view.compiler.Compiler();
-        cCompilerGeneral = new view.compiler.General();
-        cCompilerPreprocessor = new view.compiler.Preprocessor();
-        cCompilerSymbols = new view.compiler.Symbols();
-        cCompilerDirectories = new view.compiler.Directories();
-        cCompilerOptimization = new view.compiler.Optimization();
-        cCompilerDebugging = new view.compiler.Debugging();
-        cCompilerWarnings = new view.compiler.Warnings();
-        cCompilerMiscellaneous = new view.compiler.Miscellaneous();
-        cppCompiler = new view.compiler.Compiler();
-        cppCompilerGeneral = new view.compiler.General();
-        cppCompilerPreprocessor = new view.compiler.Preprocessor();
-        cppCompilerSymbols = new view.compiler.Symbols();
-        cppCompilerDirectories = new view.compiler.Directories();
-        cppCompilerOptimization = new view.compiler.Optimization();
-        cppCompilerDebugging = new view.compiler.Debugging();
-        cppCompilerWarnings = new view.compiler.Warnings();
-        cppCompilerMiscellaneous = new view.compiler.Miscellaneous();
+
+        SelectorC cSelector = new SelectorC();
+        SelectorCpp cppSelector = new SelectorCpp();
+
+        cCompiler = new view.compiler.Compiler(cSelector);
+        cCompilerGeneral = new view.compiler.General(cSelector);
+        cCompilerPreprocessor = new view.compiler.Preprocessor(cSelector);
+        cCompilerSymbols = new view.compiler.Symbols(cSelector);
+        cCompilerDirectories = new view.compiler.Directories(cSelector);
+        cCompilerOptimization = new view.compiler.Optimization(cSelector);
+        cCompilerDebugging = new view.compiler.Debugging(cSelector);
+        cCompilerWarnings = new view.compiler.Warnings(cSelector);
+        cCompilerMiscellaneous = new view.compiler.Miscellaneous(cSelector);
+
+        cppCompiler = new view.compiler.Compiler(cppSelector);
+        cppCompilerGeneral = new view.compiler.General(cppSelector);
+        cppCompilerPreprocessor = new view.compiler.Preprocessor(cppSelector);
+        cppCompilerSymbols = new view.compiler.Symbols(cppSelector);
+        cppCompilerDirectories = new view.compiler.Directories(cppSelector);
+        cppCompilerOptimization = new view.compiler.Optimization(cppSelector);
+        cppCompilerDebugging = new view.compiler.Debugging(cppSelector);
+        cppCompilerWarnings = new view.compiler.Warnings(cppSelector);
+        cppCompilerMiscellaneous = new view.compiler.Miscellaneous(cppSelector);
+
         linker = new view.linker.Linker();
         linkerGeneral = new view.linker.General();
         linkerLibraries = new view.linker.Libraries();

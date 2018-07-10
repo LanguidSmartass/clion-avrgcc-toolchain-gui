@@ -1,18 +1,13 @@
 package view.common;
 
-import com.intellij.openapi.project.Project;
-import com.intellij.openapi.project.ProjectManager;
 import model.persistence.ProjectSettings;
 import view.JPanelHolder;
-import view.resources.PluginBundle;
 import view.util.JCheckBoxPersistence;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.ResourceBundle;
 
 public class General implements JPanelHolder {
     private JPanel topPanel;
@@ -42,7 +37,7 @@ public class General implements JPanelHolder {
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-                JCheckBoxPersistence.processCheckBoxAction(relaxBranchesMrelaxCheckBox, relaxBranchesResourceTag);
+                JCheckBoxPersistence.processCommonCheckBoxAction(relaxBranchesMrelaxCheckBox, relaxBranchesResourceTag);
             }
         });
         externalRamCheckForCheckBox.addActionListener(new ActionListener() {
@@ -53,7 +48,7 @@ public class General implements JPanelHolder {
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-                JCheckBoxPersistence.processCheckBoxAction(externalRamCheckForCheckBox, externalRamCheckResourceTag);
+                JCheckBoxPersistence.processCommonCheckBoxAction(externalRamCheckForCheckBox, externalRamCheckResourceTag);
             }
         });
     }
@@ -70,8 +65,8 @@ public class General implements JPanelHolder {
     }
 
     private void initCheckBoxes() {
-        JCheckBoxPersistence.initCheckBox(relaxBranchesMrelaxCheckBox, relaxBranchesResourceTag);
-        JCheckBoxPersistence.initCheckBox(externalRamCheckForCheckBox, externalRamCheckResourceTag);
+        JCheckBoxPersistence.initCommonCheckBox(relaxBranchesMrelaxCheckBox, relaxBranchesResourceTag);
+        JCheckBoxPersistence.initCommonCheckBox(externalRamCheckForCheckBox, externalRamCheckResourceTag);
     }
 
     private void initMutableElements() {

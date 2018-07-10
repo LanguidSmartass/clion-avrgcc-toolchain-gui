@@ -8,6 +8,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class General implements JPanelHolder {
+    private CompilerSelector compiler;
+
     private JPanel topPanel;
     private JPanel vertAlignPanel;
 
@@ -21,11 +23,13 @@ public class General implements JPanelHolder {
     private final String funsignedcharResourceTag = "avrgnu.compiler.general.chbox.funsignedchar";
     private final String funsignedbitfieldsResourceTag = "avrgnu.compiler.general.chbox.funsignedbitfields";
 
-    public General() {
-        JCheckBoxPersistence.initCheckBox(mcallprologuesCheckBox, mcallprologuesResourceTag);
-        JCheckBoxPersistence.initCheckBox(mnointerruptsCheckBox, mnointerruptsResourceTag);
-        JCheckBoxPersistence.initCheckBox(funsignedcharCheckBox, funsignedcharResourceTag);
-        JCheckBoxPersistence.initCheckBox(funsignedbitfieldsCheckBox, funsignedbitfieldsResourceTag);
+    public General(CompilerSelector compiler) {
+        this.compiler = compiler;
+
+        JCheckBoxPersistence.initCompilerCheckBox(compiler, mcallprologuesCheckBox, mcallprologuesResourceTag);
+        JCheckBoxPersistence.initCompilerCheckBox(compiler, mnointerruptsCheckBox, mnointerruptsResourceTag);
+        JCheckBoxPersistence.initCompilerCheckBox(compiler, funsignedcharCheckBox, funsignedcharResourceTag);
+        JCheckBoxPersistence.initCompilerCheckBox(compiler, funsignedbitfieldsCheckBox, funsignedbitfieldsResourceTag);
         mcallprologuesCheckBox.addActionListener(new ActionListener() {
             /**
              * Invoked when an action occurs.
@@ -34,7 +38,7 @@ public class General implements JPanelHolder {
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-                JCheckBoxPersistence.processCheckBoxAction(mcallprologuesCheckBox, mcallprologuesResourceTag);
+                JCheckBoxPersistence.processCompilerCheckBoxAction(compiler, mcallprologuesCheckBox, mcallprologuesResourceTag);
             }
         });
         mnointerruptsCheckBox.addActionListener(new ActionListener() {
@@ -45,7 +49,7 @@ public class General implements JPanelHolder {
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-                JCheckBoxPersistence.processCheckBoxAction(mnointerruptsCheckBox, mnointerruptsResourceTag);
+                JCheckBoxPersistence.processCompilerCheckBoxAction(compiler, mnointerruptsCheckBox, mnointerruptsResourceTag);
             }
         });
         funsignedcharCheckBox.addActionListener(new ActionListener() {
@@ -56,7 +60,7 @@ public class General implements JPanelHolder {
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-                JCheckBoxPersistence.processCheckBoxAction(funsignedcharCheckBox, funsignedcharResourceTag);
+                JCheckBoxPersistence.processCompilerCheckBoxAction(compiler, funsignedcharCheckBox, funsignedcharResourceTag);
             }
         });
         funsignedbitfieldsCheckBox.addActionListener(new ActionListener() {
@@ -67,7 +71,7 @@ public class General implements JPanelHolder {
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-                JCheckBoxPersistence.processCheckBoxAction(funsignedbitfieldsCheckBox, funsignedbitfieldsResourceTag);
+                JCheckBoxPersistence.processCompilerCheckBoxAction(compiler, funsignedbitfieldsCheckBox, funsignedbitfieldsResourceTag);
             }
         });
     }

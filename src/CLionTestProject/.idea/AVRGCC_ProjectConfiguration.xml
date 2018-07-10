@@ -4,6 +4,9 @@
     <option name="commonFlags">
       <map>
         <entry key="-ansi" value="true" />
+        <entry key="-ffunction-sections" value="true" />
+        <entry key="-fpack-struct" value="true" />
+        <entry key="-fshort-enums" value="true" />
         <entry key="-mrelax" value="true" />
         <entry key="-v" value="true" />
         <entry key=".eep" value="false" />
@@ -13,7 +16,30 @@
         <entry key="extRamOvfCheck" value="false" />
       </map>
     </option>
-    <option name="compCDebugLevel" value="Default (-g2)" />
+    <option name="compCFlags">
+      <map>
+        <entry key="-ffunction-sections" value="true" />
+        <entry key="-fpack-struct" value="true" />
+        <entry key="-funsigned-char" value="true" />
+        <entry key="-mno-interrupts" value="true" />
+        <entry key="-mshort-calls" value="true" />
+      </map>
+    </option>
+    <option name="compCOptimLevel" value="-Os" />
+    <option name="compCOtherOptimFlags" value="78987" />
+    <option name="compCDebugLevel" value="-g2" />
+    <option name="compCOtherDebugFlags" value="4444" />
     <option name="compCOtherMiscFlags" value="44643643646515" />
+    <option name="compCppFlags">
+      <map>
+        <entry key="-fdata-sections" value="true" />
+        <entry key="-fshort-enums" value="true" />
+        <entry key="-funsigned-bitfields" value="true" />
+        <entry key="-mcall-prologues" value="true" />
+      </map>
+    </option>
+    <option name="compCppOptimLevel" value="-Og" />
+    <option name="compCppOtherOptimFlags" value="999" />
+    <option name="compCppDebugLevel" value="-g1" />
   </component>
 </project>

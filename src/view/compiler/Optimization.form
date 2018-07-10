@@ -37,14 +37,7 @@
                   <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
-                  <model>
-                    <item value="None (-O0)"/>
-                    <item value="Optimize (-O1)"/>
-                    <item value="Optimize more (-O2)"/>
-                    <item value="Optimize most (-O3)"/>
-                    <item value="Optimize for size (-Os)"/>
-                    <item value="Optimize debugging experience (-Og)"/>
-                  </model>
+                  <model/>
                 </properties>
               </component>
             </children>
@@ -99,7 +92,7 @@
                   <text resource-bundle="view/resources/ProjectSettingsLabels" key="avrgnu.compiler.optimzn.chbox.fdatasect"/>
                 </properties>
               </component>
-              <component id="6fb36" class="javax.swing.JCheckBox" binding="pachStructureMembersTogetherCheckBox" default-binding="true">
+              <component id="6fb36" class="javax.swing.JCheckBox" binding="packStructureMembersTogetherCheckBox" default-binding="true">
                 <constraints>
                   <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
