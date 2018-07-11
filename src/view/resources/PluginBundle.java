@@ -8,6 +8,7 @@ public class PluginBundle {
     private static final String cardNamesEmbeddedFileName = "view.resources.CardNamesEmbedded";
     private static final String projectSettingsFlagsFileName = "view.resources.ProjectSettingsFlags";
     private static final String projectSettingsLabelsFileName = "view.resources.ProjectSettingsLabels";
+    private static final String immutableTextContentsFileName = "view.resources.ImmutableTextContents";
 
     public static ResourceBundle getApplicationSettingsLabelsBundle() {
         return ResourceBundle.getBundle(applicationSettingsLabelsFileName);
@@ -23,5 +24,9 @@ public class PluginBundle {
 
     public static ResourceBundle getProjectsSettingsLabelsBundle() {
         return ResourceBundle.getBundle(projectSettingsLabelsFileName);
+    }
+
+    public static ResourceBundle getImmutableTextContents() {
+        return ResourceBundle.getBundle(immutableTextContentsFileName);
     }
 }

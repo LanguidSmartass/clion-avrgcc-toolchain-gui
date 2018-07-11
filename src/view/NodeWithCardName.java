@@ -1,8 +1,5 @@
 package view;
 
-import model.NamedTreeNode;
-import javax.swing.JPanel;
-
 public class NodeWithCardName extends NamedTreeNode {
     private final String cardName;
 

@@ -32,4 +32,6 @@ public interface CompilerSelector {
     public String getCompilerOtherDebugFlags();
 
     public String getCompilerOtherMiscFlags();
+
+    public String getImmutableExecutableName();
 }

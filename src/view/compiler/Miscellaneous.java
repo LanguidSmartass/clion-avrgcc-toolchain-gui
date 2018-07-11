@@ -99,6 +99,7 @@ public class Miscellaneous implements JPanelHolder {
         initCheckBoxes();
         initTextField();
     }
+
     private void saveTextField(String text) {
         compiler.setCompilerOtherMiscFlags(text);
     }

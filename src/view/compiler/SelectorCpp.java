@@ -1,9 +1,11 @@
 package view.compiler;
 
 import model.persistence.ProjectSettings;
+import view.resources.PluginBundle;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.ResourceBundle;
 
 public class SelectorCpp implements CompilerSelector {
     private ProjectSettings prjStngs;
@@ -80,5 +82,11 @@ public class SelectorCpp implements CompilerSelector {
     @Override
     public String getCompilerOtherMiscFlags() {
         return prjStngs.getCompCppOtherMiscFlags();
+    }
+
+    @Override
+    public String getImmutableExecutableName() {
+        ResourceBundle immutableBundle = PluginBundle.getImmutableTextContents();
+        return immutableBundle.getString("avrgnu.executable.name.compiler.cpp");
     }
 }

@@ -1,4 +1,4 @@
-package model;
+package view;
 
 public class NamedTreeNode extends TreeNode {
     private final String name;

@@ -32,14 +32,31 @@
     <option name="compCOtherMiscFlags" value="44643643646515" />
     <option name="compCppFlags">
       <map>
+        <entry key="-Wundef" value="true" />
         <entry key="-fdata-sections" value="true" />
         <entry key="-fshort-enums" value="true" />
         <entry key="-funsigned-bitfields" value="true" />
         <entry key="-mcall-prologues" value="true" />
+        <entry key="-pedantic" value="true" />
       </map>
     </option>
     <option name="compCppOptimLevel" value="-Og" />
     <option name="compCppOtherOptimFlags" value="999" />
     <option name="compCppDebugLevel" value="-g1" />
+    <option name="linkerFlags">
+      <map>
+        <entry key="-Wl, --gc-sections" value="true" />
+        <entry key="-Wl, -Map" value="true" />
+        <entry key="-Wl, -s" value="true" />
+        <entry key="-Wl, -u, vfprintf" value="true" />
+        <entry key="-nodefaultlibs" value="true" />
+        <entry key="-nostdlib" value="true" />
+      </map>
+    </option>
+    <option name="asmFlags">
+      <map>
+        <entry key="-v" value="true" />
+      </map>
+    </option>
   </component>
 </project>
