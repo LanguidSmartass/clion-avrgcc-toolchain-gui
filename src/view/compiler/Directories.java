@@ -15,7 +15,7 @@ public class Directories implements JPanelHolder {
 
     public Directories(CompilerSelector compiler) {
         this.compiler = compiler;
-        ResourceBundle bundle = PluginBundle.getProjectsSettingsLabelsBundle();
+        ResourceBundle bundle = PluginBundle.getProjectSettingsLabelsBundle();
         String dirslabel = bundle.getString("avrgnu.compiler.directs.label.incpath");
         directoriesRecords.setLabelText(dirslabel);
     }

@@ -22,7 +22,7 @@ public class General implements JPanelHolder {
     public General() {
         JCheckBoxPersistence.initAsmCheckBox(announceVersionVCheckBox, announceVersionVResourceTag);
 
-        ResourceBundle bundle = PluginBundle.getProjectsSettingsLabelsBundle();
+        ResourceBundle bundle = PluginBundle.getProjectSettingsLabelsBundle();
         String incPathsLabel = bundle.getString("avrgnu.assembler.general.label.incpath");
         incPathsRecords.setLabelText(incPathsLabel);
 

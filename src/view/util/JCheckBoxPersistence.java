@@ -14,7 +14,7 @@ public class JCheckBoxPersistence {
         ProjectSettings projectSettings = ProjectSettings.getInstance();
         if (projectSettings == null) return;
         HashMap<String, Boolean> flags = projectSettings.getCommonFlags();
-        ResourceBundle projectsSettingsFlagsBundle = PluginBundle.getProjectsSettingsFlagsBundle();
+        ResourceBundle projectsSettingsFlagsBundle = PluginBundle.getProjectSettingsFlagsBundle();
         Boolean state = flags.get(projectsSettingsFlagsBundle.getString(resourceTag));
         if (state == null) return;
         checkBox.setSelected(state);
@@ -25,7 +25,7 @@ public class JCheckBoxPersistence {
         if (projectSettings == null) return;
         HashMap<String, Boolean> flags = projectSettings.getCommonFlags();
 
-        ResourceBundle projectsSettingsFlagsBundle = PluginBundle.getProjectsSettingsFlagsBundle();
+        ResourceBundle projectsSettingsFlagsBundle = PluginBundle.getProjectSettingsFlagsBundle();
         String key = projectsSettingsFlagsBundle.getString(resourceTag);
         Boolean val = checkBox.isSelected();
         if (!flags.containsKey(key)) {
@@ -37,7 +37,7 @@ public class JCheckBoxPersistence {
 
     public static void initCompilerCheckBox(CompilerSelector compiler, JCheckBox checkBox, String resourceTag) {
         HashMap<String, Boolean> flags = compiler.getCompilerFlags();
-        ResourceBundle projectsSettingsFlagsBundle = PluginBundle.getProjectsSettingsFlagsBundle();
+        ResourceBundle projectsSettingsFlagsBundle = PluginBundle.getProjectSettingsFlagsBundle();
         Boolean state = flags.get(projectsSettingsFlagsBundle.getString(resourceTag));
         if (state == null) return;
         checkBox.setSelected(state);
@@ -46,7 +46,7 @@ public class JCheckBoxPersistence {
     public static void processCompilerCheckBoxAction(CompilerSelector compiler, JCheckBox checkBox, String resourceTag) {
         HashMap<String, Boolean> flags = compiler.getCompilerFlags();
 
-        ResourceBundle projectsSettingsFlagsBundle = PluginBundle.getProjectsSettingsFlagsBundle();
+        ResourceBundle projectsSettingsFlagsBundle = PluginBundle.getProjectSettingsFlagsBundle();
         String key = projectsSettingsFlagsBundle.getString(resourceTag);
         Boolean val = checkBox.isSelected();
         if (!flags.containsKey(key)) {
@@ -60,7 +60,7 @@ public class JCheckBoxPersistence {
         ProjectSettings projectSettings = ProjectSettings.getInstance();
         if (projectSettings == null) return;
         HashMap<String, Boolean> flags = projectSettings.getLinkerFlags();
-        ResourceBundle projectsSettingsFlagsBundle = PluginBundle.getProjectsSettingsFlagsBundle();
+        ResourceBundle projectsSettingsFlagsBundle = PluginBundle.getProjectSettingsFlagsBundle();
         Boolean state = flags.get(projectsSettingsFlagsBundle.getString(resourceTag));
         if (state == null) return;
         checkBox.setSelected(state);
@@ -71,7 +71,7 @@ public class JCheckBoxPersistence {
         if (projectSettings == null) return;
         HashMap<String, Boolean> flags = projectSettings.getLinkerFlags();
 
-        ResourceBundle projectsSettingsFlagsBundle = PluginBundle.getProjectsSettingsFlagsBundle();
+        ResourceBundle projectsSettingsFlagsBundle = PluginBundle.getProjectSettingsFlagsBundle();
         String key = projectsSettingsFlagsBundle.getString(resourceTag);
         Boolean val = checkBox.isSelected();
         if (!flags.containsKey(key)) {
@@ -85,7 +85,7 @@ public class JCheckBoxPersistence {
         ProjectSettings projectSettings = ProjectSettings.getInstance();
         if (projectSettings == null) return;
         HashMap<String, Boolean> flags = projectSettings.getAsmFlags();
-        ResourceBundle projectsSettingsFlagsBundle = PluginBundle.getProjectsSettingsFlagsBundle();
+        ResourceBundle projectsSettingsFlagsBundle = PluginBundle.getProjectSettingsFlagsBundle();
         Boolean state = flags.get(projectsSettingsFlagsBundle.getString(resourceTag));
         if (state == null) return;
         checkBox.setSelected(state);
@@ -96,7 +96,7 @@ public class JCheckBoxPersistence {
         if (projectSettings == null) return;
         HashMap<String, Boolean> flags = projectSettings.getAsmFlags();
 
-        ResourceBundle projectsSettingsFlagsBundle = PluginBundle.getProjectsSettingsFlagsBundle();
+        ResourceBundle projectsSettingsFlagsBundle = PluginBundle.getProjectSettingsFlagsBundle();
         String key = projectsSettingsFlagsBundle.getString(resourceTag);
         Boolean val = checkBox.isSelected();
         if (!flags.containsKey(key)) {

@@ -17,7 +17,7 @@ public class Symbols implements JPanelHolder {
     public Symbols(CompilerSelector compiler) {
         this.compiler = compiler;
 
-        ResourceBundle bundle = PluginBundle.getProjectsSettingsLabelsBundle();
+        ResourceBundle bundle = PluginBundle.getProjectSettingsLabelsBundle();
         String defsymblabel = bundle.getString("avrgnu.compiler.symbols.label.defined");
         String undefsymblabel = bundle.getString("avrgnu.compiler.symbols.label.undefined");
         definedSymbolsRecords.setLabelText(defsymblabel);

@@ -2,6 +2,7 @@ package view;
 
 import com.intellij.openapi.Disposable;
 import com.intellij.ui.treeStructure.Tree;
+import model.aggregation.CMakeFinalGenerator;
 import view.compiler.SelectorC;
 import view.compiler.SelectorCpp;
 import view.resources.PluginBundle;
@@ -11,18 +12,15 @@ import javax.swing.event.TreeSelectionListener;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.IOException;
+import java.io.FileNotFoundException;
 import java.util.ResourceBundle;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 
 public class ToolchainPanel extends JPanel implements Disposable {
     private JPanel topPanel;
     private Tree treeView;
     private JPanel cardsPanel;
-    private JButton buttonGenCMakeLists;
-    private JButton saveButton;
-    private JButton OKButton;
+    private JButton buttonCancel;
+    private JButton buttonGenerate;
     private view.TreeModel model;
 
     private view.toolchain.Toolchain toolchain;
@@ -64,7 +62,7 @@ public class ToolchainPanel extends JPanel implements Disposable {
         this.model = model;
         treeView.setModel(model);
 
-        buttonGenCMakeLists.addActionListener(new ActionListener() {
+        buttonCancel.addActionListener(new ActionListener() {
             /**
              * Invoked when an action occurs.
              *
@@ -75,7 +73,7 @@ public class ToolchainPanel extends JPanel implements Disposable {
                 dispose();
             }
         });
-        OKButton.addActionListener(new ActionListener() {
+        buttonGenerate.addActionListener(new ActionListener() {
             /**
              * Invoked when an action occurs.
              *
@@ -83,6 +81,12 @@ public class ToolchainPanel extends JPanel implements Disposable {
              */
             @Override
             public void actionPerformed(ActionEvent e) {
+                try {
+                    CMakeFinalGenerator generator = new CMakeFinalGenerator();
+                    generator.generate();
+                } catch (FileNotFoundException e1) {
+                    e1.printStackTrace();
+                }
                 dispose();
             }
         });

@@ -69,8 +69,8 @@ public class Debugging implements JPanelHolder {
     }
 
     private void initComboBox() {
-        ResourceBundle labelsBundle = PluginBundle.getProjectsSettingsLabelsBundle();
-        ResourceBundle flagsBundle  = PluginBundle.getProjectsSettingsFlagsBundle();
+        ResourceBundle labelsBundle = PluginBundle.getProjectSettingsLabelsBundle();
+        ResourceBundle flagsBundle  = PluginBundle.getProjectSettingsFlagsBundle();
         dbgLevelLabels = new ArrayList<>();
         dbgLevelLabels.add(labelsBundle.getString(dbgLvlnnLabelTag));
         dbgLevelLabels.add(labelsBundle.getString(dbgLvlg1LabelTag));

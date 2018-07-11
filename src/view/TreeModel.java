@@ -13,7 +13,7 @@ public class TreeModel implements javax.swing.tree.TreeModel {
 
     public TreeModel() {
         ResourceBundle applicationSettingsLabels = PluginBundle.getApplicationSettingsLabelsBundle();
-        ResourceBundle projectSettingsLabels = PluginBundle.getProjectsSettingsLabelsBundle();
+        ResourceBundle projectSettingsLabels = PluginBundle.getProjectSettingsLabelsBundle();
         ResourceBundle cardNamesEbmedded = PluginBundle.getCardNamesEmbeddedBundle();
 
         root = new NodeWithCardName("Root");

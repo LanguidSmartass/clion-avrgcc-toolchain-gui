@@ -21,6 +21,10 @@ import java.util.HashMap;
 public class ProjectSettings implements PersistentStateComponent<ProjectSettings.State> {
 
     public static class State {
+        // Toolchain
+        public String selectedToolchain = new String();
+        public String selectedFlavour = new String();
+        // Device
         public String deviceName = new String();
         // AVR/GNU Common section
         public HashMap<String, Boolean> commonFlags = new HashMap<>();
@@ -59,7 +63,7 @@ public class ProjectSettings implements PersistentStateComponent<ProjectSettings
         public String asmOtherFlags = new String();
         public ArrayList<String> asmIncludePaths = new ArrayList<>();
         public String asmDebugLevel = new String();
-
+        // AVR/GNU Archiver
         public HashMap<String, Boolean> archFlags = new HashMap<>();
         public String archOtherFlags = new String();
 
@@ -70,6 +74,14 @@ public class ProjectSettings implements PersistentStateComponent<ProjectSettings
 
     // ArrayList and HashMap containers can be modified externally through their getters
     // Strings setters only
+    public void setSelectedToolchain(String selectedToolchain) {
+        state.selectedToolchain = selectedToolchain;
+    }
+
+    public void setSelectedFlavour(String selectedFlavour) {
+        state.selectedFlavour = selectedFlavour;
+    }
+
     public void setDeviceName(String deviceName) {
         state.deviceName = deviceName;
     }
@@ -135,6 +147,14 @@ public class ProjectSettings implements PersistentStateComponent<ProjectSettings
     }
 
     // Plain getters
+    public String getSelectedToolchain() {
+        return state.selectedToolchain;
+    }
+
+    public String getSelectedFlavour() {
+        return state.selectedFlavour;
+    }
+
     public String getDeviceName() {
         return state.deviceName;
     }

@@ -1,0 +1,574 @@
+The target system is: Generic -  - avr
+The host system is: Windows - 6.3.9600 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: D:/Programming/C++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/avr-gcc.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "D:/Programming/Java/projects/clion-avrgcc-toolchain-gui/src/CLionTestProject/cmake-build-debug/CMakeFiles/3.10.3/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: D:/Programming/C++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/avr-g++.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "D:/Programming/Java/projects/clion-avrgcc-toolchain-gui/src/CLionTestProject/cmake-build-debug/CMakeFiles/3.10.3/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: D:/Programming/Java/projects/clion-avrgcc-toolchain-gui/src/CLionTestProject/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:/Programming/C++/toolchains/mingw-w64/x86_64-8.1.0-posix-sjlj-rt_v6-rev0/mingw64/bin/mingw32-make.exe" "cmTC_7d1a0/fast"
+D:/Programming/C++/toolchains/mingw-w64/x86_64-8.1.0-posix-sjlj-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_7d1a0.dir\build.make CMakeFiles/cmTC_7d1a0.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/Programming/Java/projects/clion-avrgcc-toolchain-gui/src/CLionTestProject/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7d1a0.dir/testCCompiler.c.obj
+D:\Programming\C++\toolchains\avr-gcc\avr8-gnu-toolchain-3.6.1.1752-win32.any.x86\avr8-gnu-toolchain-win32_x86\bin\avr-gcc.exe    -o CMakeFiles\cmTC_7d1a0.dir\testCCompiler.c.obj   -c D:\Programming\Java\projects\clion-avrgcc-toolchain-gui\src\CLionTestProject\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c
+Linking C executable cmTC_7d1a0
+"D:\Programming\C++\IDEs\CLion 2018.1.3\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_7d1a0.dir\link.txt --verbose=1
+D:\Programming\C++\toolchains\avr-gcc\avr8-gnu-toolchain-3.6.1.1752-win32.any.x86\avr8-gnu-toolchain-win32_x86\bin\avr-gcc.exe      CMakeFiles/cmTC_7d1a0.dir/testCCompiler.c.obj  -o cmTC_7d1a0 
+mingw32-make.exe[1]: Leaving directory 'D:/Programming/Java/projects/clion-avrgcc-toolchain-gui/src/CLionTestProject/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: D:/Programming/Java/projects/clion-avrgcc-toolchain-gui/src/CLionTestProject/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:/Programming/C++/toolchains/mingw-w64/x86_64-8.1.0-posix-sjlj-rt_v6-rev0/mingw64/bin/mingw32-make.exe" "cmTC_a7a88/fast"
+D:/Programming/C++/toolchains/mingw-w64/x86_64-8.1.0-posix-sjlj-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_a7a88.dir\build.make CMakeFiles/cmTC_a7a88.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/Programming/Java/projects/clion-avrgcc-toolchain-gui/src/CLionTestProject/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a7a88.dir/CMakeCCompilerABI.c.obj
+D:\Programming\C++\toolchains\avr-gcc\avr8-gnu-toolchain-3.6.1.1752-win32.any.x86\avr8-gnu-toolchain-win32_x86\bin\avr-gcc.exe    -o CMakeFiles\cmTC_a7a88.dir\CMakeCCompilerABI.c.obj   -c "D:\Programming\C++\IDEs\CLion 2018.1.3\bin\cmake\share\cmake-3.10\Modules\CMakeCCompilerABI.c"
+Linking C executable cmTC_a7a88
+"D:\Programming\C++\IDEs\CLion 2018.1.3\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_a7a88.dir\link.txt --verbose=1
+D:\Programming\C++\toolchains\avr-gcc\avr8-gnu-toolchain-3.6.1.1752-win32.any.x86\avr8-gnu-toolchain-win32_x86\bin\avr-gcc.exe     -v CMakeFiles/cmTC_a7a88.dir/CMakeCCompilerABI.c.obj  -o cmTC_a7a88 
+Using built-in specs.
+Reading specs from d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/device-specs/specs-avr2
+COLLECT_GCC=D:\Programming\C++\toolchains\avr-gcc\avr8-gnu-toolchain-3.6.1.1752-win32.any.x86\avr8-gnu-toolchain-win32_x86\bin\avr-gcc.exe
+COLLECT_LTO_WRAPPER=d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../libexec/gcc/avr/5.4.0/lto-wrapper.exe
+Target: avr
+Configured with: /home/toolsbuild/workspace/avr8-gnu-toolchain/src/gcc/configure LDFLAGS=-L/home/toolsbuild/workspace/avr8-gnu-toolchain/avr8-gnu-toolchain-win32_x86-hostlibs/lib CPPFLAGS= --target=avr --host=i686-w64-mingw32 --build=x86_64-pc-linux-gnu --prefix=/home/toolsbuild/workspace/avr8-gnu-toolchain/avr8-gnu-toolchain-win32_x86 --libdir=/home/toolsbuild/workspace/avr8-gnu-toolchain/avr8-gnu-toolchain-win32_x86/lib --enable-languages=c,c++ --with-dwarf2 --enable-doc --disable-shared --disable-libada --disable-libssp --disable-nls --with-avrlibc=yes --with-mpfr=/home/toolsbuild/workspace/avr8-gnu-toolchain/avr8-gnu-toolchain-win32_x86-hostlibs --with-gmp=/home/toolsbuild/workspace/avr8-gnu-toolchain/avr8-gnu-toolchain-win32_x86-hostlibs --with-mpc=/home/toolsbuild/workspace/avr8-gnu-toolchain/avr8-gnu-toolchain-win32_x86-hostlibs --enable-win32-registry=avrtoolchain --with-pkgversion=AVR_8_bit_GNU_Toolchain_3.6.1_1752 --with-bugurl=http://www.atmel.com
+Thread model: single
+gcc version 5.4.0 (AVR_8_bit_GNU_Toolchain_3.6.1_1752) 
+COMPILER_PATH=d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../libexec/gcc/avr/5.4.0/;d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../libexec/gcc/;d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/bin/
+LIBRARY_PATH=d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/;d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/;d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a7a88' '-specs=device-specs/specs-avr2'
+ d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../libexec/gcc/avr/5.4.0/collect2.exe -plugin d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../libexec/gcc/avr/5.4.0/liblto_plugin-0.dll -plugin-opt=d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../libexec/gcc/avr/5.4.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\Waffle\AppData\Local\Temp\cc1lrpPw.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lc --pmem-wrap-around=8k -o cmTC_a7a88 -Ld:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0 -Ld:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc -Ld:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib CMakeFiles/cmTC_a7a88.dir/CMakeCCompilerABI.c.obj --start-group -lgcc -lm -lc --end-group
+mingw32-make.exe[1]: Leaving directory 'D:/Programming/Java/projects/clion-avrgcc-toolchain-gui/src/CLionTestProject/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(avr-ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: D:/Programming/Java/projects/clion-avrgcc-toolchain-gui/src/CLionTestProject/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"D:/Programming/C++/toolchains/mingw-w64/x86_64-8.1.0-posix-sjlj-rt_v6-rev0/mingw64/bin/mingw32-make.exe" "cmTC_a7a88/fast"]
+  ignore line: [D:/Programming/C++/toolchains/mingw-w64/x86_64-8.1.0-posix-sjlj-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_a7a88.dir\build.make CMakeFiles/cmTC_a7a88.dir/build]
+  ignore line: [mingw32-make.exe[1]: Entering directory 'D:/Programming/Java/projects/clion-avrgcc-toolchain-gui/src/CLionTestProject/cmake-build-debug/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_a7a88.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [D:\Programming\C++\toolchains\avr-gcc\avr8-gnu-toolchain-3.6.1.1752-win32.any.x86\avr8-gnu-toolchain-win32_x86\bin\avr-gcc.exe    -o CMakeFiles\cmTC_a7a88.dir\CMakeCCompilerABI.c.obj   -c "D:\Programming\C++\IDEs\CLion 2018.1.3\bin\cmake\share\cmake-3.10\Modules\CMakeCCompilerABI.c"]
+  ignore line: [Linking C executable cmTC_a7a88]
+  ignore line: ["D:\Programming\C++\IDEs\CLion 2018.1.3\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_a7a88.dir\link.txt --verbose=1]
+  ignore line: [D:\Programming\C++\toolchains\avr-gcc\avr8-gnu-toolchain-3.6.1.1752-win32.any.x86\avr8-gnu-toolchain-win32_x86\bin\avr-gcc.exe     -v CMakeFiles/cmTC_a7a88.dir/CMakeCCompilerABI.c.obj  -o cmTC_a7a88 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [Reading specs from d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/device-specs/specs-avr2]
+  ignore line: [COLLECT_GCC=D:\Programming\C++\toolchains\avr-gcc\avr8-gnu-toolchain-3.6.1.1752-win32.any.x86\avr8-gnu-toolchain-win32_x86\bin\avr-gcc.exe]
+  ignore line: [COLLECT_LTO_WRAPPER=d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../libexec/gcc/avr/5.4.0/lto-wrapper.exe]
+  ignore line: [Target: avr]
+  ignore line: [Configured with: /home/toolsbuild/workspace/avr8-gnu-toolchain/src/gcc/configure LDFLAGS=-L/home/toolsbuild/workspace/avr8-gnu-toolchain/avr8-gnu-toolchain-win32_x86-hostlibs/lib CPPFLAGS= --target=avr --host=i686-w64-mingw32 --build=x86_64-pc-linux-gnu --prefix=/home/toolsbuild/workspace/avr8-gnu-toolchain/avr8-gnu-toolchain-win32_x86 --libdir=/home/toolsbuild/workspace/avr8-gnu-toolchain/avr8-gnu-toolchain-win32_x86/lib --enable-languages=c,c++ --with-dwarf2 --enable-doc --disable-shared --disable-libada --disable-libssp --disable-nls --with-avrlibc=yes --with-mpfr=/home/toolsbuild/workspace/avr8-gnu-toolchain/avr8-gnu-toolchain-win32_x86-hostlibs --with-gmp=/home/toolsbuild/workspace/avr8-gnu-toolchain/avr8-gnu-toolchain-win32_x86-hostlibs --with-mpc=/home/toolsbuild/workspace/avr8-gnu-toolchain/avr8-gnu-toolchain-win32_x86-hostlibs --enable-win32-registry=avrtoolchain --with-pkgversion=AVR_8_bit_GNU_Toolchain_3.6.1_1752 --with-bugurl=http://www.atmel.com]
+  ignore line: [Thread model: single]
+  ignore line: [gcc version 5.4.0 (AVR_8_bit_GNU_Toolchain_3.6.1_1752) ]
+  ignore line: [COMPILER_PATH=d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../libexec/gcc/avr/5.4.0/]
+  ignore line: [d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../libexec/gcc/]
+  ignore line: [d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/bin/]
+  ignore line: [LIBRARY_PATH=d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/]
+  ignore line: [d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/]
+  ignore line: [d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a7a88' '-specs=device-specs/specs-avr2']
+  link line: [ d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../libexec/gcc/avr/5.4.0/collect2.exe -plugin d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../libexec/gcc/avr/5.4.0/liblto_plugin-0.dll -plugin-opt=d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../libexec/gcc/avr/5.4.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\Waffle\AppData\Local\Temp\cc1lrpPw.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lc --pmem-wrap-around=8k -o cmTC_a7a88 -Ld:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0 -Ld:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc -Ld:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib CMakeFiles/cmTC_a7a88.dir/CMakeCCompilerABI.c.obj --start-group -lgcc -lm -lc --end-group]
+    arg [d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../libexec/gcc/avr/5.4.0/collect2.exe] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../libexec/gcc/avr/5.4.0/liblto_plugin-0.dll] ==> ignore
+    arg [-plugin-opt=d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../libexec/gcc/avr/5.4.0/lto-wrapper.exe] ==> ignore
+    arg [-plugin-opt=-fresolution=C:\Users\Waffle\AppData\Local\Temp\cc1lrpPw.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lm] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [--pmem-wrap-around=8k] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_a7a88] ==> ignore
+    arg [-Ld:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0] ==> dir [d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0]
+    arg [-Ld:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc] ==> dir [d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc]
+    arg [-Ld:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib] ==> dir [d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib]
+    arg [CMakeFiles/cmTC_a7a88.dir/CMakeCCompilerABI.c.obj] ==> ignore
+    arg [--start-group] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lm] ==> lib [m]
+    arg [-lc] ==> lib [c]
+    arg [--end-group] ==> ignore
+  collapse library dir [d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0] ==> [D:/Programming/C++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/lib/gcc/avr/5.4.0]
+  collapse library dir [d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc] ==> [D:/Programming/C++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/lib/gcc]
+  collapse library dir [d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib] ==> [D:/Programming/C++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/avr/lib]
+  implicit libs: [gcc;m;c]
+  implicit dirs: [D:/Programming/C++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/lib/gcc/avr/5.4.0;D:/Programming/C++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/lib/gcc;D:/Programming/C++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/avr/lib]
+  implicit fwks: []
+
+
+
+
+Detecting C [-std=c11] compiler features compiled with the following output:
+Change Dir: D:/Programming/Java/projects/clion-avrgcc-toolchain-gui/src/CLionTestProject/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:/Programming/C++/toolchains/mingw-w64/x86_64-8.1.0-posix-sjlj-rt_v6-rev0/mingw64/bin/mingw32-make.exe" "cmTC_5dddc/fast"
+D:/Programming/C++/toolchains/mingw-w64/x86_64-8.1.0-posix-sjlj-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_5dddc.dir\build.make CMakeFiles/cmTC_5dddc.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/Programming/Java/projects/clion-avrgcc-toolchain-gui/src/CLionTestProject/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5dddc.dir/feature_tests.c.obj
+D:\Programming\C++\toolchains\avr-gcc\avr8-gnu-toolchain-3.6.1.1752-win32.any.x86\avr8-gnu-toolchain-win32_x86\bin\avr-gcc.exe   -std=c11 -o CMakeFiles\cmTC_5dddc.dir\feature_tests.c.obj   -c D:\Programming\Java\projects\clion-avrgcc-toolchain-gui\src\CLionTestProject\cmake-build-debug\CMakeFiles\feature_tests.c
+Linking C executable cmTC_5dddc
+"D:\Programming\C++\IDEs\CLion 2018.1.3\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_5dddc.dir\link.txt --verbose=1
+D:\Programming\C++\toolchains\avr-gcc\avr8-gnu-toolchain-3.6.1.1752-win32.any.x86\avr8-gnu-toolchain-win32_x86\bin\avr-gcc.exe      CMakeFiles/cmTC_5dddc.dir/feature_tests.c.obj  -o cmTC_5dddc 
+mingw32-make.exe[1]: Leaving directory 'D:/Programming/Java/projects/clion-avrgcc-toolchain-gui/src/CLionTestProject/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:1c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c99] compiler features compiled with the following output:
+Change Dir: D:/Programming/Java/projects/clion-avrgcc-toolchain-gui/src/CLionTestProject/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:/Programming/C++/toolchains/mingw-w64/x86_64-8.1.0-posix-sjlj-rt_v6-rev0/mingw64/bin/mingw32-make.exe" "cmTC_a327d/fast"
+D:/Programming/C++/toolchains/mingw-w64/x86_64-8.1.0-posix-sjlj-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_a327d.dir\build.make CMakeFiles/cmTC_a327d.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/Programming/Java/projects/clion-avrgcc-toolchain-gui/src/CLionTestProject/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a327d.dir/feature_tests.c.obj
+D:\Programming\C++\toolchains\avr-gcc\avr8-gnu-toolchain-3.6.1.1752-win32.any.x86\avr8-gnu-toolchain-win32_x86\bin\avr-gcc.exe   -std=c99 -o CMakeFiles\cmTC_a327d.dir\feature_tests.c.obj   -c D:\Programming\Java\projects\clion-avrgcc-toolchain-gui\src\CLionTestProject\cmake-build-debug\CMakeFiles\feature_tests.c
+Linking C executable cmTC_a327d
+"D:\Programming\C++\IDEs\CLion 2018.1.3\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_a327d.dir\link.txt --verbose=1
+D:\Programming\C++\toolchains\avr-gcc\avr8-gnu-toolchain-3.6.1.1752-win32.any.x86\avr8-gnu-toolchain-win32_x86\bin\avr-gcc.exe      CMakeFiles/cmTC_a327d.dir/feature_tests.c.obj  -o cmTC_a327d 
+mingw32-make.exe[1]: Leaving directory 'D:/Programming/Java/projects/clion-avrgcc-toolchain-gui/src/CLionTestProject/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c90] compiler features compiled with the following output:
+Change Dir: D:/Programming/Java/projects/clion-avrgcc-toolchain-gui/src/CLionTestProject/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:/Programming/C++/toolchains/mingw-w64/x86_64-8.1.0-posix-sjlj-rt_v6-rev0/mingw64/bin/mingw32-make.exe" "cmTC_57fa5/fast"
+D:/Programming/C++/toolchains/mingw-w64/x86_64-8.1.0-posix-sjlj-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_57fa5.dir\build.make CMakeFiles/cmTC_57fa5.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/Programming/Java/projects/clion-avrgcc-toolchain-gui/src/CLionTestProject/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_57fa5.dir/feature_tests.c.obj
+D:\Programming\C++\toolchains\avr-gcc\avr8-gnu-toolchain-3.6.1.1752-win32.any.x86\avr8-gnu-toolchain-win32_x86\bin\avr-gcc.exe   -std=c90 -o CMakeFiles\cmTC_57fa5.dir\feature_tests.c.obj   -c D:\Programming\Java\projects\clion-avrgcc-toolchain-gui\src\CLionTestProject\cmake-build-debug\CMakeFiles\feature_tests.c
+Linking C executable cmTC_57fa5
+"D:\Programming\C++\IDEs\CLion 2018.1.3\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_57fa5.dir\link.txt --verbose=1
+D:\Programming\C++\toolchains\avr-gcc\avr8-gnu-toolchain-3.6.1.1752-win32.any.x86\avr8-gnu-toolchain-win32_x86\bin\avr-gcc.exe      CMakeFiles/cmTC_57fa5.dir/feature_tests.c.obj  -o cmTC_57fa5 
+mingw32-make.exe[1]: Leaving directory 'D:/Programming/Java/projects/clion-avrgcc-toolchain-gui/src/CLionTestProject/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:0c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:0c_variadic_macros
+Determining if the CXX compiler works passed with the following output:
+Change Dir: D:/Programming/Java/projects/clion-avrgcc-toolchain-gui/src/CLionTestProject/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:/Programming/C++/toolchains/mingw-w64/x86_64-8.1.0-posix-sjlj-rt_v6-rev0/mingw64/bin/mingw32-make.exe" "cmTC_91c90/fast"
+D:/Programming/C++/toolchains/mingw-w64/x86_64-8.1.0-posix-sjlj-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_91c90.dir\build.make CMakeFiles/cmTC_91c90.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/Programming/Java/projects/clion-avrgcc-toolchain-gui/src/CLionTestProject/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_91c90.dir/testCXXCompiler.cxx.obj
+D:\Programming\C++\toolchains\avr-gcc\avr8-gnu-toolchain-3.6.1.1752-win32.any.x86\avr8-gnu-toolchain-win32_x86\bin\avr-g++.exe     -o CMakeFiles\cmTC_91c90.dir\testCXXCompiler.cxx.obj -c D:\Programming\Java\projects\clion-avrgcc-toolchain-gui\src\CLionTestProject\cmake-build-debug\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
+Linking CXX executable cmTC_91c90
+"D:\Programming\C++\IDEs\CLion 2018.1.3\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_91c90.dir\link.txt --verbose=1
+D:\Programming\C++\toolchains\avr-gcc\avr8-gnu-toolchain-3.6.1.1752-win32.any.x86\avr8-gnu-toolchain-win32_x86\bin\avr-g++.exe       CMakeFiles/cmTC_91c90.dir/testCXXCompiler.cxx.obj  -o cmTC_91c90 
+mingw32-make.exe[1]: Leaving directory 'D:/Programming/Java/projects/clion-avrgcc-toolchain-gui/src/CLionTestProject/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: D:/Programming/Java/projects/clion-avrgcc-toolchain-gui/src/CLionTestProject/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:/Programming/C++/toolchains/mingw-w64/x86_64-8.1.0-posix-sjlj-rt_v6-rev0/mingw64/bin/mingw32-make.exe" "cmTC_6beec/fast"
+D:/Programming/C++/toolchains/mingw-w64/x86_64-8.1.0-posix-sjlj-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_6beec.dir\build.make CMakeFiles/cmTC_6beec.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/Programming/Java/projects/clion-avrgcc-toolchain-gui/src/CLionTestProject/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_6beec.dir/CMakeCXXCompilerABI.cpp.obj
+D:\Programming\C++\toolchains\avr-gcc\avr8-gnu-toolchain-3.6.1.1752-win32.any.x86\avr8-gnu-toolchain-win32_x86\bin\avr-g++.exe     -o CMakeFiles\cmTC_6beec.dir\CMakeCXXCompilerABI.cpp.obj -c "D:\Programming\C++\IDEs\CLion 2018.1.3\bin\cmake\share\cmake-3.10\Modules\CMakeCXXCompilerABI.cpp"
+Linking CXX executable cmTC_6beec
+"D:\Programming\C++\IDEs\CLion 2018.1.3\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_6beec.dir\link.txt --verbose=1
+D:\Programming\C++\toolchains\avr-gcc\avr8-gnu-toolchain-3.6.1.1752-win32.any.x86\avr8-gnu-toolchain-win32_x86\bin\avr-g++.exe      -v CMakeFiles/cmTC_6beec.dir/CMakeCXXCompilerABI.cpp.obj  -o cmTC_6beec 
+Using built-in specs.
+Reading specs from d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/device-specs/specs-avr2
+COLLECT_GCC=D:\Programming\C++\toolchains\avr-gcc\avr8-gnu-toolchain-3.6.1.1752-win32.any.x86\avr8-gnu-toolchain-win32_x86\bin\avr-g++.exe
+COLLECT_LTO_WRAPPER=d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../libexec/gcc/avr/5.4.0/lto-wrapper.exe
+Target: avr
+Configured with: /home/toolsbuild/workspace/avr8-gnu-toolchain/src/gcc/configure LDFLAGS=-L/home/toolsbuild/workspace/avr8-gnu-toolchain/avr8-gnu-toolchain-win32_x86-hostlibs/lib CPPFLAGS= --target=avr --host=i686-w64-mingw32 --build=x86_64-pc-linux-gnu --prefix=/home/toolsbuild/workspace/avr8-gnu-toolchain/avr8-gnu-toolchain-win32_x86 --libdir=/home/toolsbuild/workspace/avr8-gnu-toolchain/avr8-gnu-toolchain-win32_x86/lib --enable-languages=c,c++ --with-dwarf2 --enable-doc --disable-shared --disable-libada --disable-libssp --disable-nls --with-avrlibc=yes --with-mpfr=/home/toolsbuild/workspace/avr8-gnu-toolchain/avr8-gnu-toolchain-win32_x86-hostlibs --with-gmp=/home/toolsbuild/workspace/avr8-gnu-toolchain/avr8-gnu-toolchain-win32_x86-hostlibs --with-mpc=/home/toolsbuild/workspace/avr8-gnu-toolchain/avr8-gnu-toolchain-win32_x86-hostlibs --enable-win32-registry=avrtoolchain --with-pkgversion=AVR_8_bit_GNU_Toolchain_3.6.1_1752 --with-bugurl=http://www.atmel.com
+Thread model: single
+gcc version 5.4.0 (AVR_8_bit_GNU_Toolchain_3.6.1_1752) 
+COMPILER_PATH=d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../libexec/gcc/avr/5.4.0/;d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../libexec/gcc/;d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/bin/
+LIBRARY_PATH=d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/;d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/;d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6beec' '-specs=device-specs/specs-avr2'
+ d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../libexec/gcc/avr/5.4.0/collect2.exe -plugin d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../libexec/gcc/avr/5.4.0/liblto_plugin-0.dll -plugin-opt=d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../libexec/gcc/avr/5.4.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\Waffle\AppData\Local\Temp\ccPioI9F.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lc --pmem-wrap-around=8k -o cmTC_6beec -Ld:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0 -Ld:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc -Ld:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib CMakeFiles/cmTC_6beec.dir/CMakeCXXCompilerABI.cpp.obj -lgcc -lm --start-group -lgcc -lm -lc --end-group
+mingw32-make.exe[1]: Leaving directory 'D:/Programming/Java/projects/clion-avrgcc-toolchain-gui/src/CLionTestProject/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(avr-ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: D:/Programming/Java/projects/clion-avrgcc-toolchain-gui/src/CLionTestProject/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"D:/Programming/C++/toolchains/mingw-w64/x86_64-8.1.0-posix-sjlj-rt_v6-rev0/mingw64/bin/mingw32-make.exe" "cmTC_6beec/fast"]
+  ignore line: [D:/Programming/C++/toolchains/mingw-w64/x86_64-8.1.0-posix-sjlj-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_6beec.dir\build.make CMakeFiles/cmTC_6beec.dir/build]
+  ignore line: [mingw32-make.exe[1]: Entering directory 'D:/Programming/Java/projects/clion-avrgcc-toolchain-gui/src/CLionTestProject/cmake-build-debug/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_6beec.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [D:\Programming\C++\toolchains\avr-gcc\avr8-gnu-toolchain-3.6.1.1752-win32.any.x86\avr8-gnu-toolchain-win32_x86\bin\avr-g++.exe     -o CMakeFiles\cmTC_6beec.dir\CMakeCXXCompilerABI.cpp.obj -c "D:\Programming\C++\IDEs\CLion 2018.1.3\bin\cmake\share\cmake-3.10\Modules\CMakeCXXCompilerABI.cpp"]
+  ignore line: [Linking CXX executable cmTC_6beec]
+  ignore line: ["D:\Programming\C++\IDEs\CLion 2018.1.3\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_6beec.dir\link.txt --verbose=1]
+  ignore line: [D:\Programming\C++\toolchains\avr-gcc\avr8-gnu-toolchain-3.6.1.1752-win32.any.x86\avr8-gnu-toolchain-win32_x86\bin\avr-g++.exe      -v CMakeFiles/cmTC_6beec.dir/CMakeCXXCompilerABI.cpp.obj  -o cmTC_6beec ]
+  ignore line: [Using built-in specs.]
+  ignore line: [Reading specs from d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/device-specs/specs-avr2]
+  ignore line: [COLLECT_GCC=D:\Programming\C++\toolchains\avr-gcc\avr8-gnu-toolchain-3.6.1.1752-win32.any.x86\avr8-gnu-toolchain-win32_x86\bin\avr-g++.exe]
+  ignore line: [COLLECT_LTO_WRAPPER=d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../libexec/gcc/avr/5.4.0/lto-wrapper.exe]
+  ignore line: [Target: avr]
+  ignore line: [Configured with: /home/toolsbuild/workspace/avr8-gnu-toolchain/src/gcc/configure LDFLAGS=-L/home/toolsbuild/workspace/avr8-gnu-toolchain/avr8-gnu-toolchain-win32_x86-hostlibs/lib CPPFLAGS= --target=avr --host=i686-w64-mingw32 --build=x86_64-pc-linux-gnu --prefix=/home/toolsbuild/workspace/avr8-gnu-toolchain/avr8-gnu-toolchain-win32_x86 --libdir=/home/toolsbuild/workspace/avr8-gnu-toolchain/avr8-gnu-toolchain-win32_x86/lib --enable-languages=c,c++ --with-dwarf2 --enable-doc --disable-shared --disable-libada --disable-libssp --disable-nls --with-avrlibc=yes --with-mpfr=/home/toolsbuild/workspace/avr8-gnu-toolchain/avr8-gnu-toolchain-win32_x86-hostlibs --with-gmp=/home/toolsbuild/workspace/avr8-gnu-toolchain/avr8-gnu-toolchain-win32_x86-hostlibs --with-mpc=/home/toolsbuild/workspace/avr8-gnu-toolchain/avr8-gnu-toolchain-win32_x86-hostlibs --enable-win32-registry=avrtoolchain --with-pkgversion=AVR_8_bit_GNU_Toolchain_3.6.1_1752 --with-bugurl=http://www.atmel.com]
+  ignore line: [Thread model: single]
+  ignore line: [gcc version 5.4.0 (AVR_8_bit_GNU_Toolchain_3.6.1_1752) ]
+  ignore line: [COMPILER_PATH=d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../libexec/gcc/avr/5.4.0/]
+  ignore line: [d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../libexec/gcc/]
+  ignore line: [d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/bin/]
+  ignore line: [LIBRARY_PATH=d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/]
+  ignore line: [d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/]
+  ignore line: [d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6beec' '-specs=device-specs/specs-avr2']
+  link line: [ d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../libexec/gcc/avr/5.4.0/collect2.exe -plugin d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../libexec/gcc/avr/5.4.0/liblto_plugin-0.dll -plugin-opt=d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../libexec/gcc/avr/5.4.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\Waffle\AppData\Local\Temp\ccPioI9F.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lc --pmem-wrap-around=8k -o cmTC_6beec -Ld:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0 -Ld:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc -Ld:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib CMakeFiles/cmTC_6beec.dir/CMakeCXXCompilerABI.cpp.obj -lgcc -lm --start-group -lgcc -lm -lc --end-group]
+    arg [d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../libexec/gcc/avr/5.4.0/collect2.exe] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../libexec/gcc/avr/5.4.0/liblto_plugin-0.dll] ==> ignore
+    arg [-plugin-opt=d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../libexec/gcc/avr/5.4.0/lto-wrapper.exe] ==> ignore
+    arg [-plugin-opt=-fresolution=C:\Users\Waffle\AppData\Local\Temp\ccPioI9F.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lm] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [--pmem-wrap-around=8k] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_6beec] ==> ignore
+    arg [-Ld:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0] ==> dir [d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0]
+    arg [-Ld:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc] ==> dir [d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc]
+    arg [-Ld:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib] ==> dir [d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib]
+    arg [CMakeFiles/cmTC_6beec.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lm] ==> lib [m]
+    arg [--start-group] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lm] ==> lib [m]
+    arg [-lc] ==> lib [c]
+    arg [--end-group] ==> ignore
+  collapse library dir [d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0] ==> [D:/Programming/C++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/lib/gcc/avr/5.4.0]
+  collapse library dir [d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc] ==> [D:/Programming/C++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/lib/gcc]
+  collapse library dir [d:/programming/c++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib] ==> [D:/Programming/C++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/avr/lib]
+  implicit libs: [gcc;m;gcc;m;c]
+  implicit dirs: [D:/Programming/C++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/lib/gcc/avr/5.4.0;D:/Programming/C++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/lib/gcc;D:/Programming/C++/toolchains/avr-gcc/avr8-gnu-toolchain-3.6.1.1752-win32.any.x86/avr8-gnu-toolchain-win32_x86/avr/lib]
+  implicit fwks: []
+
+
+
+
+Detecting CXX [-std=c++1z] compiler features compiled with the following output:
+Change Dir: D:/Programming/Java/projects/clion-avrgcc-toolchain-gui/src/CLionTestProject/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:/Programming/C++/toolchains/mingw-w64/x86_64-8.1.0-posix-sjlj-rt_v6-rev0/mingw64/bin/mingw32-make.exe" "cmTC_3112d/fast"
+D:/Programming/C++/toolchains/mingw-w64/x86_64-8.1.0-posix-sjlj-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_3112d.dir\build.make CMakeFiles/cmTC_3112d.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/Programming/Java/projects/clion-avrgcc-toolchain-gui/src/CLionTestProject/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_3112d.dir/feature_tests.cxx.obj
+D:\Programming\C++\toolchains\avr-gcc\avr8-gnu-toolchain-3.6.1.1752-win32.any.x86\avr8-gnu-toolchain-win32_x86\bin\avr-g++.exe    -std=c++1z -o CMakeFiles\cmTC_3112d.dir\feature_tests.cxx.obj -c D:\Programming\Java\projects\clion-avrgcc-toolchain-gui\src\CLionTestProject\cmake-build-debug\CMakeFiles\feature_tests.cxx
+Linking CXX executable cmTC_3112d
+"D:\Programming\C++\IDEs\CLion 2018.1.3\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_3112d.dir\link.txt --verbose=1
+D:\Programming\C++\toolchains\avr-gcc\avr8-gnu-toolchain-3.6.1.1752-win32.any.x86\avr8-gnu-toolchain-win32_x86\bin\avr-g++.exe       CMakeFiles/cmTC_3112d.dir/feature_tests.cxx.obj  -o cmTC_3112d 
+mingw32-make.exe[1]: Leaving directory 'D:/Programming/Java/projects/clion-avrgcc-toolchain-gui/src/CLionTestProject/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++14] compiler features compiled with the following output:
+Change Dir: D:/Programming/Java/projects/clion-avrgcc-toolchain-gui/src/CLionTestProject/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:/Programming/C++/toolchains/mingw-w64/x86_64-8.1.0-posix-sjlj-rt_v6-rev0/mingw64/bin/mingw32-make.exe" "cmTC_c8254/fast"
+D:/Programming/C++/toolchains/mingw-w64/x86_64-8.1.0-posix-sjlj-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_c8254.dir\build.make CMakeFiles/cmTC_c8254.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/Programming/Java/projects/clion-avrgcc-toolchain-gui/src/CLionTestProject/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c8254.dir/feature_tests.cxx.obj
+D:\Programming\C++\toolchains\avr-gcc\avr8-gnu-toolchain-3.6.1.1752-win32.any.x86\avr8-gnu-toolchain-win32_x86\bin\avr-g++.exe    -std=c++14 -o CMakeFiles\cmTC_c8254.dir\feature_tests.cxx.obj -c D:\Programming\Java\projects\clion-avrgcc-toolchain-gui\src\CLionTestProject\cmake-build-debug\CMakeFiles\feature_tests.cxx
+Linking CXX executable cmTC_c8254
+"D:\Programming\C++\IDEs\CLion 2018.1.3\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_c8254.dir\link.txt --verbose=1
+D:\Programming\C++\toolchains\avr-gcc\avr8-gnu-toolchain-3.6.1.1752-win32.any.x86\avr8-gnu-toolchain-win32_x86\bin\avr-g++.exe       CMakeFiles/cmTC_c8254.dir/feature_tests.cxx.obj  -o cmTC_c8254 
+mingw32-make.exe[1]: Leaving directory 'D:/Programming/Java/projects/clion-avrgcc-toolchain-gui/src/CLionTestProject/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++11] compiler features compiled with the following output:
+Change Dir: D:/Programming/Java/projects/clion-avrgcc-toolchain-gui/src/CLionTestProject/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:/Programming/C++/toolchains/mingw-w64/x86_64-8.1.0-posix-sjlj-rt_v6-rev0/mingw64/bin/mingw32-make.exe" "cmTC_fe3d5/fast"
+D:/Programming/C++/toolchains/mingw-w64/x86_64-8.1.0-posix-sjlj-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_fe3d5.dir\build.make CMakeFiles/cmTC_fe3d5.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/Programming/Java/projects/clion-avrgcc-toolchain-gui/src/CLionTestProject/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_fe3d5.dir/feature_tests.cxx.obj
+D:\Programming\C++\toolchains\avr-gcc\avr8-gnu-toolchain-3.6.1.1752-win32.any.x86\avr8-gnu-toolchain-win32_x86\bin\avr-g++.exe    -std=c++11 -o CMakeFiles\cmTC_fe3d5.dir\feature_tests.cxx.obj -c D:\Programming\Java\projects\clion-avrgcc-toolchain-gui\src\CLionTestProject\cmake-build-debug\CMakeFiles\feature_tests.cxx
+Linking CXX executable cmTC_fe3d5
+"D:\Programming\C++\IDEs\CLion 2018.1.3\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_fe3d5.dir\link.txt --verbose=1
+D:\Programming\C++\toolchains\avr-gcc\avr8-gnu-toolchain-3.6.1.1752-win32.any.x86\avr8-gnu-toolchain-win32_x86\bin\avr-g++.exe       CMakeFiles/cmTC_fe3d5.dir/feature_tests.cxx.obj  -o cmTC_fe3d5 
+mingw32-make.exe[1]: Leaving directory 'D:/Programming/Java/projects/clion-avrgcc-toolchain-gui/src/CLionTestProject/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++98] compiler features compiled with the following output:
+Change Dir: D:/Programming/Java/projects/clion-avrgcc-toolchain-gui/src/CLionTestProject/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:/Programming/C++/toolchains/mingw-w64/x86_64-8.1.0-posix-sjlj-rt_v6-rev0/mingw64/bin/mingw32-make.exe" "cmTC_c676c/fast"
+D:/Programming/C++/toolchains/mingw-w64/x86_64-8.1.0-posix-sjlj-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_c676c.dir\build.make CMakeFiles/cmTC_c676c.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/Programming/Java/projects/clion-avrgcc-toolchain-gui/src/CLionTestProject/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c676c.dir/feature_tests.cxx.obj
+D:\Programming\C++\toolchains\avr-gcc\avr8-gnu-toolchain-3.6.1.1752-win32.any.x86\avr8-gnu-toolchain-win32_x86\bin\avr-g++.exe    -std=c++98 -o CMakeFiles\cmTC_c676c.dir\feature_tests.cxx.obj -c D:\Programming\Java\projects\clion-avrgcc-toolchain-gui\src\CLionTestProject\cmake-build-debug\CMakeFiles\feature_tests.cxx
+Linking CXX executable cmTC_c676c
+"D:\Programming\C++\IDEs\CLion 2018.1.3\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_c676c.dir\link.txt --verbose=1
+D:\Programming\C++\toolchains\avr-gcc\avr8-gnu-toolchain-3.6.1.1752-win32.any.x86\avr8-gnu-toolchain-win32_x86\bin\avr-g++.exe       CMakeFiles/cmTC_c676c.dir/feature_tests.cxx.obj  -o cmTC_c676c 
+mingw32-make.exe[1]: Leaving directory 'D:/Programming/Java/projects/clion-avrgcc-toolchain-gui/src/CLionTestProject/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:0cxx_alias_templates
+    Feature record: CXX_FEATURE:0cxx_alignas
+    Feature record: CXX_FEATURE:0cxx_alignof
+    Feature record: CXX_FEATURE:0cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:0cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:0cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:0cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:0cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:0cxx_default_function_template_args
+    Feature record: CXX_FEATURE:0cxx_defaulted_functions
+    Feature record: CXX_FEATURE:0cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:0cxx_delegating_constructors
+    Feature record: CXX_FEATURE:0cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:0cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:0cxx_explicit_conversions
+    Feature record: CXX_FEATURE:0cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:0cxx_extern_templates
+    Feature record: CXX_FEATURE:0cxx_final
+    Feature record: CXX_FEATURE:0cxx_func_identifier
+    Feature record: CXX_FEATURE:0cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:0cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:0cxx_inline_namespaces
+    Feature record: CXX_FEATURE:0cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:0cxx_local_type_template_args
+    Feature record: CXX_FEATURE:0cxx_long_long_type
+    Feature record: CXX_FEATURE:0cxx_noexcept
+    Feature record: CXX_FEATURE:0cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:0cxx_nullptr
+    Feature record: CXX_FEATURE:0cxx_override
+    Feature record: CXX_FEATURE:0cxx_range_for
+    Feature record: CXX_FEATURE:0cxx_raw_string_literals
+    Feature record: CXX_FEATURE:0cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:0cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:0cxx_rvalue_references
+    Feature record: CXX_FEATURE:0cxx_sizeof_member
+    Feature record: CXX_FEATURE:0cxx_static_assert
+    Feature record: CXX_FEATURE:0cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:0cxx_thread_local
+    Feature record: CXX_FEATURE:0cxx_trailing_return_types
+    Feature record: CXX_FEATURE:0cxx_unicode_literals
+    Feature record: CXX_FEATURE:0cxx_uniform_initialization
+    Feature record: CXX_FEATURE:0cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:0cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:0cxx_variadic_macros
+    Feature record: CXX_FEATURE:0cxx_variadic_templates

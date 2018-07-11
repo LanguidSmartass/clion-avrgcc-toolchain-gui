@@ -142,8 +142,8 @@ public class Optimization implements JPanelHolder {
     }
 
     private void initComboBox() {
-        ResourceBundle labelsBundle = PluginBundle.getProjectsSettingsLabelsBundle();
-        ResourceBundle flagsBundle  = PluginBundle.getProjectsSettingsFlagsBundle();
+        ResourceBundle labelsBundle = PluginBundle.getProjectSettingsLabelsBundle();
+        ResourceBundle flagsBundle  = PluginBundle.getProjectSettingsFlagsBundle();
         optLvlLabels = new ArrayList<>();
         optLvlLabels.add(labelsBundle.getString(optLvlo0LabelTag));
         optLvlLabels.add(labelsBundle.getString(optLvlo1LabelTag));

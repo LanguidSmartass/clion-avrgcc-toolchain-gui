@@ -1,0 +1,1 @@
+D:\Programming\C++\toolchains\avr-gcc\avr8-gnu-toolchain-3.6.1.1752-win32.any.x86\avr8-gnu-toolchain-win32_x86\bin\avr-g++.exe  -g   CMakeFiles/CLionTestProject.dir/main.cpp.obj  -o CLionTestProject 

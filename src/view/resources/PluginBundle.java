@@ -18,11 +18,11 @@ public class PluginBundle {
         return ResourceBundle.getBundle(cardNamesEmbeddedFileName);
     }
 
-    public static ResourceBundle getProjectsSettingsFlagsBundle() {
+    public static ResourceBundle getProjectSettingsFlagsBundle() {
         return ResourceBundle.getBundle(projectSettingsFlagsFileName);
     }
 
-    public static ResourceBundle getProjectsSettingsLabelsBundle() {
+    public static ResourceBundle getProjectSettingsLabelsBundle() {
         return ResourceBundle.getBundle(projectSettingsLabelsFileName);
     }
 
