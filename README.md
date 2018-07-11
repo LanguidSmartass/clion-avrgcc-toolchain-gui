@@ -2,12 +2,14 @@
 CLion plugin that imitates a part of Atmel Studio Toolchain GUI. The settings are translated into your project's CMakeLists.txt.
 
 To use the generated file place the following CMake function call BEFORE the 'project()' call, like so:
-# CMakeLists.txt example
-cmake_minimum_required(VERSION 3.10)
-include(avr-gcc.cmake)
-project(YourProject)
-set(CMAKE_CXX_STANDARD 17)
-add_executable(YourProject main.cpp)
+
+CMakeLists.txt example
+
+cmake_minimum_required(VERSION 3.10)\n
+include(avr-gcc.cmake)\n
+project(YourProject)\n
+set(CMAKE_CXX_STANDARD 17)\n
+add_executable(YourProject main.cpp)\n
 
 07/11/2018 -- What works so far:
 - application level (IDE) toolchain/flavour selection/deletion, default flavour can be saved for each toolchain
