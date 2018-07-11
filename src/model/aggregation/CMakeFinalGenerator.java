@@ -33,6 +33,7 @@ public class CMakeFinalGenerator {
         String avr_objdump = bundle.getString("avrgnu.executable.name.objdump");
 
         String path = AggregateExtractor.getProjectToolchainPath();
+        path = path.replace('\\', '/');
         writer.writeSetSimple(AVRGCC_TOOLCHAIN_ROOT, path);                // set(AVRGCC_TOOLCHAIN_ROOT path/to/toolchain)
         String path_macro = encloseInExpression(AVRGCC_TOOLCHAIN_ROOT);
         String bin_dir = path_macro + "/bin";

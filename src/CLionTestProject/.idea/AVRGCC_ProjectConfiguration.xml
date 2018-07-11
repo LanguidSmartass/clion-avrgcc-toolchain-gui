@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AVRGCC.Project.Configuration">
+    <option name="selectedToolchain" value="Atmel AVR 8-bit (C++ language)" />
+    <option name="selectedFlavour" value="default" />
     <option name="commonFlags">
       <map>
         <entry key="-ansi" value="true" />

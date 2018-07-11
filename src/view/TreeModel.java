@@ -25,6 +25,13 @@ public class TreeModel implements javax.swing.tree.TreeModel {
         toolchain.makeAsLeaf();
         root.addChild(toolchain);
 
+        NodeWithCardName projectToolchain = new NodeWithCardName(
+                projectSettingsLabels.getString("project.toolchain"),
+                cardNamesEbmedded.getString("project.toolchain")
+        );
+        projectToolchain.makeAsLeaf();
+        root.addChild(projectToolchain);
+
         NodeWithCardName device = new NodeWithCardName(
                 projectSettingsLabels.getString("device"),
                 cardNamesEbmedded.getString("device")
